@@ -13,7 +13,7 @@ LBM is a relatively novel approach to solve the Navier-Stokes equations (NSE) in
 * Written in Fortran 90, Kokkos, and DPC++. 
 * MPI+OpenMP hybrid parallelism with GPU offloading directives 
 * 2D (D2Q9) and 3D (D3Q27) problems 
-* Example problem is flow past a circle (2D) and sphere(3D) 
+* Example problems include: flow past a circle/sphere, lid driven cavity, taylor-green vortex
 
 ## Building
 The code has currently been tested on ALCF's [ThetaGPU](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview), as such, the following instructions assume you are building on ThetaGPU. In the future, we will provide more general instructions for non-ThetaGPU architectures.  
