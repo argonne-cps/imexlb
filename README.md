@@ -10,8 +10,8 @@ For this project, in particular, the IMEXLB ProxyApp suite will consist of Fortr
 LBM is a relatively novel approach to solve the Navier-Stokes equations (NSE) in the low-Mach number regime. The governing equation can be derived from the Boltzmann equation after discretizing the phase space with constant microscopic lattice velocities. One major drive behind the use of LBM in the CFD community is the ease of parallelization, but the increasing popularity of LBM can also be attributed to its unique feature: LBM solves a simplified Boltzmann equation that is essentially a set of 1st-order hyperbolic PDEs with constant microscopic lattice velocities, for which a plethora of simple yet excellent discretization schemes are available. Furthermore, all the complex non-linear effects are modeled locally at the grid points.
 
 ## Code Characteristics 
-* Written in Fortran 90, Kokkos, and DPC++. 
-* MPI+OpenMP hybrid parallelism with GPU offloading directives 
+* Written in Fortran 90 and C/C++. 
+* MPI+X hybrid parallelism with OpenMP-4.5+, SYCL/DPC++, and Kokkos (with CUDA backend) programming models  
 * 2D (D2Q9) and 3D (D3Q27) problems 
 * Example problems include: flow past a circle/sphere, lid driven cavity, taylor-green vortex
 
