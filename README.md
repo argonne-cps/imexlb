@@ -16,4 +16,8 @@ LBM is a relatively novel approach to solve the Navier-Stokes equations (NSE) in
 * Example problems include: flow past a circle/sphere, lid driven cavity, taylor-green vortex
 
 ## Building
-The code has currently been tested on ALCF's [ThetaGPU](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview), as such, the following instructions assume you are building on ThetaGPU. In the future, we will provide more general instructions for non-ThetaGPU architectures.  
+The code has currently been tested on ALCF's [ThetaGPU](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview), as such, the following instructions assume you are building on ThetaGPU. In the future, we will provide more general instructions for non-ThetaGPU architectures. 
+
+## Acknowledgements
+
+This research was a collaboration between scientists in the Mechanical Engineering department at The City College of New York (CCNY) and Argonne National Laboratory. This was supported by the Exascale Computing Project (17-SC-20-SC), a joint project of the U.S. Department of Energy's Office of Science and National Nuclear Security Administration, responsible for delivering a capable exascale ecosystem, including software, applications, and hardware technology, to support the nation's exascale computing imperative.   
