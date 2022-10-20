@@ -113,6 +113,7 @@ void LBM::setup_subdomain()
 
     m_backrightupout = buffer_ft("m_bruout", q, ghost, ghost, ghost);
 }
+
 void LBM::pack()
 {
     // 6 faces

@@ -8,7 +8,7 @@ class System
 {
 
 public:
-    System();
+    System(const int rank);
     void Monitor();
 
     int sx, sy, sz;

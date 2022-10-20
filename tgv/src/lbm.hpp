@@ -140,9 +140,11 @@ struct LBM
     buffer_ft m_leftout, m_rightout, m_downout, m_upout, m_frontout, m_backout; 
     buffer_ft m_leftup, m_rightup, m_leftdown, m_rightdown, m_frontup, m_backup, m_frontdown, m_backdown, m_frontleft, m_backleft, m_frontright, m_backright;
     buffer_ft m_leftupout, m_rightupout, m_leftdownout, m_rightdownout, m_frontupout, m_backupout, m_frontdownout, m_backdownout, m_frontleftout, m_backleftout, m_frontrightout, m_backrightout;
+
     // 8 points
     buffer_ft m_frontleftup, m_frontrightup, m_frontleftdown, m_frontrightdown, m_backleftup, m_backleftdown, m_backrightup, m_backrightdown;
     buffer_ft m_frontleftupout, m_frontrightupout, m_frontleftdownout, m_frontrightdownout, m_backleftupout, m_backleftdownout, m_backrightupout, m_backrightdownout;
+
     // particle distribution eqution
     Kokkos::View<double ****, Kokkos::CudaUVMSpace> f, ft, fb;
     // macro scopic equation
@@ -230,7 +232,6 @@ struct LBM
 
         //printf("Me is %d, x_lo=%d,x_hi=%d\n", comm.me,x_lo, x_hi);
         MPI_Barrier(MPI_COMM_WORLD);
-
 
     };
 
