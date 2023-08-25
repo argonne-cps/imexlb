@@ -1,0 +1,8 @@
+Avg time spent in Collision:  0.577125
+Avg time spent in Pack:  28.140424
+Avg time spent in Exchange:  2.259523
+Avg time spent in Unpack:  11.149766
+Avg time spent in Stream:  0.161326
+Avg time spent in Update:  1.202748
+Avg. Total Solver Time:  43.492248
+Avg. Time per time-step:  0.434922
