@@ -56,7 +56,7 @@ struct CommHelper
         MPI_Comm_size(comm, &nranks);
         MPI_Comm_rank(comm, &me);
 
-        rx = std::pow(1.0 * nranks, 1.0 / 3.0);
+        rx = std::pow(1.0 * nranks, 1.0 / 3.0); 
         while (nranks % rx != 0)
             rx++;
 
@@ -108,8 +108,6 @@ struct CommHelper
         frontleftdown  = (px == 0 )       ? frontdown+rx-1 : frontdown - 1;
         backleftup     = (px == 0 )       ? backup+rx-1    : backup - 1;
 
-
-
         printf("Me:%i MyNeibors: %i %i \n", me, frontleftup, backrightdown);
 
         MPI_Barrier(MPI_COMM_WORLD);
@@ -146,17 +144,24 @@ struct LBM
     buffer_ft m_frontleftupout, m_frontrightupout, m_frontleftdownout, m_frontrightdownout, m_backleftupout, m_backleftdownout, m_backrightupout, m_backrightdownout;
 
     // particle distribution eqution
-    Kokkos::View<double ****, Kokkos::CudaUVMSpace> f, ft, fb;
+    //Kokkos::View<double ****, Kokkos::CudaUVMSpace> f, ft, fb;
+    Kokkos::View<double ****, Kokkos::CudaSpace> f, ft, fb;
+ 
     // macro scopic equation
-    Kokkos::View<double ***, Kokkos::CudaUVMSpace> ua, va, wa, rho, p;
+    //Kokkos::View<double ***, Kokkos::CudaUVMSpace> ua, va, wa, rho, p;
+    Kokkos::View<double ***, Kokkos::CudaSpace> ua, va, wa, rho, p;
+ 
     // usr define
-    Kokkos::View<int ***, Kokkos::CudaUVMSpace> usr, ran;
+    Kokkos::View<int ***, Kokkos::CudaSpace> usr, ran;
+ 
     // bounce back notation
-    Kokkos::View<int *, Kokkos::CudaUVMSpace> bb;
+    Kokkos::View<int *, Kokkos::CudaSpace> bb;
+ 
     // weight function
-    Kokkos::View<double *, Kokkos::CudaUVMSpace> t;
+    Kokkos::View<double *, Kokkos::CudaSpace> t;
+
     // discrete velocity
-    Kokkos::View<int **, Kokkos::CudaUVMSpace> e;
+    Kokkos::View<int **, Kokkos::CudaSpace> e;
 
     LBM(MPI_Comm comm_, int sx, int sy, int sz, double &tau, double &rho0, double &u0) : comm(comm_), glx(sx), gly(sy), glz(sz), tau0(tau), rho0(rho0), u0(u0)
     {
@@ -231,7 +236,17 @@ struct LBM
         z_hi = z_hi - 1;
 
         //printf("Me is %d, x_lo=%d,x_hi=%d\n", comm.me,x_lo, x_hi);
-        MPI_Barrier(MPI_COMM_WORLD);
+    
+        //Total Number of Points and Total number of points per process
+        int myTotalPts = l_l[0]*l_l[1]*l_l[2];
+        for (int i = 0; i < comm.nranks; i++)
+	{
+           if (i == comm.me) 
+	   {
+            printf("Rank %d has %d points\n", comm.me, myTotalPts);
+	   }
+        }
+	MPI_Barrier(MPI_COMM_WORLD);
 
     };
 
@@ -248,6 +263,7 @@ struct LBM
     void MPIoutput(int n);
     void Output(int n);
 
-    Kokkos::View<double****,Kokkos::CudaUVMSpace> d_c(Kokkos::View<double***,Kokkos::CudaUVMSpace> c);
+    //Kokkos::View<double****,Kokkos::CudaUVMSpace> d_c(Kokkos::View<double***,Kokkos::CudaUVMSpace> c);
+    Kokkos::View<double****,Kokkos::CudaSpace> d_c(Kokkos::View<double***,Kokkos::CudaSpace> c);
 };
 #endif

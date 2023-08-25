@@ -184,6 +184,7 @@ int main(int argc, char *argv[])
     if (l1.comm.me == 0) {
         avgTime /= nranks;
         printf("Avg. Total Solver Time:  %lf\n", avgTime);
+        printf("Avg. Time per time-step:  %lf\n", avgTime/s1.Time);
     }
 
     }
