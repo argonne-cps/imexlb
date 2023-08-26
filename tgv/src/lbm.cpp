@@ -7,25 +7,25 @@ using namespace std;
 void LBM::Initialize()
 {
 
-    f = Kokkos::View<double ****, Kokkos::CudaSpace>("f", q, lx, ly, lz);
-    ft = Kokkos::View<double ****, Kokkos::CudaSpace>("ft", q, lx, ly, lz);
-    fb = Kokkos::View<double ****, Kokkos::CudaSpace>("fb", q, lx, ly, lz);
+    f = Kokkos::View<double ****, Kokkos::HostSpace>("f", q, lx, ly, lz);
+    ft = Kokkos::View<double ****, Kokkos::HostSpace>("ft", q, lx, ly, lz);
+    fb = Kokkos::View<double ****, Kokkos::HostSpace>("fb", q, lx, ly, lz);
 
-    ua = Kokkos::View<double ***, Kokkos::CudaSpace>("u", lx, ly, lz);
-    va = Kokkos::View<double ***, Kokkos::CudaSpace>("v", lx, ly, lz);
-    wa = Kokkos::View<double ***, Kokkos::CudaSpace>("v", lx, ly, lz);
-    rho = Kokkos::View<double ***, Kokkos::CudaSpace>("rho", lx, ly, lz);
-    p = Kokkos::View<double ***, Kokkos::CudaSpace>("p", lx, ly, lz);
+    ua = Kokkos::View<double ***, Kokkos::HostSpace>("u", lx, ly, lz);
+    va = Kokkos::View<double ***, Kokkos::HostSpace>("v", lx, ly, lz);
+    wa = Kokkos::View<double ***, Kokkos::HostSpace>("v", lx, ly, lz);
+    rho = Kokkos::View<double ***, Kokkos::HostSpace>("rho", lx, ly, lz);
+    p = Kokkos::View<double ***, Kokkos::HostSpace>("p", lx, ly, lz);
 
-    e = Kokkos::View<int **, Kokkos::CudaSpace>("e", q, dim);
-    t = Kokkos::View<double *, Kokkos::CudaSpace>("t", q);
-    usr = Kokkos::View<int ***, Kokkos::CudaSpace>("usr", lx, ly, lz);
-    ran = Kokkos::View<int ***, Kokkos::CudaSpace>("ran", lx, ly, lz);
-    bb = Kokkos::View<int *, Kokkos::CudaSpace>("b", q);
+    e = Kokkos::View<int **, Kokkos::HostSpace>("e", q, dim);
+    t = Kokkos::View<double *, Kokkos::HostSpace>("t", q);
+    usr = Kokkos::View<int ***, Kokkos::HostSpace>("usr", lx, ly, lz);
+    ran = Kokkos::View<int ***, Kokkos::HostSpace>("ran", lx, ly, lz);
+    bb = Kokkos::View<int *, Kokkos::HostSpace>("b", q);
 
-    Kokkos::View<int *, Kokkos::CudaSpace>::HostMirror bb_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(), bb);
-    Kokkos::View<double *, Kokkos::CudaSpace>::HostMirror t_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(),t);
-    Kokkos::View<int **, Kokkos::CudaSpace>::HostMirror e_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(),e);
+    Kokkos::View<int *, Kokkos::HostSpace>::HostMirror bb_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(), bb);
+    Kokkos::View<double *, Kokkos::HostSpace>::HostMirror t_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(),t);
+    Kokkos::View<int **, Kokkos::HostSpace>::HostMirror e_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(),e);
 
     //  weight function
     t_mirror(0) = 8.0 / 27.0;

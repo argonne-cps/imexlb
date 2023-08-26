@@ -1,6 +1,6 @@
-#KOKKOS_PATH = ${HOME}/Kokkos/kokkos
-KOKKOS_PATH=/grand/IMEXLBM/czhao/Kokkos/kokkos
-KOKKOS_DEVICES="Cuda"
+KOKKOS_PATH=/grand/projects/IMEXLBM/czhao/Kokkos/kokkos
+#KOKKOS_DEVICES="Cuda"
+KOKKOS_DEVICES="Serial"
 EXE_NAME="LBM"
 MKDIR=mkdir
 
@@ -15,7 +15,8 @@ default: build
 
 CXX = mpicxx
 EXE = ${EXE_NAME}.exe
-KOKKOS_ARCH = "Ampere80"
+KOKKOS_ARCH = "Zen"
+#KOKKOS_ARCH = "Ampere80"
 KOKKOS_CUDA_OPTIONS = "enable_lambda"
 
 CXXFLAGS = -O3 -g

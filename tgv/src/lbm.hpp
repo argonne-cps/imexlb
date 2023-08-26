@@ -26,8 +26,9 @@ typedef Kokkos::MDRangePolicy<Kokkos::Rank<2>> mdrange_policy2;
 typedef Kokkos::MDRangePolicy<Kokkos::Rank<3>> mdrange_policy3;
 typedef Kokkos::MDRangePolicy<Kokkos::Rank<4>> mdrange_policy4;
 
-using buffer_ft = Kokkos::View<double ****, Kokkos::CudaHostPinnedSpace>;
-using buffer_t = Kokkos::View<double ***, Kokkos::LayoutLeft, Kokkos::HostSpace>;
+//using buffer_ft = Kokkos::View<double ****, Kokkos::CudaHostPinnedSpace>;
+using buffer_ft = Kokkos::View<double ****, Kokkos::HostSpace>;
+using buffer_t  = Kokkos::View<double ***, Kokkos::LayoutLeft, Kokkos::HostSpace>;
 using buffer_ut = Kokkos::View<double **, Kokkos::LayoutLeft, Kokkos::HostSpace>;
 using buffer_st = Kokkos::View<double *, Kokkos::LayoutLeft, Kokkos::HostSpace>;
 
@@ -145,23 +146,23 @@ struct LBM
 
     // particle distribution eqution
     //Kokkos::View<double ****, Kokkos::CudaUVMSpace> f, ft, fb;
-    Kokkos::View<double ****, Kokkos::CudaSpace> f, ft, fb;
+    Kokkos::View<double ****, Kokkos::HostSpace> f, ft, fb;
  
     // macro scopic equation
     //Kokkos::View<double ***, Kokkos::CudaUVMSpace> ua, va, wa, rho, p;
-    Kokkos::View<double ***, Kokkos::CudaSpace> ua, va, wa, rho, p;
+    Kokkos::View<double ***, Kokkos::HostSpace> ua, va, wa, rho, p;
  
     // usr define
-    Kokkos::View<int ***, Kokkos::CudaSpace> usr, ran;
+    Kokkos::View<int ***, Kokkos::HostSpace> usr, ran;
  
     // bounce back notation
-    Kokkos::View<int *, Kokkos::CudaSpace> bb;
+    Kokkos::View<int *, Kokkos::HostSpace> bb;
  
     // weight function
-    Kokkos::View<double *, Kokkos::CudaSpace> t;
+    Kokkos::View<double *, Kokkos::HostSpace> t;
 
     // discrete velocity
-    Kokkos::View<int **, Kokkos::CudaSpace> e;
+    Kokkos::View<int **, Kokkos::HostSpace> e;
 
     LBM(MPI_Comm comm_, int sx, int sy, int sz, double &tau, double &rho0, double &u0) : comm(comm_), glx(sx), gly(sy), glz(sz), tau0(tau), rho0(rho0), u0(u0)
     {
@@ -264,6 +265,6 @@ struct LBM
     void Output(int n);
 
     //Kokkos::View<double****,Kokkos::CudaUVMSpace> d_c(Kokkos::View<double***,Kokkos::CudaUVMSpace> c);
-    Kokkos::View<double****,Kokkos::CudaSpace> d_c(Kokkos::View<double***,Kokkos::CudaSpace> c);
+    Kokkos::View<double****,Kokkos::HostSpace> d_c(Kokkos::View<double***,Kokkos::HostSpace> c);
 };
 #endif
