@@ -91,6 +91,62 @@ int main(int argc, char *argv[])
         end = MPI_Wtime();
         double time_Total = end - start; 
 
+       double avgTime;
+    MPI_Barrier(MPI_COMM_WORLD);    
+    MPI_Reduce(&time_Col, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
+    if (l1.comm.me == 0) {
+        avgTime /= nranks;
+        printf("Avg time spent in Collision:  %lf\n", avgTime);
+    }
+ 
+    avgTime=0.0;
+    MPI_Barrier(MPI_COMM_WORLD);    
+    MPI_Reduce(&time_Pack, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
+    if (l1.comm.me == 0) {
+        avgTime /= nranks;
+        printf("Avg time spent in Pack:  %lf\n", avgTime);
+    }
+    
+    avgTime=0.0;
+    MPI_Barrier(MPI_COMM_WORLD);    
+    MPI_Reduce(&time_Exchange, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
+    if (l1.comm.me == 0) {
+        avgTime /= nranks;
+        printf("Avg time spent in Exchange:  %lf\n", avgTime);
+    }
+    
+    avgTime=0.0;
+    MPI_Barrier(MPI_COMM_WORLD);    
+    MPI_Reduce(&time_Unpack, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
+    if (l1.comm.me == 0) {
+        avgTime /= nranks;
+        printf("Avg time spent in Unpack:  %lf\n", avgTime);
+    }
+    
+    avgTime=0.0;
+    MPI_Barrier(MPI_COMM_WORLD);    
+    MPI_Reduce(&time_Stream, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
+    if (l1.comm.me == 0) {
+        avgTime /= nranks;
+        printf("Avg time spent in Stream:  %lf\n", avgTime);
+    }
+    
+    avgTime=0.0;
+    MPI_Barrier(MPI_COMM_WORLD);    
+    MPI_Reduce(&time_Update, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
+    if (l1.comm.me == 0) {
+        avgTime /= nranks;
+        printf("Avg time spent in Update:  %lf\n", avgTime);
+    }
+    
+    avgTime=0.0;
+    MPI_Barrier(MPI_COMM_WORLD);    
+    MPI_Reduce(&time_Total, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
+    if (l1.comm.me == 0) {
+        avgTime /= nranks;
+        printf("Avg. Total Solver Time:  %lf\n", avgTime);
+    }        
+
   }       
 
   Kokkos::finalize();
