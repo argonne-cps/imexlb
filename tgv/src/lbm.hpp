@@ -26,7 +26,7 @@ typedef Kokkos::MDRangePolicy<Kokkos::Rank<2>> mdrange_policy2;
 typedef Kokkos::MDRangePolicy<Kokkos::Rank<3>> mdrange_policy3;
 typedef Kokkos::MDRangePolicy<Kokkos::Rank<4>> mdrange_policy4;
 
-using buffer_ft = Kokkos::View<double ****, Kokkos::CudaHostPinnedSpace>;
+using buffer_ft = Kokkos::View<double ****, Kokkos::HIPHostPinnedSpace>;
 using buffer_t = Kokkos::View<double ***, Kokkos::LayoutLeft, Kokkos::HostSpace>;
 using buffer_ut = Kokkos::View<double **, Kokkos::LayoutLeft, Kokkos::HostSpace>;
 using buffer_st = Kokkos::View<double *, Kokkos::LayoutLeft, Kokkos::HostSpace>;
@@ -146,17 +146,17 @@ struct LBM
     buffer_ft m_frontleftupout, m_frontrightupout, m_frontleftdownout, m_frontrightdownout, m_backleftupout, m_backleftdownout, m_backrightupout, m_backrightdownout;
 
     // particle distribution eqution
-    Kokkos::View<double ****, Kokkos::CudaUVMSpace> f, ft, fb;
+    Kokkos::View<double ****, Kokkos::HIPManagedSpace> f, ft, fb;
     // macro scopic equation
-    Kokkos::View<double ***, Kokkos::CudaUVMSpace> ua, va, wa, rho, p;
+    Kokkos::View<double ***, Kokkos::HIPManagedSpace> ua, va, wa, rho, p;
     // usr define
-    Kokkos::View<int ***, Kokkos::CudaUVMSpace> usr, ran;
+    Kokkos::View<int ***, Kokkos::HIPManagedSpace> usr, ran;
     // bounce back notation
-    Kokkos::View<int *, Kokkos::CudaUVMSpace> bb;
+    Kokkos::View<int *, Kokkos::HIPManagedSpace> bb;
     // weight function
-    Kokkos::View<double *, Kokkos::CudaUVMSpace> t;
+    Kokkos::View<double *, Kokkos::HIPManagedSpace> t;
     // discrete velocity
-    Kokkos::View<int **, Kokkos::CudaUVMSpace> e;
+    Kokkos::View<int **, Kokkos::HIPManagedSpace> e;
 
     LBM(MPI_Comm comm_, int sx, int sy, int sz, double &tau, double &rho0, double &u0) : comm(comm_), glx(sx), gly(sy), glz(sz), tau0(tau), rho0(rho0), u0(u0)
     {
@@ -248,6 +248,7 @@ struct LBM
     void MPIoutput(int n);
     void Output(int n);
 
-    Kokkos::View<double****,Kokkos::CudaUVMSpace> d_c(Kokkos::View<double***,Kokkos::CudaUVMSpace> c);
+    Kokkos::View<double****,Kokkos::HIPManagedSpace> d_c(Kokkos::View<double***,Kokkos::HIPManagedSpace> c);
 };
 #endif
+

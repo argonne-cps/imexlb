@@ -7,21 +7,21 @@ using namespace std;
 void LBM::Initialize()
 {
 
-    f = Kokkos::View<double ****, Kokkos::CudaUVMSpace>("f", q, lx, ly, lz);
-    ft = Kokkos::View<double ****, Kokkos::CudaUVMSpace>("ft", q, lx, ly, lz);
-    fb = Kokkos::View<double ****, Kokkos::CudaUVMSpace>("fb", q, lx, ly, lz);
+    f = Kokkos::View<double ****, Kokkos::HIPManagedSpace>("f", q, lx, ly, lz);
+    ft = Kokkos::View<double ****, Kokkos::HIPManagedSpace>("ft", q, lx, ly, lz);
+    fb = Kokkos::View<double ****, Kokkos::HIPManagedSpace>("fb", q, lx, ly, lz);
 
-    ua = Kokkos::View<double ***, Kokkos::CudaUVMSpace>("u", lx, ly, lz);
-    va = Kokkos::View<double ***, Kokkos::CudaUVMSpace>("v", lx, ly, lz);
-    wa = Kokkos::View<double ***, Kokkos::CudaUVMSpace>("v", lx, ly, lz);
-    rho = Kokkos::View<double ***, Kokkos::CudaUVMSpace>("rho", lx, ly, lz);
-    p = Kokkos::View<double ***, Kokkos::CudaUVMSpace>("p", lx, ly, lz);
+    ua = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("u", lx, ly, lz);
+    va = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("v", lx, ly, lz);
+    wa = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("v", lx, ly, lz);
+    rho = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("rho", lx, ly, lz);
+    p = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("p", lx, ly, lz);
 
-    e = Kokkos::View<int **, Kokkos::CudaUVMSpace>("e", q, dim);
-    t = Kokkos::View<double *, Kokkos::CudaUVMSpace>("t", q);
-    usr = Kokkos::View<int ***, Kokkos::CudaUVMSpace>("usr", lx, ly, lz);
-    ran = Kokkos::View<int ***, Kokkos::CudaUVMSpace>("ran", lx, ly, lz);
-    bb = Kokkos::View<int *, Kokkos::CudaUVMSpace>("b", q);
+    e = Kokkos::View<int **, Kokkos::HIPManagedSpace>("e", q, dim);
+    t = Kokkos::View<double *, Kokkos::HIPManagedSpace>("t", q);
+    usr = Kokkos::View<int ***, Kokkos::HIPManagedSpace>("usr", lx, ly, lz);
+    ran = Kokkos::View<int ***, Kokkos::HIPManagedSpace>("ran", lx, ly, lz);
+    bb = Kokkos::View<int *, Kokkos::HIPManagedSpace>("b", q);
 
     //  weight function
     t(0) = 8.0 / 27.0;
@@ -732,3 +732,4 @@ void LBM::Output(int n)
 Kokkos::fence();
     return dc;
 };*/
+

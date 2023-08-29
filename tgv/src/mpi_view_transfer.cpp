@@ -381,3 +381,4 @@ void LBM::unpack()
     
     Kokkos::fence();
 };
+
