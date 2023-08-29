@@ -2,6 +2,8 @@
 #include <cstring>
 #include <stdexcept>
 #include <iostream>
+#include <algorithm>
+
 #define pi 3.1415926
 using namespace std;
 void LBM::Initialize()
@@ -739,7 +741,7 @@ void LBM::Output(int n)
             for (int i = 3; i < lx - 3; i++)
             {
 
-                outfile << std::setprecision(8) << setiosflags(std::ios::left) << x_lo + i - 3 << " " << y_lo + j - 3 << " " << z_lo + k - 3 << " " << f(0, i, j, k) << std::endl;
+                //outfile << std::setprecision(8) << setiosflags(std::ios::left) << x_lo + i - 3 << " " << y_lo + j - 3 << " " << z_lo + k - 3 << " " << f(0, i, j, k) << std::endl;
             }
         }
     }

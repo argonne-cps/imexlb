@@ -1,6 +1,6 @@
-KOKKOS_PATH=/grand/projects/IMEXLBM/czhao/Kokkos/kokkos
+#KOKKOS_PATH=/grand/projects/IMEXLBM/czhao/Kokkos/kokkos
 #KOKKOS_DEVICES="Cuda"
-KOKKOS_DEVICES="Serial"
+#KOKKOS_DEVICES="Serial"
 EXE_NAME="LBM"
 MKDIR=mkdir
 
@@ -15,9 +15,9 @@ default: build
 
 CXX = mpicxx
 EXE = ${EXE_NAME}.exe
-KOKKOS_ARCH = "Zen"
+#KOKKOS_ARCH = "Zen"
 #KOKKOS_ARCH = "Ampere80"
-KOKKOS_CUDA_OPTIONS = "enable_lambda"
+#KOKKOS_CUDA_OPTIONS = "enable_lambda"
 
 CXXFLAGS = -O3 -g
 LINK = ${CXX}
@@ -30,14 +30,15 @@ OBJ2 = $(SRC2:.cpp=.o)
 SRC=./
 OBJ=*.o
 LIB =
-include $(KOKKOS_PATH)/Makefile.kokkos
+
+##include $(KOKKOS_PATH)/Makefile.kokkos
 
 build: $(EXE)
 
 $(EXE): $(OBJ1) $(OBJ2) $(KOKKOS_LINK_DEPENDS)
 	$(LINK) $(KOKKOS_LDFLAGS) $(LINKFLAGS) $(EXTRA_PATH) $(OBJ) $(KOKKOS_LIBS) $(LIB) -o $(EXE)
 
-clean: kokkos-clean
+clean: 
 	rm -rf *.o *.cuda *.host *.dat *.exe *.plt
 
 # Compilation rules

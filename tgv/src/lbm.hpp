@@ -113,6 +113,8 @@ struct LBM
     // local start, local end, local length
     int l_s[3], l_e[3], l_l[3];
 
+    int ex, ey, ez;
+
     // local axis
     int x_lo = 0, x_hi = 0, y_lo = 0, y_hi = 0, z_lo = 0, z_hi = 0;
     double rho0, mu, cs2, tau0, u0;
@@ -129,6 +131,7 @@ struct LBM
     // 8 points
     double *m_frontleftup, *m_frontrightup, *m_frontleftdown, *m_frontrightdown, *m_backleftup, *m_backleftdown, *m_backrightup, *m_backrightdown;
     double *m_frontleftupout, *m_frontrightupout, *m_frontleftdownout, *m_frontrightdownout, *m_backleftupout, *m_backleftdownout, *m_backrightupout, *m_backrightdownout;
+    MPI_Datatype m_face[3], m_line[3], m_point;
 
     // particle distribution eqution
     // bounce back notation
@@ -155,6 +158,11 @@ struct LBM
         l_e[0] = l_s[0] + l_l[0];
         l_e[1] = l_s[1] + l_l[1];
         l_e[2] = l_s[2] + l_l[2];
+
+        ex = l_l[0];
+        ey = l_l[1];
+        ez = l_l[2];
+
 
         int x_his[comm.nranks];
         int y_his[comm.nranks];
@@ -226,6 +234,31 @@ struct LBM
         ran = (int *)malloc(sizeof(int) * lx * ly * lz);
         bb = (int *)malloc(sizeof(int) * q);
 
+        MPI_Barrier(MPI_COMM_WORLD);
+
+        MPI_Type_vector(1, q * lx * ly, 1, MPI_DOUBLE, &m_face[0]);
+        MPI_Type_commit(&m_face[0]);
+
+        MPI_Type_vector(lz, q * lx, q * lx * ly, MPI_DOUBLE, &m_face[1]);
+        MPI_Type_commit(&m_face[1]);
+
+        MPI_Type_vector(ly * lz, q, lx * q, MPI_DOUBLE, &m_face[2]);
+        MPI_Type_commit(&m_face[2]);
+        // line
+        MPI_Type_vector(1, q * lx, 1, MPI_DOUBLE, &m_line[0]);
+        MPI_Type_commit(&m_line[0]);
+
+        MPI_Type_vector(ly, q, q * lx, MPI_DOUBLE, &m_line[1]);
+        MPI_Type_commit(&m_line[1]);
+
+        MPI_Type_vector(lz, q, lx * ly * q, MPI_DOUBLE, &m_line[2]);
+        MPI_Type_commit(&m_line[2]);
+        // point
+        MPI_Type_vector(1, q, 1, MPI_DOUBLE, &m_point);
+        MPI_Type_commit(&m_point);
+
+        MPI_Barrier(MPI_COMM_WORLD);        
+
         //printf("Me is %d, x_lo=%d,x_hi=%d\n", comm.me,x_lo, x_hi);
     
         //Total Number of Points and Total number of points per process
@@ -243,14 +276,14 @@ struct LBM
 
     void Initialize();
     void Collision();
-    void setup_subdomain();
-    void pack();
+    //void setup_subdomain();
+    //void pack();
     void exchange();
-    void unpack();
+    //void unpack();
     void Streaming();
     void Boundary();
     void Update();
-    void Update1();
+    //void Update1();
     void MPIoutput(int n);
     void Output(int n);
    

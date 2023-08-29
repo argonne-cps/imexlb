@@ -1,7 +1,6 @@
 #include "mpi.h"
 #include "lbm.hpp"
 #include "System.hpp"
-#include <Kokkos_Core.hpp>
 
 int main(int argc, char *argv[])
 {
@@ -18,7 +17,6 @@ int main(int argc, char *argv[])
     double time_Unpack, time_Stream, time_Update;
 
     MPI_Init(&argc, &argv);
-    Kokkos::initialize(argc, argv);
 
     {
         int rank;
@@ -37,7 +35,7 @@ int main(int argc, char *argv[])
         l1.Initialize();
 
         //l1.MPIoutput(0);
-        l1.setup_subdomain();
+        //l1.setup_subdomain();
   
 	/*
         for (int it = 1; it <= 1000; it++)
@@ -63,29 +61,13 @@ int main(int argc, char *argv[])
 	    end_Col = MPI_Wtime();
 	    time_Col += end_Col - start_Col;
 
-	    //pack
-            start_Pack = MPI_Wtime();
-	    {
-	       l1.pack();
-            }
-	    end_Pack = MPI_Wtime();
-	    time_Pack += end_Pack - start_Pack;
-
-            //exchange
+	    //exchange
             start_Exchange = MPI_Wtime();
             {
 	       l1.exchange();
             }
 	    end_Exchange = MPI_Wtime();
 	    time_Exchange += end_Exchange - start_Exchange;
-
-            //unpack
-            start_Unpack = MPI_Wtime();
-	    {
-	       l1.unpack();
-            }
-            end_Unpack = MPI_Wtime();
-	    time_Unpack += end_Unpack - start_Unpack;
 
             //Stream
             start_Stream = MPI_Wtime();
@@ -103,7 +85,7 @@ int main(int argc, char *argv[])
 	    end_Update = MPI_Wtime();
             time_Update += end_Update - start_Update;
 
-            /*
+        /*
 	    end = MPI_Wtime();
 	    if (it % s1.inter == 0)
             {
@@ -140,26 +122,10 @@ int main(int argc, char *argv[])
  
     avgTime=0.0;
     MPI_Barrier(MPI_COMM_WORLD);    
-    MPI_Reduce(&time_Pack, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
-    if (l1.comm.me == 0) {
-        avgTime /= nranks;
-        printf("Avg time spent in Pack:  %lf\n", avgTime);
-    }
-    
-    avgTime=0.0;
-    MPI_Barrier(MPI_COMM_WORLD);    
     MPI_Reduce(&time_Exchange, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
         printf("Avg time spent in Exchange:  %lf\n", avgTime);
-    }
-    
-    avgTime=0.0;
-    MPI_Barrier(MPI_COMM_WORLD);    
-    MPI_Reduce(&time_Unpack, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
-    if (l1.comm.me == 0) {
-        avgTime /= nranks;
-        printf("Avg time spent in Unpack:  %lf\n", avgTime);
     }
     
     avgTime=0.0;
@@ -189,7 +155,6 @@ int main(int argc, char *argv[])
 
     }
 
-    Kokkos::finalize();
     MPI_Finalize();
 
     return 0;
