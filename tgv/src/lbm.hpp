@@ -12,25 +12,11 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-#include <Kokkos_Core.hpp>
-#include <Kokkos_Random.hpp>
-#include <Kokkos_Timer.hpp>
 #include <mpi.h>
 
 #define q 27
 #define dim 3
 #define ghost 3
-
-typedef Kokkos::RangePolicy<> range_policy;
-typedef Kokkos::MDRangePolicy<Kokkos::Rank<2>> mdrange_policy2;
-typedef Kokkos::MDRangePolicy<Kokkos::Rank<3>> mdrange_policy3;
-typedef Kokkos::MDRangePolicy<Kokkos::Rank<4>> mdrange_policy4;
-
-//using buffer_ft = Kokkos::View<double ****, Kokkos::CudaHostPinnedSpace>;
-using buffer_ft = Kokkos::View<double ****, Kokkos::HostSpace>;
-using buffer_t  = Kokkos::View<double ***, Kokkos::LayoutLeft, Kokkos::HostSpace>;
-using buffer_ut = Kokkos::View<double **, Kokkos::LayoutLeft, Kokkos::HostSpace>;
-using buffer_st = Kokkos::View<double *, Kokkos::LayoutLeft, Kokkos::HostSpace>;
 
 struct CommHelper
 {
@@ -92,14 +78,12 @@ struct CommHelper
         frontdown  = (pz == 0)      ? front +rx*(rz-1) : front - rx;
         frontleft  = (px == 0)      ? front +rx-1      : front - 1;
 
-
         backup    = (pz == rz - 1) ? back -rx*(rz-1) : back + rx;
         backright = (px == rx - 1) ? back -rx+1      : back + 1;
         backdown  = (pz == 0)      ? back +rx*(rz-1) : back - rx;
         backleft  = (px == 0)      ? back +rx-1      : back - 1;
 
         // 8 points
-
         backrightdown  = (px == rx - 1 )  ? backdown-rx+1 : backdown + 1;
         frontrightdown = (px == rx - 1 )  ? frontdown-rx+1 : frontdown + 1;
         frontrightup   = (px == rx - 1 )  ? frontup-rx+1   : frontup + 1;
@@ -135,34 +119,23 @@ struct LBM
 
     // 6 faces
     double *test,*test1;
-    buffer_ft m_left, m_right, m_down, m_up, m_front, m_back;
-    buffer_ft m_leftout, m_rightout, m_downout, m_upout, m_frontout, m_backout; 
-    buffer_ft m_leftup, m_rightup, m_leftdown, m_rightdown, m_frontup, m_backup, m_frontdown, m_backdown, m_frontleft, m_backleft, m_frontright, m_backright;
-    buffer_ft m_leftupout, m_rightupout, m_leftdownout, m_rightdownout, m_frontupout, m_backupout, m_frontdownout, m_backdownout, m_frontleftout, m_backleftout, m_frontrightout, m_backrightout;
+    double *m_left, *m_right, *m_down, *m_up, *m_front, *m_back;
+    double *m_leftout, *m_rightout, *m_downout, *m_upout, *m_frontout, *m_backout;
 
+    // 12 edges
+    double *m_leftup, *m_rightup, *m_leftdown, *m_rightdown, *m_frontup, *m_backup, *m_frontdown, *m_backdown, *m_frontleft, *m_backleft, *m_frontright, *m_backright;
+    double *m_leftupout, *m_rightupout, *m_leftdownout, *m_rightdownout, *m_frontupout, *m_backupout, *m_frontdownout, *m_backdownout, *m_frontleftout, *m_backleftout, *m_frontrightout, *m_backrightout;
+  
     // 8 points
-    buffer_ft m_frontleftup, m_frontrightup, m_frontleftdown, m_frontrightdown, m_backleftup, m_backleftdown, m_backrightup, m_backrightdown;
-    buffer_ft m_frontleftupout, m_frontrightupout, m_frontleftdownout, m_frontrightdownout, m_backleftupout, m_backleftdownout, m_backrightupout, m_backrightdownout;
+    double *m_frontleftup, *m_frontrightup, *m_frontleftdown, *m_frontrightdown, *m_backleftup, *m_backleftdown, *m_backrightup, *m_backrightdown;
+    double *m_frontleftupout, *m_frontrightupout, *m_frontleftdownout, *m_frontrightdownout, *m_backleftupout, *m_backleftdownout, *m_backrightupout, *m_backrightdownout;
 
     // particle distribution eqution
-    //Kokkos::View<double ****, Kokkos::CudaUVMSpace> f, ft, fb;
-    Kokkos::View<double ****, Kokkos::HostSpace> f, ft, fb;
- 
-    // macro scopic equation
-    //Kokkos::View<double ***, Kokkos::CudaUVMSpace> ua, va, wa, rho, p;
-    Kokkos::View<double ***, Kokkos::HostSpace> ua, va, wa, rho, p;
- 
-    // usr define
-    Kokkos::View<int ***, Kokkos::HostSpace> usr, ran;
- 
     // bounce back notation
-    Kokkos::View<int *, Kokkos::HostSpace> bb;
- 
     // weight function
-    Kokkos::View<double *, Kokkos::HostSpace> t;
-
     // discrete velocity
-    Kokkos::View<int **, Kokkos::HostSpace> e;
+    double *f, *ft, *fb, *ua, *va, *wa, *rho, *p, *t;
+    int *e, *usr, *ran, *bb;
 
     LBM(MPI_Comm comm_, int sx, int sy, int sz, double &tau, double &rho0, double &u0) : comm(comm_), glx(sx), gly(sy), glz(sz), tau0(tau), rho0(rho0), u0(u0)
     {
@@ -236,6 +209,23 @@ struct LBM
         z_lo = z_hi - l_l[2];
         z_hi = z_hi - 1;
 
+        f = (double *)malloc(sizeof(double) * q * lx * ly * lz);
+        ft = (double *)malloc(sizeof(double) * q * lx * ly * lz);
+        fb = (double *)malloc(sizeof(double) * q * lx * ly * lz);
+
+        ua = (double *)malloc(sizeof(double) * lx * ly * lz);
+        va = (double *)malloc(sizeof(double) * lx * ly * lz);
+        wa = (double *)malloc(sizeof(double) * lx * ly * lz);
+
+        rho = (double *)malloc(sizeof(double) * lx * ly * lz);
+        p = (double *)malloc(sizeof(double) * lx * ly * lz);
+
+        e = (int *)malloc(sizeof(int) * q * dim);
+        t = (double *)malloc(sizeof(double) * q);
+        usr = (int *)malloc(sizeof(int) * lx * ly * lz);
+        ran = (int *)malloc(sizeof(int) * lx * ly * lz);
+        bb = (int *)malloc(sizeof(int) * q);
+
         //printf("Me is %d, x_lo=%d,x_hi=%d\n", comm.me,x_lo, x_hi);
     
         //Total Number of Points and Total number of points per process
@@ -263,8 +253,6 @@ struct LBM
     void Update1();
     void MPIoutput(int n);
     void Output(int n);
-
-    //Kokkos::View<double****,Kokkos::CudaUVMSpace> d_c(Kokkos::View<double***,Kokkos::CudaUVMSpace> c);
-    Kokkos::View<double****,Kokkos::HostSpace> d_c(Kokkos::View<double***,Kokkos::HostSpace> c);
+   
 };
 #endif
