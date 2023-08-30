@@ -14,7 +14,7 @@ System::System(const int rank)
     input >> this->u0 >> this->Time >> this->inter;
     input >> this->sx >> this->sy >> this->sz;
     
-    this->Time=1000;  //(int)(this->Time*this->sx/3.1415926/this->u0/2);
+    this->Time=200;  //(int)(this->Time*this->sx/3.1415926/this->u0/2);
     this->inter=1000;  //(int)(this->inter*this->sx/this->u0/3.1415926/2);
     this->Ma = this->u0 / this->cs;
     this->miu = this->rho0 * this->u0 * this->sx/2/3.1415926 / this->Re;
@@ -27,7 +27,7 @@ void System::Monitor()
 {
 
     std::cout << "============================" << std::endl
-              << "3D Cylinder Flow" << std::endl
+              << "TGV" << std::endl
               << "Re    =" << this->Re << std::endl
               << "Ma    =" << this->Ma << std::endl
               << "rho   =" << this->rho0 << std::endl
