@@ -3,6 +3,10 @@
 #include "lbm.hpp"
 #include "System.hpp"
 
+#include <hip/hip_runtime.h>
+
+#include "example_utils.hpp"
+
 int main(int argc, char *argv[])
 {
 
@@ -19,9 +23,7 @@ int main(int argc, char *argv[])
 
   MPI_Init(&argc, &argv);
   Kokkos::initialize(argc, argv);
-
   {
-
         int rank;
         int nranks;
 	      MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -37,6 +39,9 @@ int main(int argc, char *argv[])
         l1.Initialize();
         //l1.MPIoutput(0);
         l1.setup_subdomain();
+        
+        int myDeviceID;
+        HIP_CHECK(hipGetDevice(&myDeviceID));
 
         start = MPI_Wtime();
         for (int it = 1; it <= s1.Time; it++)
@@ -82,16 +87,17 @@ int main(int argc, char *argv[])
 	          end_Stream = MPI_Wtime();
             time_Stream += end_Stream - start_Stream;
      
-	          if (it % s1.inter == 0)
+	          /*if (it % s1.inter == 0)
             {
                 l1.MPIoutput(it / s1.inter);
-            }
+            }*/
+
             if (l1.comm.me == 0) printf("time-step = %f\n", (double) it);
         }
         end = MPI_Wtime();
         double time_Total = end - start; 
 
-       double avgTime;
+    double avgTime;
     MPI_Barrier(MPI_COMM_WORLD);    
     MPI_Reduce(&time_Col, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
