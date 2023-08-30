@@ -7,188 +7,196 @@ using namespace std;
 void LBM::Initialize()
 {
 
-    f = Kokkos::View<double ****, Kokkos::HIPManagedSpace>("f", q, lx, ly, lz);
-    ft = Kokkos::View<double ****, Kokkos::HIPManagedSpace>("ft", q, lx, ly, lz);
-    fb = Kokkos::View<double ****, Kokkos::HIPManagedSpace>("fb", q, lx, ly, lz);
+    f = Kokkos::View<double ****, Kokkos::HIPSpace>("f", q, lx, ly, lz);
+    ft = Kokkos::View<double ****, Kokkos::HIPSpace>("ft", q, lx, ly, lz);
+    fb = Kokkos::View<double ****, Kokkos::HIPSpace>("fb", q, lx, ly, lz);
 
-    ua = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("u", lx, ly, lz);
-    va = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("v", lx, ly, lz);
-    wa = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("v", lx, ly, lz);
-    rho = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("rho", lx, ly, lz);
-    p = Kokkos::View<double ***, Kokkos::HIPManagedSpace>("p", lx, ly, lz);
+    ua = Kokkos::View<double ***, Kokkos::HIPSpace>("u", lx, ly, lz);
+    va = Kokkos::View<double ***, Kokkos::HIPSpace>("v", lx, ly, lz);
+    wa = Kokkos::View<double ***, Kokkos::HIPSpace>("v", lx, ly, lz);
+    rho = Kokkos::View<double ***, Kokkos::HIPSpace>("rho", lx, ly, lz);
+    p = Kokkos::View<double ***, Kokkos::HIPSpace>("p", lx, ly, lz);
 
-    e = Kokkos::View<int **, Kokkos::HIPManagedSpace>("e", q, dim);
-    t = Kokkos::View<double *, Kokkos::HIPManagedSpace>("t", q);
-    usr = Kokkos::View<int ***, Kokkos::HIPManagedSpace>("usr", lx, ly, lz);
-    ran = Kokkos::View<int ***, Kokkos::HIPManagedSpace>("ran", lx, ly, lz);
-    bb = Kokkos::View<int *, Kokkos::HIPManagedSpace>("b", q);
+    e = Kokkos::View<int **, Kokkos::HIPSpace>("e", q, dim);
+    t = Kokkos::View<double *, Kokkos::HIPSpace>("t", q);
+    usr = Kokkos::View<int ***, Kokkos::HIPSpace>("usr", lx, ly, lz);
+    ran = Kokkos::View<int ***, Kokkos::HIPSpace>("ran", lx, ly, lz);
+    bb = Kokkos::View<int *, Kokkos::HIPSpace>("b", q);
+
+    Kokkos::View<int *, Kokkos::HIPSpace>::HostMirror bb_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(), bb);
+    Kokkos::View<double *, Kokkos::HIPSpace>::HostMirror t_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(),t);
+    Kokkos::View<int **, Kokkos::HIPSpace>::HostMirror e_mirror=Kokkos::create_mirror_view(Kokkos::HostSpace(),e);    
 
     //  weight function
-    t(0) = 8.0 / 27.0;
-    t(1) = 2.0 / 27.0;
-    t(2) = 2.0 / 27.0;
-    t(3) = 2.0 / 27.0;
-    t(4) = 2.0 / 27.0;
-    t(5) = 2.0 / 27.0;
-    t(6) = 2.0 / 27.0;
-    t(7) = 1.0 / 54.0;
-    t(8) = 1.0 / 54.0;
-    t(9) = 1.0 / 54.0;
-    t(10) = 1.0 / 54.0;
-    t(11) = 1.0 / 54.0;
-    t(12) = 1.0 / 54.0;
-    t(13) = 1.0 / 54.0;
-    t(14) = 1.0 / 54.0;
-    t(15) = 1.0 / 54.0;
-    t(16) = 1.0 / 54.0;
-    t(17) = 1.0 / 54.0;
-    t(18) = 1.0 / 54.0;
-    t(19) = 1.0 / 216.0;
-    t(20) = 1.0 / 216.0;
-    t(21) = 1.0 / 216.0;
-    t(22) = 1.0 / 216.0;
-    t(23) = 1.0 / 216.0;
-    t(24) = 1.0 / 216.0;
-    t(25) = 1.0 / 216.0;
-    t(26) = 1.0 / 216.0;
+    t_mirror(0) = 8.0 / 27.0;
+    t_mirror(1) = 2.0 / 27.0;
+    t_mirror(2) = 2.0 / 27.0;
+    t_mirror(3) = 2.0 / 27.0;
+    t_mirror(4) = 2.0 / 27.0;
+    t_mirror(5) = 2.0 / 27.0;
+    t_mirror(6) = 2.0 / 27.0;
+    t_mirror(7) = 1.0 / 54.0;
+    t_mirror(8) = 1.0 / 54.0;
+    t_mirror(9) = 1.0 / 54.0;
+    t_mirror(10) = 1.0 / 54.0;
+    t_mirror(11) = 1.0 / 54.0;
+    t_mirror(12) = 1.0 / 54.0;
+    t_mirror(13) = 1.0 / 54.0;
+    t_mirror(14) = 1.0 / 54.0;
+    t_mirror(15) = 1.0 / 54.0;
+    t_mirror(16) = 1.0 / 54.0;
+    t_mirror(17) = 1.0 / 54.0;
+    t_mirror(18) = 1.0 / 54.0;
+    t_mirror(19) = 1.0 / 216.0;
+    t_mirror(20) = 1.0 / 216.0;
+    t_mirror(21) = 1.0 / 216.0;
+    t_mirror(22) = 1.0 / 216.0;
+    t_mirror(23) = 1.0 / 216.0;
+    t_mirror(24) = 1.0 / 216.0;
+    t_mirror(25) = 1.0 / 216.0;
+    t_mirror(26) = 1.0 / 216.0;   
+
     // bounce back directions
-    bb(0) = 0;
-    bb(1) = 2;
-    bb(2) = 1;
-    bb(3) = 4;
-    bb(4) = 3;
-    bb(5) = 6;
-    bb(6) = 5;
-    bb(7) = 8;
-    bb(8) = 7;
-    bb(9) = 10;
-    bb(10) = 9;
-    bb(11) = 12;
-    bb(12) = 11;
-    bb(13) = 14;
-    bb(14) = 13;
-    bb(15) = 16;
-    bb(16) = 15;
-    bb(17) = 18;
-    bb(18) = 17;
-    bb(19) = 20;
-    bb(20) = 19;
-    bb(21) = 22;
-    bb(22) = 21;
-    bb(23) = 24;
-    bb(24) = 23;
-    bb(25) = 26;
-    bb(26) = 25;
+    bb_mirror(0) = 0;
+    bb_mirror(1) = 2;
+    bb_mirror(2) = 1;
+    bb_mirror(3) = 4;
+    bb_mirror(4) = 3;
+    bb_mirror(5) = 6;
+    bb_mirror(6) = 5;
+    bb_mirror(7) = 8;
+    bb_mirror(8) = 7;
+    bb_mirror(9) = 10; 
+    bb_mirror(10) = 9;
+    bb_mirror(11) = 12; 
+    bb_mirror(12) = 11; 
+    bb_mirror(13) = 14; 
+    bb_mirror(14) = 13; 
+    bb_mirror(15) = 16; 
+    bb_mirror(16) = 15; 
+    bb_mirror(17) = 18;
+    bb_mirror(18) = 17;
+    bb_mirror(19) = 20;
+    bb_mirror(20) = 19;
+    bb_mirror(21) = 22;
+    bb_mirror(22) = 21;
+    bb_mirror(23) = 24;
+    bb_mirror(24) = 23;
+    bb_mirror(25) = 26;
+    bb_mirror(26) = 25;
 
     // discrete velocity
-    e(0, 0) = 0;
-    e(0, 1) = 0;
-    e(0, 2) = 0;
+    e_mirror(0, 0) = 0;
+    e_mirror(0, 1) = 0;
+    e_mirror(0, 2) = 0;
 
-    e(1, 0) = 1;
-    e(1, 1) = 0;
-    e(1, 2) = 0;
+    e_mirror(1, 0) = 1;
+    e_mirror(1, 1) = 0;
+    e_mirror(1, 2) = 0;
 
-    e(2, 0) = -1;
-    e(2, 1) = 0;
-    e(2, 2) = 0;
+    e_mirror(2, 0) = -1;
+    e_mirror(2, 1) = 0;
+    e_mirror(2, 2) = 0;
 
-    e(3, 0) = 0;
-    e(3, 1) = 1;
-    e(3, 2) = 0;
+    e_mirror(3, 0) = 0;
+    e_mirror(3, 1) = 1;
+    e_mirror(3, 2) = 0;
 
-    e(4, 0) = 0;
-    e(4, 1) = -1;
-    e(4, 2) = 0;
+    e_mirror(4, 0) = 0;
+    e_mirror(4, 1) = -1;
+    e_mirror(4, 2) = 0;
 
-    e(5, 0) = 0;
-    e(5, 1) = 0;
-    e(5, 2) = 1;
+    e_mirror(5, 0) = 0;
+    e_mirror(5, 1) = 0;
+    e_mirror(5, 2) = 1;
 
-    e(6, 0) = 0;
-    e(6, 1) = 0;
-    e(6, 2) = -1;
+    e_mirror(6, 0) = 0;
+    e_mirror(6, 1) = 0;
+    e_mirror(6, 2) = -1;
 
-    e(7, 0) = 1;
-    e(7, 1) = 1;
-    e(7, 2) = 0;
+    e_mirror(7, 0) = 1;
+    e_mirror(7, 1) = 1;
+    e_mirror(7, 2) = 0;
 
-    e(8, 0) = -1;
-    e(8, 1) = -1;
-    e(8, 2) = 0;
+    e_mirror(8, 0) = -1;
+    e_mirror(8, 1) = -1;
+    e_mirror(8, 2) = 0;
 
-    e(9, 0) = 1;
-    e(9, 1) = -1;
-    e(9, 2) = 0;
+    e_mirror(9, 0) = 1;
+    e_mirror(9, 1) = -1;
+    e_mirror(9, 2) = 0;
 
-    e(10, 0) = -1;
-    e(10, 1) = 1;
-    e(10, 2) = 0;
+    e_mirror(10, 0) = -1;
+    e_mirror(10, 1) = 1;
+    e_mirror(10, 2) = 0;
 
-    e(11, 0) = 1;
-    e(11, 1) = 0;
-    e(11, 2) = 1;
+    e_mirror(11, 0) = 1;
+    e_mirror(11, 1) = 0;
+    e_mirror(11, 2) = 1;
 
-    e(12, 0) = -1;
-    e(12, 1) = 0;
-    e(12, 2) = -1;
+    e_mirror(12, 0) = -1;
+    e_mirror(12, 1) = 0;
+    e_mirror(12, 2) = -1;
 
-    e(13, 0) = 1;
-    e(13, 1) = 0;
-    e(13, 2) = -1;
+    e_mirror(13, 0) = 1;
+    e_mirror(13, 1) = 0;
+    e_mirror(13, 2) = -1;
 
-    e(14, 0) = -1;
-    e(14, 1) = 0;
-    e(14, 2) = 1;
+    e_mirror(14, 0) = -1;
+    e_mirror(14, 1) = 0;
+    e_mirror(14, 2) = 1;
 
-    e(15, 0) = 0;
-    e(15, 1) = 1;
-    e(15, 2) = 1;
+    e_mirror(15, 0) = 0;
+    e_mirror(15, 1) = 1;
+    e_mirror(15, 2) = 1;
 
-    e(16, 0) = 0;
-    e(16, 1) = -1;
-    e(16, 2) = -1;
+    e_mirror(16, 0) = 0;
+    e_mirror(16, 1) = -1;
+    e_mirror(16, 2) = -1;
 
-    e(17, 0) = 0;
-    e(17, 1) = 1;
-    e(17, 2) = -1;
+    e_mirror(17, 0) = 0;
+    e_mirror(17, 1) = 1;
+    e_mirror(17, 2) = -1;
 
-    e(18, 0) = 0;
-    e(18, 1) = -1;
-    e(18, 2) = 1;
+    e_mirror(18, 0) = 0;
+    e_mirror(18, 1) = -1;
+    e_mirror(18, 2) = 1;
 
-    e(19, 0) = 1;
-    e(19, 1) = 1;
-    e(19, 2) = 1;
+    e_mirror(19, 0) = 1;
+    e_mirror(19, 1) = 1;
+    e_mirror(19, 2) = 1;
 
-    e(20, 0) = -1;
-    e(20, 1) = -1;
-    e(20, 2) = -1;
+    e_mirror(20, 0) = -1;
+    e_mirror(20, 1) = -1;
+    e_mirror(20, 2) = -1;
 
-    e(21, 0) = 1;
-    e(21, 1) = -1;
-    e(21, 2) = 1;
+    e_mirror(21, 0) = 1;
+    e_mirror(21, 1) = -1;
+    e_mirror(21, 2) = 1;
 
-    e(22, 0) = -1;
-    e(22, 1) = 1;
-    e(22, 2) = -1;
+    e_mirror(22, 0) = -1;
+    e_mirror(22, 1) = 1;
+    e_mirror(22, 2) = -1;
 
-    e(23, 0) = 1;
-    e(23, 1) = 1;
-    e(23, 2) = -1;
+    e_mirror(23, 0) = 1;
+    e_mirror(23, 1) = 1;
+    e_mirror(23, 2) = -1;
 
-    e(24, 0) = -1;
-    e(24, 1) = -1;
-    e(24, 2) = 1;
+    e_mirror(24, 0) = -1;
+    e_mirror(24, 1) = -1;
+    e_mirror(24, 2) = 1;
 
-    e(25, 0) = 1;
-    e(25, 1) = -1;
-    e(25, 2) = -1;
+    e_mirror(25, 0) = 1;
+    e_mirror(25, 1) = -1;
+    e_mirror(25, 2) = -1;
 
-    e(26, 0) = -1;
-    e(26, 1) = 1;
-    e(26, 2) = 1;
+    e_mirror(26, 0) = -1;
+    e_mirror(26, 1) = 1;
+    e_mirror(26, 2) = 1;
 
+    Kokkos::deep_copy(t, t_mirror);
+    Kokkos::deep_copy(e, e_mirror);
+    Kokkos::deep_copy(bb, bb_mirror);
     // macroscopic value initialization
 
     // macroscopic value initialization
@@ -699,37 +707,3 @@ void LBM::Output(int n)
         printf("============================\n");
     }
 };
-
-/*Kokkos::View<double****,Kokkos::CudaUVMSpace> LBM::d_c(Kokkos::View<double***,Kokkos::CudaUVMSpace> c)
-{
-    Kokkos::View<double ****, Kokkos::CudaUVMSpace> dc= Kokkos::View<double ****, Kokkos::CudaUVMSpace>("dc_", dim, lx, ly, lz);
-    typedef Kokkos::TeamPolicy<> team_policy;
-    typedef Kokkos::TeamPolicy<>::member_type member_type;
-
-
-    Kokkos::parallel_for(
-        "dc", team_policy(ly-2*ghost, Kokkos::AUTO), KOKKOS_CLASS_LAMBDA(const member_type &team_member) {
-            const int j = team_member.league_rank()+ghost;
-            Kokkos::parallel_for(
-            Kokkos::TeamThreadRange(team_member, ghost,lx-ghost), [&](const int &i)
-            {
-                            dc(0, i, j) = 0.0;
-                            dc(1, i, j) = 0.0;
-
-                        Kokkos::parallel_reduce(
-                                         Kokkos::ThreadVectorRange(team_member, q),[&](const int& ii, double &dc0_tem) {
-                        dc0_tem += t(ii) *  e(ii, 0) * (c(i + e(ii, 0), j + e(ii, 1)) - c(i - e(ii, 0), j - e(ii, 1))) / 2.0 / cs2;},
-                        dc(0,i,j));
-
-                        Kokkos::parallel_reduce(
-                                         Kokkos::ThreadVectorRange(team_member, q),[&](const int& ii, double &dc1_tem) {
-                        dc1_tem += t(ii) *  e(ii, 1) * (c(i + e(ii, 0), j + e(ii, 1)) - c(i - e(ii, 0), j - e(ii, 1))) / 2.0 / cs2;},
-                        dc(1,i,j));
-
-
-             }); });
-
-Kokkos::fence();
-    return dc;
-};*/
-

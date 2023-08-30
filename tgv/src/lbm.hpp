@@ -146,17 +146,17 @@ struct LBM
     buffer_ft m_frontleftupout, m_frontrightupout, m_frontleftdownout, m_frontrightdownout, m_backleftupout, m_backleftdownout, m_backrightupout, m_backrightdownout;
 
     // particle distribution eqution
-    Kokkos::View<double ****, Kokkos::HIPManagedSpace> f, ft, fb;
+    Kokkos::View<double ****, Kokkos::HIPSpace> f, ft, fb;
     // macro scopic equation
-    Kokkos::View<double ***, Kokkos::HIPManagedSpace> ua, va, wa, rho, p;
+    Kokkos::View<double ***, Kokkos::HIPSpace> ua, va, wa, rho, p;
     // usr define
-    Kokkos::View<int ***, Kokkos::HIPManagedSpace> usr, ran;
+    Kokkos::View<int ***, Kokkos::HIPSpace> usr, ran;
     // bounce back notation
-    Kokkos::View<int *, Kokkos::HIPManagedSpace> bb;
+    Kokkos::View<int *, Kokkos::HIPSpace> bb;
     // weight function
-    Kokkos::View<double *, Kokkos::HIPManagedSpace> t;
+    Kokkos::View<double *, Kokkos::HIPSpace> t;
     // discrete velocity
-    Kokkos::View<int **, Kokkos::HIPManagedSpace> e;
+    Kokkos::View<int **, Kokkos::HIPSpace> e;
 
     LBM(MPI_Comm comm_, int sx, int sy, int sz, double &tau, double &rho0, double &u0) : comm(comm_), glx(sx), gly(sy), glz(sz), tau0(tau), rho0(rho0), u0(u0)
     {
@@ -248,7 +248,6 @@ struct LBM
     void MPIoutput(int n);
     void Output(int n);
 
-    Kokkos::View<double****,Kokkos::HIPManagedSpace> d_c(Kokkos::View<double***,Kokkos::HIPManagedSpace> c);
 };
 #endif
 
