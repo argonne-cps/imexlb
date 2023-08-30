@@ -42,6 +42,7 @@ int main(int argc, char *argv[])
         
         int myDeviceID;
         HIP_CHECK(hipGetDevice(&myDeviceID));
+        printf("My Device ID is %d\n", myDeviceID); 
 
         start = MPI_Wtime();
         for (int it = 1; it <= s1.Time; it++)
@@ -86,7 +87,15 @@ int main(int argc, char *argv[])
             }
 	          end_Stream = MPI_Wtime();
             time_Stream += end_Stream - start_Stream;
-     
+    
+            //Update
+	          start_Update = MPI_Wtime();
+            {
+	            l1.Update();
+            }
+	          end_Update = MPI_Wtime();
+            time_Update += end_Update - start_Update;
+
 	          /*if (it % s1.inter == 0)
             {
                 l1.MPIoutput(it / s1.inter);
