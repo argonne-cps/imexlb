@@ -2,6 +2,8 @@
 #include "lbm.hpp"
 #include "System.hpp"
 
+#define midStep 99
+
 int main(int argc, char *argv[])
 {
 
@@ -36,19 +38,21 @@ int main(int argc, char *argv[])
 
         //l1.MPIoutput(0);
         //l1.setup_subdomain();
-  
-	/*
-        for (int it = 1; it <= 1000; it++)
+        if (l1.comm.me == 0) printf("Warm-Up\n");
+        //warm-up
+
+        for (int it = 1; it <= 10; it++)
         {
             l1.Collision();
-            l1.pack();
             l1.exchange();
-            l1.unpack();
             l1.Streaming();
-
-            l1.Update1();
-        }*/
+            l1.Update();
+            if (l1.comm.me == 0) printf("Warm-UP, time-step = %f\n", (double) it);
+        }
     
+        if (l1.comm.me == 0) printf("Reset & Run Main loop\n");
+	l1.Initialize(); 
+
         start = MPI_Wtime();
         for (int it = 1; it <= s1.Time; it++)
         {
@@ -60,6 +64,7 @@ int main(int argc, char *argv[])
 	    }
 	    end_Col = MPI_Wtime();
 	    time_Col += end_Col - start_Col;
+
 
 	    //exchange
             start_Exchange = MPI_Wtime();
@@ -85,7 +90,7 @@ int main(int argc, char *argv[])
 	    end_Update = MPI_Wtime();
             time_Update += end_Update - start_Update;
 
-        /*
+            /*
 	    end = MPI_Wtime();
 	    if (it % s1.inter == 0)
             {
@@ -94,7 +99,7 @@ int main(int argc, char *argv[])
                     printf("time=%f\n", end - start);
             }
 	    */
-            if (l1.comm.me == 0) printf("time-step = %f\n", (double) it);
+            if (l1.comm.me == 0) printf("Main Loop, time-step = %f\n", (double) it);
 
         }
         end = MPI_Wtime();
