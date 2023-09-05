@@ -3,6 +3,8 @@
 #include "System.hpp"
 #include <Kokkos_Core.hpp>
 
+#include <cuda_runtime.h>
+
 int main(int argc, char *argv[])
 {
 
@@ -35,22 +37,29 @@ int main(int argc, char *argv[])
         LBM l1(MPI_COMM_WORLD, s1.sx, s1.sy, s1.sz, s1.tau, s1.rho0, s1.u0);
 
         l1.Initialize();
-
-        //l1.MPIoutput(0);
         l1.setup_subdomain();
-  
-	/*
-        for (int it = 1; it <= 1000; it++)
+ 
+	int device;
+        cudaGetDevice(&device);
+        std::cout << "Currently used CUDA device: " << device << std::endl; 
+
+        if (l1.comm.me == 0) printf("Warm-Up\n");
+
+        //warm-up	
+        for (int it = 1; it <= 20; it++)
         {
             l1.Collision();
             l1.pack();
             l1.exchange();
             l1.unpack();
             l1.Streaming();
+            l1.Update();
+	    if (l1.comm.me == 0) printf("Warm-UP, time-step = %f\n", (double) it);
+        }
+   
+        if (l1.comm.me == 0) printf("Reset & Run Main loop\n");
+	l1.Initialize();
 
-            l1.Update1();
-        }*/
-    
         start = MPI_Wtime();
         for (int it = 1; it <= s1.Time; it++)
         {
