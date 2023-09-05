@@ -1,5 +1,6 @@
 #KOKKOS_PATH = ${HOME}/Kokkos/kokkos
-KOKKOS_PATH=/gpfs/jlse-fs0/users/spatel/kokkos/amd_MI100/kokkos/
+#KOKKOS_PATH=/gpfs/jlse-fs0/users/spatel/kokkos/amd_MI100/kokkos/
+KOKKOS_PATH=/gpfs/jlse-fs0/users/spatel/kokkos/amd_MI250/kokkos/
 #KOKKOS_DEVICES = "OpenMP"
 KOKKOS_DEVICES = "HIP"
 EXE_NAME = "lbm_tgv"
@@ -21,7 +22,7 @@ else
 #CXX = hipcc
 CXX = mpicxx
 EXE = ${EXE_NAME}.hip
-KOKKOS_ARCH = "Vega908"
+KOKKOS_ARCH = "Vega90A"
 endif
 
 CXXFLAGS = -O3
