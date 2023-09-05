@@ -3,6 +3,8 @@
 #include "System.hpp"
 #include <Kokkos_Core.hpp>
 
+#include <cuda_runtime.h>
+
 int main(int argc, char *argv[])
 {
 
@@ -37,6 +39,10 @@ int main(int argc, char *argv[])
         l1.Initialize();
         l1.setup_subdomain();
  
+	int device;
+        cudaGetDevice(&device);
+        std::cout << "Currently used CUDA device: " << device << std::endl; 
+
         if (l1.comm.me == 0) printf("Warm-Up\n");
 
         //warm-up	
