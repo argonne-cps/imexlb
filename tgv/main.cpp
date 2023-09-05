@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
                 l1.MPIoutput(it / s1.inter);
             }*/
 
-            if (l1.comm.me == 0) printf("time-step = %f\n", (double) it);
+            if (l1.comm.me == 0) printf("Main Loop, Time-Step = %f\n", (double) it);
         }
         end = MPI_Wtime();
         double time_Total = end - start; 
