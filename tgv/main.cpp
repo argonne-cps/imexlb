@@ -41,9 +41,11 @@ int main(int argc, char *argv[])
  
 	int device;
         cudaGetDevice(&device);
-        std::cout << "Currently used CUDA device: " << device << std::endl; 
+        std::cout << "Currently using CUDA device: " << device << std::endl; 
 
-        if (l1.comm.me == 0) printf("Warm-Up\n");
+        if (l1.comm.me == 0) {
+        	std::cout << "Warm-Up" << std::endl; 
+	}
 
         //warm-up	
         for (int it = 1; it <= 20; it++)
@@ -54,12 +56,16 @@ int main(int argc, char *argv[])
             l1.unpack();
             l1.Streaming();
             l1.Update();
-	    if (l1.comm.me == 0) printf("Warm-UP, time-step = %f\n", (double) it);
-        }
+	    if (l1.comm.me == 0) {
+        	std::cout << "Warm-Up, Time-Step: " << it << std::endl; 
+    	    }
+	}
    
-        if (l1.comm.me == 0) printf("Reset & Run Main loop\n");
+        if (l1.comm.me == 0) {
+        	std::cout << "Reset and Run Main-Loop" << std::endl; 
+        }
+	
 	l1.Initialize();
-
         start = MPI_Wtime();
         for (int it = 1; it <= s1.Time; it++)
         {
@@ -121,7 +127,9 @@ int main(int argc, char *argv[])
                     printf("time=%f\n", end - start);
             }
 	    */
-            if (l1.comm.me == 0) printf("time-step = %f\n", (double) it);
+            if (l1.comm.me == 0) {
+                std::cout << "time-step = " << it << std::endl;
+	    }
 
         }
         end = MPI_Wtime();
@@ -145,6 +153,7 @@ int main(int argc, char *argv[])
     if (l1.comm.me == 0) {
         avgTime /= nranks;
         printf("Avg time spent in Collision:  %lf\n", avgTime);
+        std::cout << "Avg time spent in Collision: " << avgTime << std::endl;
     }
  
     avgTime=0.0;
