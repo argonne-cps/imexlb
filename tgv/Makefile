@@ -1,5 +1,6 @@
 #KOKKOS_PATH = ${HOME}/Kokkos/kokkos
-KOKKOS_PATH=/grand/IMEXLBM/czhao/Kokkos/kokkos
+#KOKKOS_PATH=/grand/IMEXLBM/czhao/Kokkos/kokkos
+KOKKOS_PATH=/lus/grand/projects/IMEXLBM/spatel/kokkos/polaris/kokkos
 KOKKOS_DEVICES="Cuda"
 EXE_NAME="LBM"
 MKDIR=mkdir
@@ -13,10 +14,12 @@ SRC2=$(wildcard ./src/*.cpp)
 default: build
 	echo "Start Build"
 
-CXX = mpicxx
-EXE = ${EXE_NAME}.exe
-KOKKOS_ARCH = "Ampere80"
-KOKKOS_CUDA_OPTIONS = "enable_lambda"
+CXX=CC
+#CXX=/lus/grand/projects/IMEXLBM/spatel/kokkos/polaris/install/kokkos/bin/nvcc_wrapper
+CC=cc
+EXE=${EXE_NAME}.exe
+KOKKOS_ARCH="Ampere80"
+KOKKOS_CUDA_OPTIONS="enable_lambda"
 
 CXXFLAGS = -O3 -g
 LINK = ${CXX}
