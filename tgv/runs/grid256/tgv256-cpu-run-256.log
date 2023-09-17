@@ -1,0 +1,654 @@
+System Definition: Done
+============================
+TGV Flow
+Re    =1600
+Ma    =0.0866025
+rho   =1
+miu   =0.00127324
+tau   =0.00381972
+Time  =100
+inter =10
+nx    =256
+ny    =256
+nz    =256
+============================
+Me:0 MyNeibors: 207 121 
+Rank 0 has 65536 points
+Warm-Up
+Warm-Up, Time-Step: 1
+Warm-Up, Time-Step: 2
+Warm-Up, Time-Step: 3
+Warm-Up, Time-Step: 4
+Warm-Up, Time-Step: 5
+Warm-Up, Time-Step: 6
+Warm-Up, Time-Step: 7
+Warm-Up, Time-Step: 8
+Warm-Up, Time-Step: 9
+Warm-Up, Time-Step: 10
+Warm-Up, Time-Step: 11
+Warm-Up, Time-Step: 12
+Warm-Up, Time-Step: 13
+Warm-Up, Time-Step: 14
+Warm-Up, Time-Step: 15
+Warm-Up, Time-Step: 16
+Warm-Up, Time-Step: 17
+Warm-Up, Time-Step: 18
+Warm-Up, Time-Step: 19
+Warm-Up, Time-Step: 20
+Reset and Run Main-Loop 
+Main-Loop, time-step = 1
+Main-Loop, time-step = 2
+Main-Loop, time-step = 3
+Main-Loop, time-step = 4
+Main-Loop, time-step = 5
+Main-Loop, time-step = 6
+Main-Loop, time-step = 7
+Main-Loop, time-step = 8
+Main-Loop, time-step = 9
+Main-Loop, time-step = 10
+Main-Loop, time-step = 11
+Main-Loop, time-step = 12
+Main-Loop, time-step = 13
+Main-Loop, time-step = 14
+Main-Loop, time-step = 15
+Main-Loop, time-step = 16
+Main-Loop, time-step = 17
+Main-Loop, time-step = 18
+Main-Loop, time-step = 19
+Main-Loop, time-step = 20
+Main-Loop, time-step = 21
+Main-Loop, time-step = 22
+Main-Loop, time-step = 23
+Main-Loop, time-step = 24
+Main-Loop, time-step = 25
+Main-Loop, time-step = 26
+Main-Loop, time-step = 27
+Main-Loop, time-step = 28
+Main-Loop, time-step = 29
+Main-Loop, time-step = 30
+Main-Loop, time-step = 31
+Main-Loop, time-step = 32
+Main-Loop, time-step = 33
+Main-Loop, time-step = 34
+Main-Loop, time-step = 35
+Main-Loop, time-step = 36
+Main-Loop, time-step = 37
+Main-Loop, time-step = 38
+Main-Loop, time-step = 39
+Main-Loop, time-step = 40
+Main-Loop, time-step = 41
+Main-Loop, time-step = 42
+Main-Loop, time-step = 43
+Main-Loop, time-step = 44
+Main-Loop, time-step = 45
+Main-Loop, time-step = 46
+Main-Loop, time-step = 47
+Main-Loop, time-step = 48
+Main-Loop, time-step = 49
+Main-Loop, time-step = 50
+Main-Loop, time-step = 51
+Main-Loop, time-step = 52
+Main-Loop, time-step = 53
+Main-Loop, time-step = 54
+Main-Loop, time-step = 55
+Main-Loop, time-step = 56
+Main-Loop, time-step = 57
+Main-Loop, time-step = 58
+Main-Loop, time-step = 59
+Main-Loop, time-step = 60
+Main-Loop, time-step = 61
+Main-Loop, time-step = 62
+Main-Loop, time-step = 63
+Main-Loop, time-step = 64
+Main-Loop, time-step = 65
+Main-Loop, time-step = 66
+Main-Loop, time-step = 67
+Main-Loop, time-step = 68
+Main-Loop, time-step = 69
+Main-Loop, time-step = 70
+Main-Loop, time-step = 71
+Main-Loop, time-step = 72
+Main-Loop, time-step = 73
+Main-Loop, time-step = 74
+Main-Loop, time-step = 75
+Main-Loop, time-step = 76
+Main-Loop, time-step = 77
+Main-Loop, time-step = 78
+Main-Loop, time-step = 79
+Main-Loop, time-step = 80
+Main-Loop, time-step = 81
+Main-Loop, time-step = 82
+Main-Loop, time-step = 83
+Main-Loop, time-step = 84
+Main-Loop, time-step = 85
+Main-Loop, time-step = 86
+Main-Loop, time-step = 87
+Main-Loop, time-step = 88
+Main-Loop, time-step = 89
+Main-Loop, time-step = 90
+Main-Loop, time-step = 91
+Main-Loop, time-step = 92
+Main-Loop, time-step = 93
+Main-Loop, time-step = 94
+Main-Loop, time-step = 95
+Main-Loop, time-step = 96
+Main-Loop, time-step = 97
+Main-Loop, time-step = 98
+Main-Loop, time-step = 99
+Main-Loop, time-step = 100
+Me:7 MyNeibors: 206 120 
+Rank 7 has 65536 points
+Me:63 MyNeibors: 198 112 
+Rank 63 has 65536 points
+Me:199 MyNeibors: 142 56 
+Rank 199 has 65536 points
+Me:255 MyNeibors: 134 48 
+Rank 255 has 65536 points
+Me:135 MyNeibors: 78 248 
+Rank 135 has 65536 points
+Me:207 MyNeibors: 150 0 
+Rank 207 has 65536 points
+Me:47 MyNeibors: 246 96 
+Rank 47 has 65536 points
+Me:127 MyNeibors: 6 176 
+Rank 127 has 65536 points
+Me:215 MyNeibors: 158 8 
+Rank 215 has 65536 points
+Me:247 MyNeibors: 190 40 
+Rank 247 has 65536 points
+Me:15 MyNeibors: 214 64 
+Rank 15 has 65536 points
+Me:39 MyNeibors: 238 88 
+Rank 39 has 65536 points
+Me:71 MyNeibors: 14 184 
+Rank 71 has 65536 points
+Me:191 MyNeibors: 70 240 
+Rank 191 has 65536 points
+Me:223 MyNeibors: 166 16 
+Rank 223 has 65536 points
+Me:31 MyNeibors: 230 80 
+Rank 31 has 65536 points
+Me:231 MyNeibors: 174 24 
+Rank 231 has 65536 points
+Me:55 MyNeibors: 254 104 
+Rank 55 has 65536 points
+Me:23 MyNeibors: 222 72 
+Rank 23 has 65536 points
+Me:239 MyNeibors: 182 32 
+Rank 239 has 65536 points
+Me:95 MyNeibors: 38 144 
+Rank 95 has 65536 points
+Me:103 MyNeibors: 46 152 
+Rank 103 has 65536 points
+Me:143 MyNeibors: 86 192 
+Rank 143 has 65536 points
+Me:151 MyNeibors: 94 200 
+Rank 151 has 65536 points
+Me:87 MyNeibors: 30 136 
+Rank 87 has 65536 points
+Me:2 MyNeibors: 201 123 
+Rank 2 has 65536 points
+Me:159 MyNeibors: 102 208 
+Rank 159 has 65536 points
+Me:167 MyNeibors: 110 216 
+Rank 167 has 65536 points
+Me:193 MyNeibors: 136 58 
+Rank 193 has 65536 points
+Me:1 MyNeibors: 200 122 
+Rank 1 has 65536 points
+Me:5 MyNeibors: 204 126 
+Rank 5 has 65536 points
+Me:61 MyNeibors: 196 118 
+Rank 61 has 65536 points
+Me:79 MyNeibors: 22 128 
+Rank 79 has 65536 points
+Me:119 MyNeibors: 62 168 
+Rank 119 has 65536 points
+Me:175 MyNeibors: 118 224 
+Rank 175 has 65536 points
+Me:197 MyNeibors: 140 62 
+Rank 197 has 65536 points
+Me:249 MyNeibors: 128 50 
+Rank 249 has 65536 points
+Me:253 MyNeibors: 132 54 
+Rank 253 has 65536 points
+Me:111 MyNeibors: 54 160 
+Rank 111 has 65536 points
+Me:183 MyNeibors: 126 232 
+Rank 183 has 65536 points
+Me:195 MyNeibors: 138 60 
+Rank 195 has 65536 points
+Me:251 MyNeibors: 130 52 
+Rank 251 has 65536 points
+Me:57 MyNeibors: 192 114 
+Rank 57 has 65536 points
+Me:59 MyNeibors: 194 116 
+Rank 59 has 65536 points
+Me:120 MyNeibors: 7 177 
+Rank 120 has 65536 points
+Me:104 MyNeibors: 55 161 
+Rank 104 has 65536 points
+Me:8 MyNeibors: 215 65 
+Rank 8 has 65536 points
+Me:133 MyNeibors: 76 254 
+Rank 133 has 65536 points
+Me:72 MyNeibors: 23 129 
+Rank 72 has 65536 points
+Me:168 MyNeibors: 119 225 
+Rank 168 has 65536 points
+Me:205 MyNeibors: 148 6 
+Rank 205 has 65536 points
+Me:45 MyNeibors: 244 102 
+Rank 45 has 65536 points
+Me:201 MyNeibors: 144 2 
+Rank 201 has 65536 points
+Me:233 MyNeibors: 176 34 
+Rank 233 has 65536 points
+Me:241 MyNeibors: 184 42 
+Rank 241 has 65536 points
+Me:245 MyNeibors: 188 46 
+Rank 245 has 65536 points
+Me:13 MyNeibors: 212 70 
+Rank 13 has 65536 points
+Me:17 MyNeibors: 216 74 
+Rank 17 has 65536 points
+Me:25 MyNeibors: 224 82 
+Rank 25 has 65536 points
+Me:33 MyNeibors: 232 90 
+Rank 33 has 65536 points
+Me:69 MyNeibors: 12 190 
+Rank 69 has 65536 points
+Me:88 MyNeibors: 39 145 
+Rank 88 has 65536 points
+Me:125 MyNeibors: 4 182 
+Rank 125 has 65536 points
+Me:136 MyNeibors: 87 193 
+Rank 136 has 65536 points
+Me:189 MyNeibors: 68 246 
+Rank 189 has 65536 points
+Me:209 MyNeibors: 152 10 
+Rank 209 has 65536 points
+Me:213 MyNeibors: 156 14 
+Rank 213 has 65536 points
+Me:225 MyNeibors: 168 26 
+Rank 225 has 65536 points
+Me:229 MyNeibors: 172 30 
+Rank 229 has 65536 points
+Me:21 MyNeibors: 220 78 
+Rank 21 has 65536 points
+Me:37 MyNeibors: 236 94 
+Rank 37 has 65536 points
+Me:41 MyNeibors: 240 98 
+Rank 41 has 65536 points
+Me:49 MyNeibors: 248 106 
+Rank 49 has 65536 points
+Me:53 MyNeibors: 252 110 
+Rank 53 has 65536 points
+Me:58 MyNeibors: 193 115 
+Rank 58 has 65536 points
+Me:62 MyNeibors: 197 119 
+Rank 62 has 65536 points
+Me:80 MyNeibors: 31 137 
+Rank 80 has 65536 points
+Me:96 MyNeibors: 47 153 
+Rank 96 has 65536 points
+Me:123 MyNeibors: 2 180 
+Rank 123 has 65536 points
+Me:144 MyNeibors: 95 201 
+Rank 144 has 65536 points
+Me:194 MyNeibors: 137 59 
+Rank 194 has 65536 points
+Me:203 MyNeibors: 146 4 
+Rank 203 has 65536 points
+Me:221 MyNeibors: 164 22 
+Rank 221 has 65536 points
+Me:227 MyNeibors: 170 28 
+Rank 227 has 65536 points
+Me:250 MyNeibors: 129 51 
+Rank 250 has 65536 points
+Me:6 MyNeibors: 205 127 
+Rank 6 has 65536 points
+Me:11 MyNeibors: 210 68 
+Rank 11 has 65536 points
+Me:19 MyNeibors: 218 76 
+Rank 19 has 65536 points
+Me:27 MyNeibors: 226 84 
+Rank 27 has 65536 points
+Me:29 MyNeibors: 228 86 
+Rank 29 has 65536 points
+Me:35 MyNeibors: 234 92 
+Rank 35 has 65536 points
+Me:64 MyNeibors: 15 185 
+Rank 64 has 65536 points
+Me:160 MyNeibors: 111 217 
+Rank 160 has 65536 points
+Me:198 MyNeibors: 141 63 
+Rank 198 has 65536 points
+Me:211 MyNeibors: 154 12 
+Rank 211 has 65536 points
+Me:217 MyNeibors: 160 18 
+Rank 217 has 65536 points
+Me:235 MyNeibors: 178 36 
+Rank 235 has 65536 points
+Me:237 MyNeibors: 180 38 
+Rank 237 has 65536 points
+Me:243 MyNeibors: 186 44 
+Rank 243 has 65536 points
+Me:43 MyNeibors: 242 100 
+Rank 43 has 65536 points
+Me:56 MyNeibors: 199 113 
+Rank 56 has 65536 points
+Me:67 MyNeibors: 10 188 
+Rank 67 has 65536 points
+Me:131 MyNeibors: 74 252 
+Rank 131 has 65536 points
+Me:219 MyNeibors: 162 20 
+Rank 219 has 65536 points
+Me:254 MyNeibors: 133 55 
+Rank 254 has 65536 points
+Me:3 MyNeibors: 202 124 
+Rank 3 has 65536 points
+Me:128 MyNeibors: 79 249 
+Rank 128 has 65536 points
+Me:112 MyNeibors: 63 169 
+Rank 112 has 65536 points
+Me:248 MyNeibors: 135 49 
+Rank 248 has 65536 points
+Me:101 MyNeibors: 44 158 
+Rank 101 has 65536 points
+Me:149 MyNeibors: 92 206 
+Rank 149 has 65536 points
+Me:141 MyNeibors: 84 198 
+Rank 141 has 65536 points
+Me:200 MyNeibors: 151 1 
+Rank 200 has 65536 points
+Me:51 MyNeibors: 250 108 
+Rank 51 has 65536 points
+Me:192 MyNeibors: 143 57 
+Rank 192 has 65536 points
+Me:93 MyNeibors: 36 150 
+Rank 93 has 65536 points
+Me:232 MyNeibors: 183 33 
+Rank 232 has 65536 points
+Me:153 MyNeibors: 96 210 
+Rank 153 has 65536 points
+Me:85 MyNeibors: 28 142 
+Rank 85 has 65536 points
+Me:24 MyNeibors: 231 81 
+Rank 24 has 65536 points
+Me:109 MyNeibors: 52 166 
+Rank 109 has 65536 points
+Me:117 MyNeibors: 60 174 
+Rank 117 has 65536 points
+Avg time spent in Collision:  0.816364
+Avg time spent in Exchange:  5.923958
+Avg time spent in Stream:  4.505505
+Avg time spent in Update:  1.828919
+Avg. Total Solver Time:  13.075028
+Avg. Time per time-step:  0.130750
+Me:157 MyNeibors: 100 214 
+Rank 157 has 65536 points
+Me:165 MyNeibors: 108 222 
+Rank 165 has 65536 points
+Me:30 MyNeibors: 229 87 
+Rank 30 has 65536 points
+Me:177 MyNeibors: 120 234 
+Rank 177 has 65536 points
+Me:38 MyNeibors: 237 95 
+Rank 38 has 65536 points
+Me:134 MyNeibors: 77 255 
+Rank 134 has 65536 points
+Me:206 MyNeibors: 149 7 
+Rank 206 has 65536 points
+Me:210 MyNeibors: 153 11 
+Rank 210 has 65536 points
+Me:246 MyNeibors: 189 47 
+Rank 246 has 65536 points
+Me:9 MyNeibors: 208 66 
+Rank 9 has 65536 points
+Me:16 MyNeibors: 223 73 
+Rank 16 has 65536 points
+Me:26 MyNeibors: 225 83 
+Rank 26 has 65536 points
+Me:32 MyNeibors: 239 89 
+Rank 32 has 65536 points
+Me:40 MyNeibors: 247 97 
+Rank 40 has 65536 points
+Me:77 MyNeibors: 20 134 
+Rank 77 has 65536 points
+Me:91 MyNeibors: 34 148 
+Rank 91 has 65536 points
+Me:107 MyNeibors: 50 164 
+Rank 107 has 65536 points
+Me:122 MyNeibors: 1 179 
+Rank 122 has 65536 points
+Me:126 MyNeibors: 5 183 
+Rank 126 has 65536 points
+Me:155 MyNeibors: 98 212 
+Rank 155 has 65536 points
+Me:173 MyNeibors: 116 230 
+Rank 173 has 65536 points
+Me:181 MyNeibors: 124 238 
+Rank 181 has 65536 points
+Me:202 MyNeibors: 145 3 
+Rank 202 has 65536 points
+Me:208 MyNeibors: 159 9 
+Rank 208 has 65536 points
+Me:216 MyNeibors: 167 17 
+Rank 216 has 65536 points
+Me:222 MyNeibors: 165 23 
+Rank 222 has 65536 points
+Me:234 MyNeibors: 177 35 
+Rank 234 has 65536 points
+Me:242 MyNeibors: 185 43 
+Rank 242 has 65536 points
+Me:10 MyNeibors: 209 67 
+Rank 10 has 65536 points
+Me:14 MyNeibors: 213 71 
+Rank 14 has 65536 points
+Me:18 MyNeibors: 217 75 
+Rank 18 has 65536 points
+Me:22 MyNeibors: 221 79 
+Rank 22 has 65536 points
+Me:34 MyNeibors: 233 91 
+Rank 34 has 65536 points
+Me:42 MyNeibors: 241 99 
+Rank 42 has 65536 points
+Me:46 MyNeibors: 245 103 
+Rank 46 has 65536 points
+Me:54 MyNeibors: 253 111 
+Rank 54 has 65536 points
+Me:65 MyNeibors: 8 186 
+Rank 65 has 65536 points
+Me:70 MyNeibors: 13 191 
+Rank 70 has 65536 points
+Me:75 MyNeibors: 18 132 
+Rank 75 has 65536 points
+Me:83 MyNeibors: 26 140 
+Rank 83 has 65536 points
+Me:99 MyNeibors: 42 156 
+Rank 99 has 65536 points
+Me:115 MyNeibors: 58 172 
+Rank 115 has 65536 points
+Me:121 MyNeibors: 0 178 
+Rank 121 has 65536 points
+Me:130 MyNeibors: 73 251 
+Rank 130 has 65536 points
+Me:139 MyNeibors: 82 196 
+Rank 139 has 65536 points
+Me:147 MyNeibors: 90 204 
+Rank 147 has 65536 points
+Me:163 MyNeibors: 106 220 
+Rank 163 has 65536 points
+Me:171 MyNeibors: 114 228 
+Rank 171 has 65536 points
+Me:179 MyNeibors: 122 236 
+Rank 179 has 65536 points
+Me:184 MyNeibors: 71 241 
+Rank 184 has 65536 points
+Me:190 MyNeibors: 69 247 
+Rank 190 has 65536 points
+Me:214 MyNeibors: 157 15 
+Rank 214 has 65536 points
+Me:218 MyNeibors: 161 19 
+Rank 218 has 65536 points
+Me:224 MyNeibors: 175 25 
+Rank 224 has 65536 points
+Me:230 MyNeibors: 173 31 
+Rank 230 has 65536 points
+Me:4 MyNeibors: 203 125 
+Rank 4 has 65536 points
+Me:48 MyNeibors: 255 105 
+Rank 48 has 65536 points
+Me:66 MyNeibors: 9 187 
+Rank 66 has 65536 points
+Me:129 MyNeibors: 72 250 
+Rank 129 has 65536 points
+Me:187 MyNeibors: 66 244 
+Rank 187 has 65536 points
+Me:226 MyNeibors: 169 27 
+Rank 226 has 65536 points
+Me:238 MyNeibors: 181 39 
+Rank 238 has 65536 points
+Me:240 MyNeibors: 191 41 
+Rank 240 has 65536 points
+Me:196 MyNeibors: 139 61 
+Rank 196 has 65536 points
+Me:152 MyNeibors: 103 209 
+Rank 152 has 65536 points
+Me:60 MyNeibors: 195 117 
+Rank 60 has 65536 points
+Me:252 MyNeibors: 131 53 
+Rank 252 has 65536 points
+Me:50 MyNeibors: 249 107 
+Rank 50 has 65536 points
+Me:212 MyNeibors: 155 13 
+Rank 212 has 65536 points
+Me:36 MyNeibors: 235 93 
+Rank 36 has 65536 points
+Me:176 MyNeibors: 127 233 
+Rank 176 has 65536 points
+Me:244 MyNeibors: 187 45 
+Rank 244 has 65536 points
+Me:228 MyNeibors: 171 29 
+Rank 228 has 65536 points
+Me:68 MyNeibors: 11 189 
+Rank 68 has 65536 points
+Me:132 MyNeibors: 75 253 
+Rank 132 has 65536 points
+Me:124 MyNeibors: 3 181 
+Rank 124 has 65536 points
+Me:52 MyNeibors: 251 109 
+Rank 52 has 65536 points
+Me:204 MyNeibors: 147 5 
+Rank 204 has 65536 points
+Me:20 MyNeibors: 219 77 
+Rank 20 has 65536 points
+Me:28 MyNeibors: 227 85 
+Rank 28 has 65536 points
+Me:188 MyNeibors: 67 245 
+Rank 188 has 65536 points
+Me:89 MyNeibors: 32 146 
+Rank 89 has 65536 points
+Me:102 MyNeibors: 45 159 
+Rank 102 has 65536 points
+Me:220 MyNeibors: 163 21 
+Rank 220 has 65536 points
+Me:12 MyNeibors: 211 69 
+Rank 12 has 65536 points
+Me:44 MyNeibors: 243 101 
+Rank 44 has 65536 points
+Me:150 MyNeibors: 93 207 
+Rank 150 has 65536 points
+Me:236 MyNeibors: 179 37 
+Rank 236 has 65536 points
+Me:142 MyNeibors: 85 199 
+Rank 142 has 65536 points
+Me:90 MyNeibors: 33 147 
+Rank 90 has 65536 points
+Me:169 MyNeibors: 112 226 
+Rank 169 has 65536 points
+Me:105 MyNeibors: 48 162 
+Rank 105 has 65536 points
+Me:86 MyNeibors: 29 143 
+Rank 86 has 65536 points
+Me:97 MyNeibors: 40 154 
+Rank 97 has 65536 points
+Me:146 MyNeibors: 89 203 
+Rank 146 has 65536 points
+Me:94 MyNeibors: 37 151 
+Rank 94 has 65536 points
+Me:145 MyNeibors: 88 202 
+Rank 145 has 65536 points
+Me:98 MyNeibors: 41 155 
+Rank 98 has 65536 points
+Me:106 MyNeibors: 49 163 
+Rank 106 has 65536 points
+Me:170 MyNeibors: 113 227 
+Rank 170 has 65536 points
+Me:185 MyNeibors: 64 242 
+Rank 185 has 65536 points
+Me:166 MyNeibors: 109 223 
+Rank 166 has 65536 points
+Me:73 MyNeibors: 16 130 
+Rank 73 has 65536 points
+Me:118 MyNeibors: 61 175 
+Rank 118 has 65536 points
+Me:154 MyNeibors: 97 211 
+Rank 154 has 65536 points
+Me:158 MyNeibors: 101 215 
+Rank 158 has 65536 points
+Me:74 MyNeibors: 17 131 
+Rank 74 has 65536 points
+Me:161 MyNeibors: 104 218 
+Rank 161 has 65536 points
+Me:174 MyNeibors: 117 231 
+Rank 174 has 65536 points
+Me:182 MyNeibors: 125 239 
+Rank 182 has 65536 points
+Me:186 MyNeibors: 65 243 
+Rank 186 has 65536 points
+Me:78 MyNeibors: 21 135 
+Rank 78 has 65536 points
+Me:82 MyNeibors: 25 139 
+Rank 82 has 65536 points
+Me:114 MyNeibors: 57 171 
+Rank 114 has 65536 points
+Me:138 MyNeibors: 81 195 
+Rank 138 has 65536 points
+Me:81 MyNeibors: 24 138 
+Rank 81 has 65536 points
+Me:113 MyNeibors: 56 170 
+Rank 113 has 65536 points
+Me:137 MyNeibors: 80 194 
+Rank 137 has 65536 points
+Me:162 MyNeibors: 105 219 
+Rank 162 has 65536 points
+Me:178 MyNeibors: 121 235 
+Rank 178 has 65536 points
+Me:110 MyNeibors: 53 167 
+Rank 110 has 65536 points
+Me:100 MyNeibors: 43 157 
+Rank 100 has 65536 points
+Me:84 MyNeibors: 27 141 
+Rank 84 has 65536 points
+Me:148 MyNeibors: 91 205 
+Rank 148 has 65536 points
+Me:164 MyNeibors: 107 221 
+Rank 164 has 65536 points
+Me:180 MyNeibors: 123 237 
+Rank 180 has 65536 points
+Me:116 MyNeibors: 59 173 
+Rank 116 has 65536 points
+Me:92 MyNeibors: 35 149 
+Rank 92 has 65536 points
+Me:140 MyNeibors: 83 197 
+Rank 140 has 65536 points
+Me:156 MyNeibors: 99 213 
+Rank 156 has 65536 points
+Me:108 MyNeibors: 51 165 
+Rank 108 has 65536 points
+Me:76 MyNeibors: 19 133 
+Rank 76 has 65536 points
+Me:172 MyNeibors: 115 229 
+Rank 172 has 65536 points

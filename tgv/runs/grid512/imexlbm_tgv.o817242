@@ -1,0 +1,2126 @@
+NUM_OF_NODES= 256 TOTAL_NUM_RANKS= 1024 RANKS_PER_NODE= 4 THREADS_PER_RANK= 1
+System Definition: Done
+============================
+TGV Flow
+Re    =1600
+Ma    =0.0866025
+rho   =1
+miu   =0.00254648
+tau   =0.00763944
+Time  =50
+inter =10
+nx    =512
+ny    =512
+nz    =512
+============================
+Me:0 MyNeibors: 927 241 
+Rank 0 has 131072 points
+Warm-Up
+Warm-Up, Time-Step: 1
+Warm-Up, Time-Step: 2
+Warm-Up, Time-Step: 3
+Warm-Up, Time-Step: 4
+Warm-Up, Time-Step: 5
+Reset and Run Main-Loop 
+Main-Loop, time-step = 1
+Main-Loop, time-step = 2
+Main-Loop, time-step = 3
+Main-Loop, time-step = 4
+Main-Loop, time-step = 5
+Main-Loop, time-step = 6
+Main-Loop, time-step = 7
+Main-Loop, time-step = 8
+Main-Loop, time-step = 9
+Main-Loop, time-step = 10
+Main-Loop, time-step = 11
+Main-Loop, time-step = 12
+Main-Loop, time-step = 13
+Main-Loop, time-step = 14
+Main-Loop, time-step = 15
+Main-Loop, time-step = 16
+Main-Loop, time-step = 17
+Main-Loop, time-step = 18
+Main-Loop, time-step = 19
+Main-Loop, time-step = 20
+Main-Loop, time-step = 21
+Main-Loop, time-step = 22
+Main-Loop, time-step = 23
+Main-Loop, time-step = 24
+Main-Loop, time-step = 25
+Main-Loop, time-step = 26
+Main-Loop, time-step = 27
+Main-Loop, time-step = 28
+Main-Loop, time-step = 29
+Main-Loop, time-step = 30
+Main-Loop, time-step = 31
+Main-Loop, time-step = 32
+Main-Loop, time-step = 33
+Main-Loop, time-step = 34
+Main-Loop, time-step = 35
+Main-Loop, time-step = 36
+Main-Loop, time-step = 37
+Main-Loop, time-step = 38
+Main-Loop, time-step = 39
+Main-Loop, time-step = 40
+Main-Loop, time-step = 41
+Main-Loop, time-step = 42
+Main-Loop, time-step = 43
+Main-Loop, time-step = 44
+Main-Loop, time-step = 45
+Main-Loop, time-step = 46
+Main-Loop, time-step = 47
+Main-Loop, time-step = 48
+Main-Loop, time-step = 49
+Main-Loop, time-step = 50
+Me:127 MyNeibors: 910 224 
+Rank 127 has 131072 points
+Me:1023 MyNeibors: 782 96 
+Rank 1023 has 131072 points
+Me:15 MyNeibors: 926 240 
+Rank 15 has 131072 points
+Me:911 MyNeibors: 798 112 
+Rank 911 has 131072 points
+Me:95 MyNeibors: 1006 192 
+Rank 95 has 131072 points
+Me:271 MyNeibors: 158 496 
+Rank 271 has 131072 points
+Me:47 MyNeibors: 958 144 
+Rank 47 has 131072 points
+Me:383 MyNeibors: 142 480 
+Rank 383 has 131072 points
+Me:31 MyNeibors: 942 128 
+Rank 31 has 131072 points
+Me:63 MyNeibors: 974 160 
+Rank 63 has 131072 points
+Me:79 MyNeibors: 990 176 
+Rank 79 has 131072 points
+Me:143 MyNeibors: 30 368 
+Rank 143 has 131072 points
+Me:255 MyNeibors: 14 352 
+Rank 255 has 131072 points
+Me:527 MyNeibors: 414 752 
+Rank 527 has 131072 points
+Me:639 MyNeibors: 398 736 
+Rank 639 has 131072 points
+Me:655 MyNeibors: 542 880 
+Rank 655 has 131072 points
+Me:767 MyNeibors: 526 864 
+Rank 767 has 131072 points
+Me:783 MyNeibors: 670 1008 
+Rank 783 has 131072 points
+Me:895 MyNeibors: 654 992 
+Rank 895 has 131072 points
+Me:399 MyNeibors: 286 624 
+Rank 399 has 131072 points
+Me:1007 MyNeibors: 894 80 
+Rank 1007 has 131072 points
+Me:111 MyNeibors: 1022 208 
+Rank 111 has 131072 points
+Me:943 MyNeibors: 830 16 
+Rank 943 has 131072 points
+Me:959 MyNeibors: 846 32 
+Rank 959 has 131072 points
+Me:511 MyNeibors: 270 608 
+Rank 511 has 131072 points
+Me:975 MyNeibors: 862 48 
+Rank 975 has 131072 points
+Me:447 MyNeibors: 334 544 
+Rank 447 has 131072 points
+Me:223 MyNeibors: 110 320 
+Rank 223 has 131072 points
+Me:991 MyNeibors: 878 64 
+Rank 991 has 131072 points
+Me:207 MyNeibors: 94 304 
+Rank 207 has 131072 points
+Me:335 MyNeibors: 222 432 
+Rank 335 has 131072 points
+Me:351 MyNeibors: 238 448 
+Rank 351 has 131072 points
+Me:575 MyNeibors: 462 672 
+Rank 575 has 131072 points
+Me:159 MyNeibors: 46 256 
+Rank 159 has 131072 points
+Me:239 MyNeibors: 126 336 
+Rank 239 has 131072 points
+Me:287 MyNeibors: 174 384 
+Rank 287 has 131072 points
+Me:303 MyNeibors: 190 400 
+Rank 303 has 131072 points
+Me:879 MyNeibors: 766 976 
+Rank 879 has 131072 points
+Me:1021 MyNeibors: 780 110 
+Rank 1021 has 131072 points
+Me:6 MyNeibors: 917 247 
+Rank 6 has 131072 points
+Me:121 MyNeibors: 904 234 
+Rank 121 has 131072 points
+Me:125 MyNeibors: 908 238 
+Rank 125 has 131072 points
+Me:671 MyNeibors: 558 768 
+Rank 671 has 131072 points
+Me:175 MyNeibors: 62 272 
+Rank 175 has 131072 points
+Me:191 MyNeibors: 78 288 
+Rank 191 has 131072 points
+Me:735 MyNeibors: 622 832 
+Rank 735 has 131072 points
+Me:751 MyNeibors: 638 848 
+Rank 751 has 131072 points
+Me:799 MyNeibors: 686 896 
+Rank 799 has 131072 points
+Me:815 MyNeibors: 702 912 
+Rank 815 has 131072 points
+Me:319 MyNeibors: 206 416 
+Rank 319 has 131072 points
+Me:863 MyNeibors: 750 960 
+Rank 863 has 131072 points
+Me:367 MyNeibors: 254 464 
+Rank 367 has 131072 points
+Me:909 MyNeibors: 796 126 
+Rank 909 has 131072 points
+Me:415 MyNeibors: 302 512 
+Rank 415 has 131072 points
+Me:431 MyNeibors: 318 528 
+Rank 431 has 131072 points
+Me:479 MyNeibors: 366 576 
+Rank 479 has 131072 points
+Me:495 MyNeibors: 382 592 
+Rank 495 has 131072 points
+Me:1 MyNeibors: 912 242 
+Rank 1 has 131072 points
+Me:5 MyNeibors: 916 246 
+Rank 5 has 131072 points
+Me:9 MyNeibors: 920 250 
+Rank 9 has 131072 points
+Me:13 MyNeibors: 924 254 
+Rank 13 has 131072 points
+Me:543 MyNeibors: 430 640 
+Rank 543 has 131072 points
+Me:559 MyNeibors: 446 656 
+Rank 559 has 131072 points
+Me:591 MyNeibors: 478 688 
+Rank 591 has 131072 points
+Me:623 MyNeibors: 510 720 
+Rank 623 has 131072 points
+Me:117 MyNeibors: 900 230 
+Rank 117 has 131072 points
+Me:687 MyNeibors: 574 784 
+Rank 687 has 131072 points
+Me:703 MyNeibors: 590 800 
+Rank 703 has 131072 points
+Me:719 MyNeibors: 606 816 
+Rank 719 has 131072 points
+Me:831 MyNeibors: 718 928 
+Rank 831 has 131072 points
+Me:847 MyNeibors: 734 944 
+Rank 847 has 131072 points
+Me:905 MyNeibors: 792 122 
+Rank 905 has 131072 points
+Me:463 MyNeibors: 350 560 
+Rank 463 has 131072 points
+Me:1013 MyNeibors: 772 102 
+Rank 1013 has 131072 points
+Me:1017 MyNeibors: 776 106 
+Rank 1017 has 131072 points
+Me:11 MyNeibors: 922 252 
+Rank 11 has 131072 points
+Me:607 MyNeibors: 494 704 
+Rank 607 has 131072 points
+Me:115 MyNeibors: 898 228 
+Rank 115 has 131072 points
+Me:119 MyNeibors: 902 232 
+Rank 119 has 131072 points
+Me:123 MyNeibors: 906 236 
+Rank 123 has 131072 points
+Me:897 MyNeibors: 784 114 
+Rank 897 has 131072 points
+Me:901 MyNeibors: 788 118 
+Rank 901 has 131072 points
+Me:907 MyNeibors: 794 124 
+Rank 907 has 131072 points
+Me:1009 MyNeibors: 768 98 
+Rank 1009 has 131072 points
+Me:1015 MyNeibors: 774 104 
+Rank 1015 has 131072 points
+Me:1019 MyNeibors: 778 108 
+Rank 1019 has 131072 points
+Me:3 MyNeibors: 914 244 
+Rank 3 has 131072 points
+Me:899 MyNeibors: 786 116 
+Rank 899 has 131072 points
+Me:903 MyNeibors: 790 120 
+Rank 903 has 131072 points
+Me:1011 MyNeibors: 770 100 
+Rank 1011 has 131072 points
+Me:501 MyNeibors: 260 614 
+Rank 501 has 131072 points
+Me:269 MyNeibors: 156 510 
+Rank 269 has 131072 points
+Me:25 MyNeibors: 936 138 
+Rank 25 has 131072 points
+Me:393 MyNeibors: 280 634 
+Rank 393 has 131072 points
+Me:93 MyNeibors: 1004 206 
+Rank 93 has 131072 points
+Me:137 MyNeibors: 24 378 
+Rank 137 has 131072 points
+Me:369 MyNeibors: 128 482 
+Rank 369 has 131072 points
+Me:57 MyNeibors: 968 170 
+Rank 57 has 131072 points
+Me:257 MyNeibors: 144 498 
+Rank 257 has 131072 points
+Me:265 MyNeibors: 152 506 
+Rank 265 has 131072 points
+Me:389 MyNeibors: 276 630 
+Rank 389 has 131072 points
+Me:513 MyNeibors: 400 754 
+Rank 513 has 131072 points
+Me:521 MyNeibors: 408 762 
+Rank 521 has 131072 points
+Me:37 MyNeibors: 948 150 
+Rank 37 has 131072 points
+Me:45 MyNeibors: 956 158 
+Rank 45 has 131072 points
+Me:65 MyNeibors: 976 178 
+Rank 65 has 131072 points
+Me:101 MyNeibors: 1012 214 
+Rank 101 has 131072 points
+Me:637 MyNeibors: 396 750 
+Rank 637 has 131072 points
+Me:649 MyNeibors: 536 890 
+Rank 649 has 131072 points
+Me:249 MyNeibors: 8 362 
+Rank 249 has 131072 points
+Me:261 MyNeibors: 148 502 
+Rank 261 has 131072 points
+Me:881 MyNeibors: 640 994 
+Rank 881 has 131072 points
+Me:889 MyNeibors: 648 1002 
+Rank 889 has 131072 points
+Me:397 MyNeibors: 284 638 
+Rank 397 has 131072 points
+Me:921 MyNeibors: 808 10 
+Rank 921 has 131072 points
+Me:937 MyNeibors: 824 26 
+Rank 937 has 131072 points
+Me:505 MyNeibors: 264 618 
+Rank 505 has 131072 points
+Me:509 MyNeibors: 268 622 
+Rank 509 has 131072 points
+Me:10 MyNeibors: 921 251 
+Rank 10 has 131072 points
+Me:525 MyNeibors: 412 766 
+Rank 525 has 131072 points
+Me:21 MyNeibors: 932 134 
+Rank 21 has 131072 points
+Me:29 MyNeibors: 940 142 
+Rank 29 has 131072 points
+Me:39 MyNeibors: 950 152 
+Rank 39 has 131072 points
+Me:49 MyNeibors: 960 162 
+Rank 49 has 131072 points
+Me:69 MyNeibors: 980 182 
+Rank 69 has 131072 points
+Me:73 MyNeibors: 984 186 
+Rank 73 has 131072 points
+Me:77 MyNeibors: 988 190 
+Rank 77 has 131072 points
+Me:81 MyNeibors: 992 194 
+Rank 81 has 131072 points
+Me:85 MyNeibors: 996 198 
+Rank 85 has 131072 points
+Me:89 MyNeibors: 1000 202 
+Rank 89 has 131072 points
+Me:103 MyNeibors: 1014 216 
+Rank 103 has 131072 points
+Me:105 MyNeibors: 1016 218 
+Rank 105 has 131072 points
+Me:109 MyNeibors: 1020 222 
+Rank 109 has 131072 points
+Me:625 MyNeibors: 384 738 
+Rank 625 has 131072 points
+Me:122 MyNeibors: 905 235 
+Rank 122 has 131072 points
+Me:126 MyNeibors: 909 239 
+Rank 126 has 131072 points
+Me:131 MyNeibors: 18 372 
+Rank 131 has 131072 points
+Me:645 MyNeibors: 532 886 
+Rank 645 has 131072 points
+Me:141 MyNeibors: 28 382 
+Rank 141 has 131072 points
+Me:757 MyNeibors: 516 870 
+Rank 757 has 131072 points
+Me:761 MyNeibors: 520 874 
+Rank 761 has 131072 points
+Me:765 MyNeibors: 524 878 
+Rank 765 has 131072 points
+Me:259 MyNeibors: 146 500 
+Rank 259 has 131072 points
+Me:263 MyNeibors: 150 504 
+Rank 263 has 131072 points
+Me:777 MyNeibors: 664 1018 
+Rank 777 has 131072 points
+Me:883 MyNeibors: 642 996 
+Rank 883 has 131072 points
+Me:373 MyNeibors: 132 486 
+Rank 373 has 131072 points
+Me:377 MyNeibors: 136 490 
+Rank 377 has 131072 points
+Me:893 MyNeibors: 652 1006 
+Rank 893 has 131072 points
+Me:391 MyNeibors: 278 632 
+Rank 391 has 131072 points
+Me:906 MyNeibors: 793 123 
+Rank 906 has 131072 points
+Me:910 MyNeibors: 797 127 
+Rank 910 has 131072 points
+Me:913 MyNeibors: 800 2 
+Rank 913 has 131072 points
+Me:917 MyNeibors: 804 6 
+Rank 917 has 131072 points
+Me:927 MyNeibors: 814 0 
+Rank 927 has 131072 points
+Me:929 MyNeibors: 816 18 
+Rank 929 has 131072 points
+Me:939 MyNeibors: 826 28 
+Rank 939 has 131072 points
+Me:941 MyNeibors: 828 30 
+Rank 941 has 131072 points
+Me:957 MyNeibors: 844 46 
+Rank 957 has 131072 points
+Me:961 MyNeibors: 848 50 
+Rank 961 has 131072 points
+Me:973 MyNeibors: 860 62 
+Rank 973 has 131072 points
+Me:977 MyNeibors: 864 66 
+Rank 977 has 131072 points
+Me:989 MyNeibors: 876 78 
+Rank 989 has 131072 points
+Me:993 MyNeibors: 880 82 
+Rank 993 has 131072 points
+Me:997 MyNeibors: 884 86 
+Rank 997 has 131072 points
+Me:1005 MyNeibors: 892 94 
+Rank 1005 has 131072 points
+Me:497 MyNeibors: 256 610 
+Rank 497 has 131072 points
+Me:1014 MyNeibors: 773 103 
+Rank 1014 has 131072 points
+Me:515 MyNeibors: 402 756 
+Rank 515 has 131072 points
+Me:517 MyNeibors: 404 758 
+Rank 517 has 131072 points
+Me:523 MyNeibors: 410 764 
+Rank 523 has 131072 points
+Me:14 MyNeibors: 925 255 
+Rank 14 has 131072 points
+Me:19 MyNeibors: 930 132 
+Rank 19 has 131072 points
+Me:23 MyNeibors: 934 136 
+Rank 23 has 131072 points
+Me:27 MyNeibors: 938 140 
+Rank 27 has 131072 points
+Me:35 MyNeibors: 946 148 
+Rank 35 has 131072 points
+Me:41 MyNeibors: 952 154 
+Rank 41 has 131072 points
+Me:51 MyNeibors: 962 164 
+Rank 51 has 131072 points
+Me:53 MyNeibors: 964 166 
+Rank 53 has 131072 points
+Me:59 MyNeibors: 970 172 
+Rank 59 has 131072 points
+Me:61 MyNeibors: 972 174 
+Rank 61 has 131072 points
+Me:67 MyNeibors: 978 180 
+Rank 67 has 131072 points
+Me:71 MyNeibors: 982 184 
+Rank 71 has 131072 points
+Me:75 MyNeibors: 986 188 
+Rank 75 has 131072 points
+Me:83 MyNeibors: 994 196 
+Rank 83 has 131072 points
+Me:87 MyNeibors: 998 200 
+Rank 87 has 131072 points
+Me:91 MyNeibors: 1002 204 
+Rank 91 has 131072 points
+Me:99 MyNeibors: 1010 212 
+Rank 99 has 131072 points
+Me:107 MyNeibors: 1018 220 
+Rank 107 has 131072 points
+Me:113 MyNeibors: 896 226 
+Rank 113 has 131072 points
+Me:629 MyNeibors: 388 742 
+Rank 629 has 131072 points
+Me:633 MyNeibors: 392 746 
+Rank 633 has 131072 points
+Me:641 MyNeibors: 528 882 
+Rank 641 has 131072 points
+Me:133 MyNeibors: 20 374 
+Rank 133 has 131072 points
+Me:651 MyNeibors: 538 892 
+Rank 651 has 131072 points
+Me:653 MyNeibors: 540 894 
+Rank 653 has 131072 points
+Me:753 MyNeibors: 512 866 
+Rank 753 has 131072 points
+Me:245 MyNeibors: 4 358 
+Rank 245 has 131072 points
+Me:251 MyNeibors: 10 364 
+Rank 251 has 131072 points
+Me:253 MyNeibors: 12 366 
+Rank 253 has 131072 points
+Me:769 MyNeibors: 656 1010 
+Rank 769 has 131072 points
+Me:773 MyNeibors: 660 1014 
+Rank 773 has 131072 points
+Me:267 MyNeibors: 154 508 
+Rank 267 has 131072 points
+Me:781 MyNeibors: 668 1022 
+Rank 781 has 131072 points
+Me:371 MyNeibors: 130 484 
+Rank 371 has 131072 points
+Me:885 MyNeibors: 644 998 
+Rank 885 has 131072 points
+Me:891 MyNeibors: 650 1004 
+Rank 891 has 131072 points
+Me:381 MyNeibors: 140 494 
+Rank 381 has 131072 points
+Me:898 MyNeibors: 785 115 
+Rank 898 has 131072 points
+Me:902 MyNeibors: 789 119 
+Rank 902 has 131072 points
+Me:395 MyNeibors: 282 636 
+Rank 395 has 131072 points
+Me:915 MyNeibors: 802 4 
+Rank 915 has 131072 points
+Me:919 MyNeibors: 806 8 
+Rank 919 has 131072 points
+Me:923 MyNeibors: 810 12 
+Rank 923 has 131072 points
+Me:931 MyNeibors: 818 20 
+Rank 931 has 131072 points
+Me:933 MyNeibors: 820 22 
+Rank 933 has 131072 points
+Me:945 MyNeibors: 832 34 
+Rank 945 has 131072 points
+Me:949 MyNeibors: 836 38 
+Rank 949 has 131072 points
+Me:953 MyNeibors: 840 42 
+Rank 953 has 131072 points
+Me:963 MyNeibors: 850 52 
+Rank 963 has 131072 points
+Me:965 MyNeibors: 852 54 
+Rank 965 has 131072 points
+Me:969 MyNeibors: 856 58 
+Rank 969 has 131072 points
+Me:979 MyNeibors: 866 68 
+Rank 979 has 131072 points
+Me:981 MyNeibors: 868 70 
+Rank 981 has 131072 points
+Me:985 MyNeibors: 872 74 
+Rank 985 has 131072 points
+Me:995 MyNeibors: 882 84 
+Rank 995 has 131072 points
+Me:999 MyNeibors: 886 88 
+Rank 999 has 131072 points
+Me:1001 MyNeibors: 888 90 
+Rank 1001 has 131072 points
+Me:1010 MyNeibors: 769 99 
+Rank 1010 has 131072 points
+Me:503 MyNeibors: 262 616 
+Rank 503 has 131072 points
+Me:507 MyNeibors: 266 620 
+Rank 507 has 131072 points
+Me:1022 MyNeibors: 781 111 
+Rank 1022 has 131072 points
+Me:2 MyNeibors: 913 243 
+Rank 2 has 131072 points
+Me:7 MyNeibors: 918 248 
+Rank 7 has 131072 points
+Me:17 MyNeibors: 928 130 
+Rank 17 has 131072 points
+Me:33 MyNeibors: 944 146 
+Rank 33 has 131072 points
+Me:43 MyNeibors: 954 156 
+Rank 43 has 131072 points
+Me:561 MyNeibors: 448 674 
+Rank 561 has 131072 points
+Me:55 MyNeibors: 966 168 
+Rank 55 has 131072 points
+Me:97 MyNeibors: 1008 210 
+Rank 97 has 131072 points
+Me:114 MyNeibors: 897 227 
+Rank 114 has 131072 points
+Me:118 MyNeibors: 901 231 
+Rank 118 has 131072 points
+Me:635 MyNeibors: 394 748 
+Rank 635 has 131072 points
+Me:643 MyNeibors: 530 884 
+Rank 643 has 131072 points
+Me:647 MyNeibors: 534 888 
+Rank 647 has 131072 points
+Me:139 MyNeibors: 26 380 
+Rank 139 has 131072 points
+Me:144 MyNeibors: 47 257 
+Rank 144 has 131072 points
+Me:149 MyNeibors: 36 262 
+Rank 149 has 131072 points
+Me:157 MyNeibors: 44 270 
+Rank 157 has 131072 points
+Me:160 MyNeibors: 63 273 
+Rank 160 has 131072 points
+Me:169 MyNeibors: 56 282 
+Rank 169 has 131072 points
+Me:176 MyNeibors: 79 289 
+Rank 176 has 131072 points
+Me:193 MyNeibors: 80 306 
+Rank 193 has 131072 points
+Me:721 MyNeibors: 608 834 
+Rank 721 has 131072 points
+Me:221 MyNeibors: 108 334 
+Rank 221 has 131072 points
+Me:225 MyNeibors: 112 338 
+Rank 225 has 131072 points
+Me:749 MyNeibors: 636 862 
+Rank 749 has 131072 points
+Me:755 MyNeibors: 514 868 
+Rank 755 has 131072 points
+Me:759 MyNeibors: 518 872 
+Rank 759 has 131072 points
+Me:763 MyNeibors: 522 876 
+Rank 763 has 131072 points
+Me:771 MyNeibors: 658 1012 
+Rank 771 has 131072 points
+Me:775 MyNeibors: 662 1016 
+Rank 775 has 131072 points
+Me:779 MyNeibors: 666 1020 
+Rank 779 has 131072 points
+Me:272 MyNeibors: 175 385 
+Rank 272 has 131072 points
+Me:281 MyNeibors: 168 394 
+Rank 281 has 131072 points
+Me:289 MyNeibors: 176 402 
+Rank 289 has 131072 points
+Me:805 MyNeibors: 692 918 
+Rank 805 has 131072 points
+Me:309 MyNeibors: 196 422 
+Rank 309 has 131072 points
+Me:837 MyNeibors: 724 950 
+Rank 837 has 131072 points
+Me:841 MyNeibors: 728 954 
+Rank 841 has 131072 points
+Me:333 MyNeibors: 220 446 
+Rank 333 has 131072 points
+Me:336 MyNeibors: 239 449 
+Rank 336 has 131072 points
+Me:341 MyNeibors: 228 454 
+Rank 341 has 131072 points
+Me:345 MyNeibors: 232 458 
+Rank 345 has 131072 points
+Me:877 MyNeibors: 764 990 
+Rank 877 has 131072 points
+Me:375 MyNeibors: 134 488 
+Rank 375 has 131072 points
+Me:379 MyNeibors: 138 492 
+Rank 379 has 131072 points
+Me:401 MyNeibors: 288 514 
+Rank 401 has 131072 points
+Me:405 MyNeibors: 292 518 
+Rank 405 has 131072 points
+Me:409 MyNeibors: 296 522 
+Rank 409 has 131072 points
+Me:413 MyNeibors: 300 526 
+Rank 413 has 131072 points
+Me:935 MyNeibors: 822 24 
+Rank 935 has 131072 points
+Me:425 MyNeibors: 312 538 
+Rank 425 has 131072 points
+Me:947 MyNeibors: 834 36 
+Rank 947 has 131072 points
+Me:951 MyNeibors: 838 40 
+Rank 951 has 131072 points
+Me:955 MyNeibors: 842 44 
+Rank 955 has 131072 points
+Me:445 MyNeibors: 332 558 
+Rank 445 has 131072 points
+Me:449 MyNeibors: 336 562 
+Rank 449 has 131072 points
+Me:967 MyNeibors: 854 56 
+Rank 967 has 131072 points
+Me:971 MyNeibors: 858 60 
+Rank 971 has 131072 points
+Me:983 MyNeibors: 870 72 
+Rank 983 has 131072 points
+Me:987 MyNeibors: 874 76 
+Rank 987 has 131072 points
+Me:480 MyNeibors: 383 593 
+Rank 480 has 131072 points
+Me:1003 MyNeibors: 890 92 
+Rank 1003 has 131072 points
+Me:499 MyNeibors: 258 612 
+Rank 499 has 131072 points
+Me:1018 MyNeibors: 777 107 
+Rank 1018 has 131072 points
+Me:519 MyNeibors: 406 760 
+Rank 519 has 131072 points
+Me:522 MyNeibors: 409 763 
+Rank 522 has 131072 points
+Me:526 MyNeibors: 413 767 
+Rank 526 has 131072 points
+Me:529 MyNeibors: 416 642 
+Rank 529 has 131072 points
+Me:533 MyNeibors: 420 646 
+Rank 533 has 131072 points
+Me:537 MyNeibors: 424 650 
+Rank 537 has 131072 points
+Me:541 MyNeibors: 428 654 
+Rank 541 has 131072 points
+Me:545 MyNeibors: 432 658 
+Rank 545 has 131072 points
+Me:549 MyNeibors: 436 662 
+Rank 549 has 131072 points
+Me:553 MyNeibors: 440 666 
+Rank 553 has 131072 points
+Me:557 MyNeibors: 444 670 
+Rank 557 has 131072 points
+Me:563 MyNeibors: 450 676 
+Rank 563 has 131072 points
+Me:565 MyNeibors: 452 678 
+Rank 565 has 131072 points
+Me:569 MyNeibors: 456 682 
+Rank 569 has 131072 points
+Me:573 MyNeibors: 460 686 
+Rank 573 has 131072 points
+Me:577 MyNeibors: 464 690 
+Rank 577 has 131072 points
+Me:581 MyNeibors: 468 694 
+Rank 581 has 131072 points
+Me:585 MyNeibors: 472 698 
+Rank 585 has 131072 points
+Me:589 MyNeibors: 476 702 
+Rank 589 has 131072 points
+Me:593 MyNeibors: 480 706 
+Rank 593 has 131072 points
+Me:597 MyNeibors: 484 710 
+Rank 597 has 131072 points
+Me:601 MyNeibors: 488 714 
+Rank 601 has 131072 points
+Me:94 MyNeibors: 1005 207 
+Rank 94 has 131072 points
+Me:609 MyNeibors: 496 722 
+Rank 609 has 131072 points
+Me:613 MyNeibors: 500 726 
+Rank 613 has 131072 points
+Me:617 MyNeibors: 504 730 
+Rank 617 has 131072 points
+Me:621 MyNeibors: 508 734 
+Rank 621 has 131072 points
+Me:627 MyNeibors: 386 740 
+Rank 627 has 131072 points
+Me:631 MyNeibors: 390 744 
+Rank 631 has 131072 points
+Me:634 MyNeibors: 393 747 
+Rank 634 has 131072 points
+Me:638 MyNeibors: 397 751 
+Rank 638 has 131072 points
+Me:129 MyNeibors: 16 370 
+Rank 129 has 131072 points
+Me:135 MyNeibors: 22 376 
+Rank 135 has 131072 points
+Me:138 MyNeibors: 25 379 
+Rank 138 has 131072 points
+Me:142 MyNeibors: 29 383 
+Rank 142 has 131072 points
+Me:657 MyNeibors: 544 770 
+Rank 657 has 131072 points
+Me:661 MyNeibors: 548 774 
+Rank 661 has 131072 points
+Me:153 MyNeibors: 40 266 
+Rank 153 has 131072 points
+Me:669 MyNeibors: 556 782 
+Rank 669 has 131072 points
+Me:673 MyNeibors: 560 786 
+Rank 673 has 131072 points
+Me:165 MyNeibors: 52 278 
+Rank 165 has 131072 points
+Me:171 MyNeibors: 58 284 
+Rank 171 has 131072 points
+Me:173 MyNeibors: 60 286 
+Rank 173 has 131072 points
+Me:689 MyNeibors: 576 802 
+Rank 689 has 131072 points
+Me:693 MyNeibors: 580 806 
+Rank 693 has 131072 points
+Me:185 MyNeibors: 72 298 
+Rank 185 has 131072 points
+Me:189 MyNeibors: 76 302 
+Rank 189 has 131072 points
+Me:195 MyNeibors: 82 308 
+Rank 195 has 131072 points
+Me:197 MyNeibors: 84 310 
+Rank 197 has 131072 points
+Me:713 MyNeibors: 600 826 
+Rank 713 has 131072 points
+Me:205 MyNeibors: 92 318 
+Rank 205 has 131072 points
+Me:209 MyNeibors: 96 322 
+Rank 209 has 131072 points
+Me:213 MyNeibors: 100 326 
+Rank 213 has 131072 points
+Me:217 MyNeibors: 104 330 
+Rank 217 has 131072 points
+Me:733 MyNeibors: 620 846 
+Rank 733 has 131072 points
+Me:227 MyNeibors: 114 340 
+Rank 227 has 131072 points
+Me:229 MyNeibors: 116 342 
+Rank 229 has 131072 points
+Me:745 MyNeibors: 632 858 
+Rank 745 has 131072 points
+Me:237 MyNeibors: 124 350 
+Rank 237 has 131072 points
+Me:243 MyNeibors: 2 356 
+Rank 243 has 131072 points
+Me:247 MyNeibors: 6 360 
+Rank 247 has 131072 points
+Me:250 MyNeibors: 9 363 
+Rank 250 has 131072 points
+Me:766 MyNeibors: 525 879 
+Rank 766 has 131072 points
+Me:258 MyNeibors: 145 499 
+Rank 258 has 131072 points
+Me:262 MyNeibors: 149 503 
+Rank 262 has 131072 points
+Me:266 MyNeibors: 153 507 
+Rank 266 has 131072 points
+Me:270 MyNeibors: 157 511 
+Rank 270 has 131072 points
+Me:785 MyNeibors: 672 898 
+Rank 785 has 131072 points
+Me:789 MyNeibors: 676 902 
+Rank 789 has 131072 points
+Me:793 MyNeibors: 680 906 
+Rank 793 has 131072 points
+Me:797 MyNeibors: 684 910 
+Rank 797 has 131072 points
+Me:291 MyNeibors: 178 404 
+Rank 291 has 131072 points
+Me:293 MyNeibors: 180 406 
+Rank 293 has 131072 points
+Me:297 MyNeibors: 184 410 
+Rank 297 has 131072 points
+Me:813 MyNeibors: 700 926 
+Rank 813 has 131072 points
+Me:305 MyNeibors: 192 418 
+Rank 305 has 131072 points
+Me:311 MyNeibors: 198 424 
+Rank 311 has 131072 points
+Me:313 MyNeibors: 200 426 
+Rank 313 has 131072 points
+Me:317 MyNeibors: 204 430 
+Rank 317 has 131072 points
+Me:833 MyNeibors: 720 946 
+Rank 833 has 131072 points
+Me:325 MyNeibors: 212 438 
+Rank 325 has 131072 points
+Me:329 MyNeibors: 216 442 
+Rank 329 has 131072 points
+Me:845 MyNeibors: 732 958 
+Rank 845 has 131072 points
+Me:849 MyNeibors: 736 962 
+Rank 849 has 131072 points
+Me:853 MyNeibors: 740 966 
+Rank 853 has 131072 points
+Me:347 MyNeibors: 234 460 
+Rank 347 has 131072 points
+Me:861 MyNeibors: 748 974 
+Rank 861 has 131072 points
+Me:865 MyNeibors: 752 978 
+Rank 865 has 131072 points
+Me:869 MyNeibors: 756 982 
+Rank 869 has 131072 points
+Me:361 MyNeibors: 248 474 
+Rank 361 has 131072 points
+Me:365 MyNeibors: 252 478 
+Rank 365 has 131072 points
+Me:370 MyNeibors: 129 483 
+Rank 370 has 131072 points
+Me:887 MyNeibors: 646 1000 
+Rank 887 has 131072 points
+Me:890 MyNeibors: 649 1003 
+Rank 890 has 131072 points
+Me:382 MyNeibors: 141 495 
+Rank 382 has 131072 points
+Me:390 MyNeibors: 277 631 
+Rank 390 has 131072 points
+Me:394 MyNeibors: 281 635 
+Rank 394 has 131072 points
+Me:398 MyNeibors: 285 639 
+Rank 398 has 131072 points
+Me:403 MyNeibors: 290 516 
+Rank 403 has 131072 points
+Me:407 MyNeibors: 294 520 
+Rank 407 has 131072 points
+Me:411 MyNeibors: 298 524 
+Rank 411 has 131072 points
+Me:925 MyNeibors: 812 14 
+Rank 925 has 131072 points
+Me:417 MyNeibors: 304 530 
+Rank 417 has 131072 points
+Me:421 MyNeibors: 308 534 
+Rank 421 has 131072 points
+Me:427 MyNeibors: 314 540 
+Rank 427 has 131072 points
+Me:429 MyNeibors: 316 542 
+Rank 429 has 131072 points
+Me:432 MyNeibors: 335 545 
+Rank 432 has 131072 points
+Me:437 MyNeibors: 324 550 
+Rank 437 has 131072 points
+Me:441 MyNeibors: 328 554 
+Rank 441 has 131072 points
+Me:958 MyNeibors: 845 47 
+Rank 958 has 131072 points
+Me:451 MyNeibors: 338 564 
+Rank 451 has 131072 points
+Me:453 MyNeibors: 340 566 
+Rank 453 has 131072 points
+Me:457 MyNeibors: 344 570 
+Rank 457 has 131072 points
+Me:461 MyNeibors: 348 574 
+Rank 461 has 131072 points
+Me:465 MyNeibors: 352 578 
+Rank 465 has 131072 points
+Me:469 MyNeibors: 356 582 
+Rank 469 has 131072 points
+Me:473 MyNeibors: 360 586 
+Rank 473 has 131072 points
+Me:477 MyNeibors: 364 590 
+Rank 477 has 131072 points
+Me:994 MyNeibors: 881 83 
+Rank 994 has 131072 points
+Me:485 MyNeibors: 372 598 
+Rank 485 has 131072 points
+Me:489 MyNeibors: 376 602 
+Rank 489 has 131072 points
+Me:493 MyNeibors: 380 606 
+Rank 493 has 131072 points
+Me:498 MyNeibors: 257 611 
+Rank 498 has 131072 points
+Me:502 MyNeibors: 261 615 
+Rank 502 has 131072 points
+Me:506 MyNeibors: 265 619 
+Rank 506 has 131072 points
+Me:510 MyNeibors: 269 623 
+Rank 510 has 131072 points
+Me:514 MyNeibors: 401 755 
+Rank 514 has 131072 points
+Me:518 MyNeibors: 405 759 
+Rank 518 has 131072 points
+Me:8 MyNeibors: 919 249 
+Rank 8 has 131072 points
+Me:12 MyNeibors: 923 253 
+Rank 12 has 131072 points
+Me:18 MyNeibors: 929 131 
+Rank 18 has 131072 points
+Me:535 MyNeibors: 422 648 
+Rank 535 has 131072 points
+Me:26 MyNeibors: 937 139 
+Rank 26 has 131072 points
+Me:30 MyNeibors: 941 143 
+Rank 30 has 131072 points
+Me:34 MyNeibors: 945 147 
+Rank 34 has 131072 points
+Me:551 MyNeibors: 438 664 
+Rank 551 has 131072 points
+Me:42 MyNeibors: 953 155 
+Rank 42 has 131072 points
+Me:46 MyNeibors: 957 159 
+Rank 46 has 131072 points
+Me:50 MyNeibors: 961 163 
+Rank 50 has 131072 points
+Me:54 MyNeibors: 965 167 
+Rank 54 has 131072 points
+Me:58 MyNeibors: 969 171 
+Rank 58 has 131072 points
+Me:62 MyNeibors: 973 175 
+Rank 62 has 131072 points
+Me:66 MyNeibors: 977 179 
+Rank 66 has 131072 points
+Me:70 MyNeibors: 981 183 
+Rank 70 has 131072 points
+Me:74 MyNeibors: 985 187 
+Rank 74 has 131072 points
+Me:78 MyNeibors: 989 191 
+Rank 78 has 131072 points
+Me:82 MyNeibors: 993 195 
+Rank 82 has 131072 points
+Me:86 MyNeibors: 997 199 
+Rank 86 has 131072 points
+Me:603 MyNeibors: 490 716 
+Rank 603 has 131072 points
+Me:605 MyNeibors: 492 718 
+Rank 605 has 131072 points
+Me:98 MyNeibors: 1009 211 
+Rank 98 has 131072 points
+Me:102 MyNeibors: 1013 215 
+Rank 102 has 131072 points
+Me:106 MyNeibors: 1017 219 
+Rank 106 has 131072 points
+Me:110 MyNeibors: 1021 223 
+Rank 110 has 131072 points
+Me:626 MyNeibors: 385 739 
+Rank 626 has 131072 points
+Me:630 MyNeibors: 389 743 
+Rank 630 has 131072 points
+Me:120 MyNeibors: 903 233 
+Rank 120 has 131072 points
+Me:124 MyNeibors: 907 237 
+Rank 124 has 131072 points
+Me:130 MyNeibors: 17 371 
+Rank 130 has 131072 points
+Me:646 MyNeibors: 533 887 
+Rank 646 has 131072 points
+Me:650 MyNeibors: 537 891 
+Rank 650 has 131072 points
+Me:654 MyNeibors: 541 895 
+Rank 654 has 131072 points
+Me:659 MyNeibors: 546 772 
+Rank 659 has 131072 points
+Me:151 MyNeibors: 38 264 
+Rank 151 has 131072 points
+Me:665 MyNeibors: 552 778 
+Rank 665 has 131072 points
+Me:675 MyNeibors: 562 788 
+Rank 675 has 131072 points
+Me:677 MyNeibors: 564 790 
+Rank 677 has 131072 points
+Me:681 MyNeibors: 568 794 
+Rank 681 has 131072 points
+Me:685 MyNeibors: 572 798 
+Rank 685 has 131072 points
+Me:179 MyNeibors: 66 292 
+Rank 179 has 131072 points
+Me:181 MyNeibors: 68 294 
+Rank 181 has 131072 points
+Me:697 MyNeibors: 584 810 
+Rank 697 has 131072 points
+Me:701 MyNeibors: 588 814 
+Rank 701 has 131072 points
+Me:705 MyNeibors: 592 818 
+Rank 705 has 131072 points
+Me:199 MyNeibors: 86 312 
+Rank 199 has 131072 points
+Me:201 MyNeibors: 88 314 
+Rank 201 has 131072 points
+Me:717 MyNeibors: 604 830 
+Rank 717 has 131072 points
+Me:211 MyNeibors: 98 324 
+Rank 211 has 131072 points
+Me:725 MyNeibors: 612 838 
+Rank 725 has 131072 points
+Me:729 MyNeibors: 616 842 
+Rank 729 has 131072 points
+Me:737 MyNeibors: 624 850 
+Rank 737 has 131072 points
+Me:741 MyNeibors: 628 854 
+Rank 741 has 131072 points
+Me:233 MyNeibors: 120 346 
+Rank 233 has 131072 points
+Me:241 MyNeibors: 0 354 
+Rank 241 has 131072 points
+Me:758 MyNeibors: 517 871 
+Rank 758 has 131072 points
+Me:762 MyNeibors: 521 875 
+Rank 762 has 131072 points
+Me:254 MyNeibors: 13 367 
+Rank 254 has 131072 points
+Me:770 MyNeibors: 657 1011 
+Rank 770 has 131072 points
+Me:774 MyNeibors: 661 1015 
+Rank 774 has 131072 points
+Me:778 MyNeibors: 665 1019 
+Rank 778 has 131072 points
+Me:782 MyNeibors: 669 1023 
+Rank 782 has 131072 points
+Me:275 MyNeibors: 162 388 
+Rank 275 has 131072 points
+Me:277 MyNeibors: 164 390 
+Rank 277 has 131072 points
+Me:283 MyNeibors: 170 396 
+Rank 283 has 131072 points
+Me:285 MyNeibors: 172 398 
+Rank 285 has 131072 points
+Me:801 MyNeibors: 688 914 
+Rank 801 has 131072 points
+Me:807 MyNeibors: 694 920 
+Rank 807 has 131072 points
+Me:299 MyNeibors: 186 412 
+Rank 299 has 131072 points
+Me:301 MyNeibors: 188 414 
+Rank 301 has 131072 points
+Me:817 MyNeibors: 704 930 
+Rank 817 has 131072 points
+Me:821 MyNeibors: 708 934 
+Rank 821 has 131072 points
+Me:825 MyNeibors: 712 938 
+Rank 825 has 131072 points
+Me:829 MyNeibors: 716 942 
+Rank 829 has 131072 points
+Me:321 MyNeibors: 208 434 
+Rank 321 has 131072 points
+Me:839 MyNeibors: 726 952 
+Rank 839 has 131072 points
+Me:843 MyNeibors: 730 956 
+Rank 843 has 131072 points
+Me:851 MyNeibors: 738 964 
+Rank 851 has 131072 points
+Me:343 MyNeibors: 230 456 
+Rank 343 has 131072 points
+Me:857 MyNeibors: 744 970 
+Rank 857 has 131072 points
+Me:349 MyNeibors: 236 462 
+Rank 349 has 131072 points
+Me:353 MyNeibors: 240 466 
+Rank 353 has 131072 points
+Me:357 MyNeibors: 244 470 
+Rank 357 has 131072 points
+Me:873 MyNeibors: 760 986 
+Rank 873 has 131072 points
+Me:882 MyNeibors: 641 995 
+Rank 882 has 131072 points
+Me:374 MyNeibors: 133 487 
+Rank 374 has 131072 points
+Me:378 MyNeibors: 137 491 
+Rank 378 has 131072 points
+Me:894 MyNeibors: 653 1007 
+Rank 894 has 131072 points
+Me:896 MyNeibors: 799 113 
+Rank 896 has 131072 points
+Me:900 MyNeibors: 787 117 
+Rank 900 has 131072 points
+Me:904 MyNeibors: 791 121 
+Rank 904 has 131072 points
+Me:908 MyNeibors: 795 125 
+Rank 908 has 131072 points
+Me:914 MyNeibors: 801 3 
+Rank 914 has 131072 points
+Me:918 MyNeibors: 805 7 
+Rank 918 has 131072 points
+Me:922 MyNeibors: 809 11 
+Rank 922 has 131072 points
+Me:419 MyNeibors: 306 532 
+Rank 419 has 131072 points
+Me:423 MyNeibors: 310 536 
+Rank 423 has 131072 points
+Me:938 MyNeibors: 825 27 
+Rank 938 has 131072 points
+Me:942 MyNeibors: 829 31 
+Rank 942 has 131072 points
+Me:435 MyNeibors: 322 548 
+Rank 435 has 131072 points
+Me:950 MyNeibors: 837 39 
+Rank 950 has 131072 points
+Me:443 MyNeibors: 330 556 
+Rank 443 has 131072 points
+Me:962 MyNeibors: 849 51 
+Rank 962 has 131072 points
+Me:966 MyNeibors: 853 55 
+Rank 966 has 131072 points
+Me:459 MyNeibors: 346 572 
+Rank 459 has 131072 points
+Me:974 MyNeibors: 861 63 
+Rank 974 has 131072 points
+Me:978 MyNeibors: 865 67 
+Rank 978 has 131072 points
+Me:471 MyNeibors: 358 584 
+Rank 471 has 131072 points
+Me:986 MyNeibors: 873 75 
+Rank 986 has 131072 points
+Me:990 MyNeibors: 877 79 
+Rank 990 has 131072 points
+Me:483 MyNeibors: 370 596 
+Rank 483 has 131072 points
+Me:998 MyNeibors: 885 87 
+Rank 998 has 131072 points
+Me:491 MyNeibors: 378 604 
+Rank 491 has 131072 points
+Me:1006 MyNeibors: 893 95 
+Rank 1006 has 131072 points
+Me:1008 MyNeibors: 783 97 
+Rank 1008 has 131072 points
+Me:1012 MyNeibors: 771 101 
+Rank 1012 has 131072 points
+Me:1016 MyNeibors: 775 105 
+Rank 1016 has 131072 points
+Me:1020 MyNeibors: 779 109 
+Rank 1020 has 131072 points
+Me:512 MyNeibors: 415 753 
+Rank 512 has 131072 points
+Avg time spent in Collision:  0.807776
+Avg time spent in Exchange:  0.571145
+Avg time spent in Stream:  1.733833
+Avg time spent in Update:  2.128523
+Avg. Total Solver Time:  5.241462
+Avg. Time per time-step:  0.104829
+Me:4 MyNeibors: 915 245 
+Rank 4 has 131072 points
+Me:531 MyNeibors: 418 644 
+Rank 531 has 131072 points
+Me:22 MyNeibors: 933 135 
+Rank 22 has 131072 points
+Me:539 MyNeibors: 426 652 
+Rank 539 has 131072 points
+Me:542 MyNeibors: 429 655 
+Rank 542 has 131072 points
+Me:547 MyNeibors: 434 660 
+Rank 547 has 131072 points
+Me:38 MyNeibors: 949 151 
+Rank 38 has 131072 points
+Me:555 MyNeibors: 442 668 
+Rank 555 has 131072 points
+Me:558 MyNeibors: 445 671 
+Rank 558 has 131072 points
+Me:48 MyNeibors: 975 161 
+Rank 48 has 131072 points
+Me:567 MyNeibors: 454 680 
+Rank 567 has 131072 points
+Me:571 MyNeibors: 458 684 
+Rank 571 has 131072 points
+Me:574 MyNeibors: 461 687 
+Rank 574 has 131072 points
+Me:579 MyNeibors: 466 692 
+Rank 579 has 131072 points
+Me:583 MyNeibors: 470 696 
+Rank 583 has 131072 points
+Me:587 MyNeibors: 474 700 
+Rank 587 has 131072 points
+Me:590 MyNeibors: 477 703 
+Rank 590 has 131072 points
+Me:595 MyNeibors: 482 708 
+Rank 595 has 131072 points
+Me:599 MyNeibors: 486 712 
+Rank 599 has 131072 points
+Me:90 MyNeibors: 1001 203 
+Rank 90 has 131072 points
+Me:92 MyNeibors: 1003 205 
+Rank 92 has 131072 points
+Me:611 MyNeibors: 498 724 
+Rank 611 has 131072 points
+Me:615 MyNeibors: 502 728 
+Rank 615 has 131072 points
+Me:619 MyNeibors: 506 732 
+Rank 619 has 131072 points
+Me:622 MyNeibors: 509 735 
+Rank 622 has 131072 points
+Me:624 MyNeibors: 399 737 
+Rank 624 has 131072 points
+Me:116 MyNeibors: 899 229 
+Rank 116 has 131072 points
+Me:128 MyNeibors: 31 369 
+Rank 128 has 131072 points
+Me:134 MyNeibors: 21 375 
+Rank 134 has 131072 points
+Me:136 MyNeibors: 23 377 
+Rank 136 has 131072 points
+Me:140 MyNeibors: 27 381 
+Rank 140 has 131072 points
+Me:147 MyNeibors: 34 260 
+Rank 147 has 131072 points
+Me:663 MyNeibors: 550 776 
+Rank 663 has 131072 points
+Me:667 MyNeibors: 554 780 
+Rank 667 has 131072 points
+Me:158 MyNeibors: 45 271 
+Rank 158 has 131072 points
+Me:163 MyNeibors: 50 276 
+Rank 163 has 131072 points
+Me:167 MyNeibors: 54 280 
+Rank 167 has 131072 points
+Me:683 MyNeibors: 570 796 
+Rank 683 has 131072 points
+Me:174 MyNeibors: 61 287 
+Rank 174 has 131072 points
+Me:691 MyNeibors: 578 804 
+Rank 691 has 131072 points
+Me:183 MyNeibors: 70 296 
+Rank 183 has 131072 points
+Me:187 MyNeibors: 74 300 
+Rank 187 has 131072 points
+Me:702 MyNeibors: 589 815 
+Rank 702 has 131072 points
+Me:707 MyNeibors: 594 820 
+Rank 707 has 131072 points
+Me:709 MyNeibors: 596 822 
+Rank 709 has 131072 points
+Me:203 MyNeibors: 90 316 
+Rank 203 has 131072 points
+Me:206 MyNeibors: 93 319 
+Rank 206 has 131072 points
+Me:723 MyNeibors: 610 836 
+Rank 723 has 131072 points
+Me:215 MyNeibors: 102 328 
+Rank 215 has 131072 points
+Me:219 MyNeibors: 106 332 
+Rank 219 has 131072 points
+Me:222 MyNeibors: 109 335 
+Rank 222 has 131072 points
+Me:739 MyNeibors: 626 852 
+Rank 739 has 131072 points
+Me:231 MyNeibors: 118 344 
+Rank 231 has 131072 points
+Me:747 MyNeibors: 634 860 
+Rank 747 has 131072 points
+Me:750 MyNeibors: 637 863 
+Rank 750 has 131072 points
+Me:242 MyNeibors: 1 355 
+Rank 242 has 131072 points
+Me:246 MyNeibors: 5 359 
+Rank 246 has 131072 points
+Me:248 MyNeibors: 7 361 
+Rank 248 has 131072 points
+Me:764 MyNeibors: 523 877 
+Rank 764 has 131072 points
+Me:256 MyNeibors: 159 497 
+Rank 256 has 131072 points
+Me:260 MyNeibors: 147 501 
+Rank 260 has 131072 points
+Me:264 MyNeibors: 151 505 
+Rank 264 has 131072 points
+Me:268 MyNeibors: 155 509 
+Rank 268 has 131072 points
+Me:787 MyNeibors: 674 900 
+Rank 787 has 131072 points
+Me:791 MyNeibors: 678 904 
+Rank 791 has 131072 points
+Me:795 MyNeibors: 682 908 
+Rank 795 has 131072 points
+Me:286 MyNeibors: 173 399 
+Rank 286 has 131072 points
+Me:803 MyNeibors: 690 916 
+Rank 803 has 131072 points
+Me:295 MyNeibors: 182 408 
+Rank 295 has 131072 points
+Me:809 MyNeibors: 696 922 
+Rank 809 has 131072 points
+Me:814 MyNeibors: 701 927 
+Rank 814 has 131072 points
+Me:307 MyNeibors: 194 420 
+Rank 307 has 131072 points
+Me:823 MyNeibors: 710 936 
+Rank 823 has 131072 points
+Me:315 MyNeibors: 202 428 
+Rank 315 has 131072 points
+Me:318 MyNeibors: 205 431 
+Rank 318 has 131072 points
+Me:835 MyNeibors: 722 948 
+Rank 835 has 131072 points
+Me:327 MyNeibors: 214 440 
+Rank 327 has 131072 points
+Me:331 MyNeibors: 218 444 
+Rank 331 has 131072 points
+Me:334 MyNeibors: 221 447 
+Rank 334 has 131072 points
+Me:339 MyNeibors: 226 452 
+Rank 339 has 131072 points
+Me:855 MyNeibors: 742 968 
+Rank 855 has 131072 points
+Me:859 MyNeibors: 746 972 
+Rank 859 has 131072 points
+Me:862 MyNeibors: 749 975 
+Rank 862 has 131072 points
+Me:867 MyNeibors: 754 980 
+Rank 867 has 131072 points
+Me:871 MyNeibors: 758 984 
+Rank 871 has 131072 points
+Me:363 MyNeibors: 250 476 
+Rank 363 has 131072 points
+Me:878 MyNeibors: 765 991 
+Rank 878 has 131072 points
+Me:880 MyNeibors: 655 993 
+Rank 880 has 131072 points
+Me:886 MyNeibors: 645 999 
+Rank 886 has 131072 points
+Me:888 MyNeibors: 647 1001 
+Rank 888 has 131072 points
+Me:380 MyNeibors: 139 493 
+Rank 380 has 131072 points
+Me:387 MyNeibors: 274 628 
+Rank 387 has 131072 points
+Me:388 MyNeibors: 275 629 
+Rank 388 has 131072 points
+Me:912 MyNeibors: 815 1 
+Rank 912 has 131072 points
+Me:406 MyNeibors: 293 519 
+Rank 406 has 131072 points
+Me:920 MyNeibors: 807 9 
+Rank 920 has 131072 points
+Me:414 MyNeibors: 301 527 
+Rank 414 has 131072 points
+Me:930 MyNeibors: 817 19 
+Rank 930 has 131072 points
+Me:934 MyNeibors: 821 23 
+Rank 934 has 131072 points
+Me:936 MyNeibors: 823 25 
+Rank 936 has 131072 points
+Me:430 MyNeibors: 317 543 
+Rank 430 has 131072 points
+Me:946 MyNeibors: 833 35 
+Rank 946 has 131072 points
+Me:439 MyNeibors: 326 552 
+Rank 439 has 131072 points
+Me:954 MyNeibors: 841 43 
+Rank 954 has 131072 points
+Me:446 MyNeibors: 333 559 
+Rank 446 has 131072 points
+Me:960 MyNeibors: 863 49 
+Rank 960 has 131072 points
+Me:455 MyNeibors: 342 568 
+Rank 455 has 131072 points
+Me:970 MyNeibors: 857 59 
+Rank 970 has 131072 points
+Me:972 MyNeibors: 859 61 
+Rank 972 has 131072 points
+Me:467 MyNeibors: 354 580 
+Rank 467 has 131072 points
+Me:982 MyNeibors: 869 71 
+Rank 982 has 131072 points
+Me:475 MyNeibors: 362 588 
+Rank 475 has 131072 points
+Me:478 MyNeibors: 365 591 
+Rank 478 has 131072 points
+Me:992 MyNeibors: 895 81 
+Rank 992 has 131072 points
+Me:487 MyNeibors: 374 600 
+Rank 487 has 131072 points
+Me:1002 MyNeibors: 889 91 
+Rank 1002 has 131072 points
+Me:1004 MyNeibors: 891 93 
+Rank 1004 has 131072 points
+Me:496 MyNeibors: 271 609 
+Rank 496 has 131072 points
+Me:520 MyNeibors: 407 761 
+Rank 520 has 131072 points
+Me:524 MyNeibors: 411 765 
+Rank 524 has 131072 points
+Me:16 MyNeibors: 943 129 
+Rank 16 has 131072 points
+Me:20 MyNeibors: 931 133 
+Rank 20 has 131072 points
+Me:24 MyNeibors: 935 137 
+Rank 24 has 131072 points
+Me:28 MyNeibors: 939 141 
+Rank 28 has 131072 points
+Me:32 MyNeibors: 959 145 
+Rank 32 has 131072 points
+Me:550 MyNeibors: 437 663 
+Rank 550 has 131072 points
+Me:40 MyNeibors: 951 153 
+Rank 40 has 131072 points
+Me:44 MyNeibors: 955 157 
+Rank 44 has 131072 points
+Me:560 MyNeibors: 463 673 
+Rank 560 has 131072 points
+Me:52 MyNeibors: 963 165 
+Rank 52 has 131072 points
+Me:56 MyNeibors: 967 169 
+Rank 56 has 131072 points
+Me:60 MyNeibors: 971 173 
+Rank 60 has 131072 points
+Me:64 MyNeibors: 991 177 
+Rank 64 has 131072 points
+Me:68 MyNeibors: 979 181 
+Rank 68 has 131072 points
+Me:72 MyNeibors: 983 185 
+Rank 72 has 131072 points
+Me:76 MyNeibors: 987 189 
+Rank 76 has 131072 points
+Me:80 MyNeibors: 1007 193 
+Rank 80 has 131072 points
+Me:84 MyNeibors: 995 197 
+Rank 84 has 131072 points
+Me:88 MyNeibors: 999 201 
+Rank 88 has 131072 points
+Me:606 MyNeibors: 493 719 
+Rank 606 has 131072 points
+Me:96 MyNeibors: 1023 209 
+Rank 96 has 131072 points
+Me:100 MyNeibors: 1011 213 
+Rank 100 has 131072 points
+Me:104 MyNeibors: 1015 217 
+Rank 104 has 131072 points
+Me:108 MyNeibors: 1019 221 
+Rank 108 has 131072 points
+Me:112 MyNeibors: 911 225 
+Rank 112 has 131072 points
+Me:632 MyNeibors: 391 745 
+Rank 632 has 131072 points
+Me:636 MyNeibors: 395 749 
+Rank 636 has 131072 points
+Me:642 MyNeibors: 529 883 
+Rank 642 has 131072 points
+Me:644 MyNeibors: 531 885 
+Rank 644 has 131072 points
+Me:648 MyNeibors: 535 889 
+Rank 648 has 131072 points
+Me:652 MyNeibors: 539 893 
+Rank 652 has 131072 points
+Me:656 MyNeibors: 559 769 
+Rank 656 has 131072 points
+Me:150 MyNeibors: 37 263 
+Rank 150 has 131072 points
+Me:155 MyNeibors: 42 268 
+Rank 155 has 131072 points
+Me:670 MyNeibors: 557 783 
+Rank 670 has 131072 points
+Me:672 MyNeibors: 575 785 
+Rank 672 has 131072 points
+Me:679 MyNeibors: 566 792 
+Rank 679 has 131072 points
+Me:170 MyNeibors: 57 283 
+Rank 170 has 131072 points
+Me:686 MyNeibors: 573 799 
+Rank 686 has 131072 points
+Me:688 MyNeibors: 591 801 
+Rank 688 has 131072 points
+Me:695 MyNeibors: 582 808 
+Rank 695 has 131072 points
+Me:699 MyNeibors: 586 812 
+Rank 699 has 131072 points
+Me:190 MyNeibors: 77 303 
+Rank 190 has 131072 points
+Me:192 MyNeibors: 95 305 
+Rank 192 has 131072 points
+Me:711 MyNeibors: 598 824 
+Rank 711 has 131072 points
+Me:715 MyNeibors: 602 828 
+Rank 715 has 131072 points
+Me:718 MyNeibors: 605 831 
+Rank 718 has 131072 points
+Me:720 MyNeibors: 623 833 
+Rank 720 has 131072 points
+Me:727 MyNeibors: 614 840 
+Rank 727 has 131072 points
+Me:731 MyNeibors: 618 844 
+Rank 731 has 131072 points
+Me:734 MyNeibors: 621 847 
+Rank 734 has 131072 points
+Me:224 MyNeibors: 127 337 
+Rank 224 has 131072 points
+Me:743 MyNeibors: 630 856 
+Rank 743 has 131072 points
+Me:235 MyNeibors: 122 348 
+Rank 235 has 131072 points
+Me:238 MyNeibors: 125 351 
+Rank 238 has 131072 points
+Me:754 MyNeibors: 513 867 
+Rank 754 has 131072 points
+Me:756 MyNeibors: 515 869 
+Rank 756 has 131072 points
+Me:760 MyNeibors: 519 873 
+Rank 760 has 131072 points
+Me:252 MyNeibors: 11 365 
+Rank 252 has 131072 points
+Me:768 MyNeibors: 671 1009 
+Rank 768 has 131072 points
+Me:772 MyNeibors: 659 1013 
+Rank 772 has 131072 points
+Me:776 MyNeibors: 663 1017 
+Rank 776 has 131072 points
+Me:780 MyNeibors: 667 1021 
+Rank 780 has 131072 points
+Me:784 MyNeibors: 687 897 
+Rank 784 has 131072 points
+Me:279 MyNeibors: 166 392 
+Rank 279 has 131072 points
+Me:282 MyNeibors: 169 395 
+Rank 282 has 131072 points
+Me:798 MyNeibors: 685 911 
+Rank 798 has 131072 points
+Me:288 MyNeibors: 191 401 
+Rank 288 has 131072 points
+Me:806 MyNeibors: 693 919 
+Rank 806 has 131072 points
+Me:811 MyNeibors: 698 924 
+Rank 811 has 131072 points
+Me:302 MyNeibors: 189 415 
+Rank 302 has 131072 points
+Me:819 MyNeibors: 706 932 
+Rank 819 has 131072 points
+Me:310 MyNeibors: 197 423 
+Rank 310 has 131072 points
+Me:827 MyNeibors: 714 940 
+Rank 827 has 131072 points
+Me:830 MyNeibors: 717 943 
+Rank 830 has 131072 points
+Me:323 MyNeibors: 210 436 
+Rank 323 has 131072 points
+Me:326 MyNeibors: 213 439 
+Rank 326 has 131072 points
+Me:842 MyNeibors: 729 955 
+Rank 842 has 131072 points
+Me:846 MyNeibors: 733 959 
+Rank 846 has 131072 points
+Me:848 MyNeibors: 751 961 
+Rank 848 has 131072 points
+Me:342 MyNeibors: 229 455 
+Rank 342 has 131072 points
+Me:346 MyNeibors: 233 459 
+Rank 346 has 131072 points
+Me:350 MyNeibors: 237 463 
+Rank 350 has 131072 points
+Me:355 MyNeibors: 242 468 
+Rank 355 has 131072 points
+Me:359 MyNeibors: 246 472 
+Rank 359 has 131072 points
+Me:875 MyNeibors: 762 988 
+Rank 875 has 131072 points
+Me:366 MyNeibors: 253 479 
+Rank 366 has 131072 points
+Me:368 MyNeibors: 143 481 
+Rank 368 has 131072 points
+Me:884 MyNeibors: 643 997 
+Rank 884 has 131072 points
+Me:376 MyNeibors: 135 489 
+Rank 376 has 131072 points
+Me:892 MyNeibors: 651 1005 
+Rank 892 has 131072 points
+Me:385 MyNeibors: 272 626 
+Rank 385 has 131072 points
+Me:392 MyNeibors: 279 633 
+Rank 392 has 131072 points
+Me:396 MyNeibors: 283 637 
+Rank 396 has 131072 points
+Me:916 MyNeibors: 803 5 
+Rank 916 has 131072 points
+Me:410 MyNeibors: 297 523 
+Rank 410 has 131072 points
+Me:926 MyNeibors: 813 15 
+Rank 926 has 131072 points
+Me:928 MyNeibors: 831 17 
+Rank 928 has 131072 points
+Me:422 MyNeibors: 309 535 
+Rank 422 has 131072 points
+Me:426 MyNeibors: 313 539 
+Rank 426 has 131072 points
+Me:940 MyNeibors: 827 29 
+Rank 940 has 131072 points
+Me:944 MyNeibors: 847 33 
+Rank 944 has 131072 points
+Me:948 MyNeibors: 835 37 
+Rank 948 has 131072 points
+Me:442 MyNeibors: 329 555 
+Rank 442 has 131072 points
+Me:956 MyNeibors: 843 45 
+Rank 956 has 131072 points
+Me:450 MyNeibors: 337 563 
+Rank 450 has 131072 points
+Me:964 MyNeibors: 851 53 
+Rank 964 has 131072 points
+Me:458 MyNeibors: 345 571 
+Rank 458 has 131072 points
+Me:462 MyNeibors: 349 575 
+Rank 462 has 131072 points
+Me:976 MyNeibors: 879 65 
+Rank 976 has 131072 points
+Me:980 MyNeibors: 867 69 
+Rank 980 has 131072 points
+Me:984 MyNeibors: 871 73 
+Rank 984 has 131072 points
+Me:988 MyNeibors: 875 77 
+Rank 988 has 131072 points
+Me:996 MyNeibors: 883 85 
+Rank 996 has 131072 points
+Me:1000 MyNeibors: 887 89 
+Rank 1000 has 131072 points
+Me:494 MyNeibors: 381 607 
+Rank 494 has 131072 points
+Me:500 MyNeibors: 259 613 
+Rank 500 has 131072 points
+Me:504 MyNeibors: 263 617 
+Rank 504 has 131072 points
+Me:508 MyNeibors: 267 621 
+Rank 508 has 131072 points
+Me:516 MyNeibors: 403 757 
+Rank 516 has 131072 points
+Me:534 MyNeibors: 421 647 
+Rank 534 has 131072 points
+Me:538 MyNeibors: 425 651 
+Rank 538 has 131072 points
+Me:36 MyNeibors: 947 149 
+Rank 36 has 131072 points
+Me:554 MyNeibors: 441 667 
+Rank 554 has 131072 points
+Me:566 MyNeibors: 453 679 
+Rank 566 has 131072 points
+Me:570 MyNeibors: 457 683 
+Rank 570 has 131072 points
+Me:582 MyNeibors: 469 695 
+Rank 582 has 131072 points
+Me:586 MyNeibors: 473 699 
+Rank 586 has 131072 points
+Me:602 MyNeibors: 489 715 
+Rank 602 has 131072 points
+Me:614 MyNeibors: 501 727 
+Rank 614 has 131072 points
+Me:618 MyNeibors: 505 731 
+Rank 618 has 131072 points
+Me:628 MyNeibors: 387 741 
+Rank 628 has 131072 points
+Me:132 MyNeibors: 19 373 
+Rank 132 has 131072 points
+Me:658 MyNeibors: 545 771 
+Rank 658 has 131072 points
+Me:662 MyNeibors: 549 775 
+Rank 662 has 131072 points
+Me:154 MyNeibors: 41 267 
+Rank 154 has 131072 points
+Me:156 MyNeibors: 43 269 
+Rank 156 has 131072 points
+Me:674 MyNeibors: 561 787 
+Rank 674 has 131072 points
+Me:166 MyNeibors: 53 279 
+Rank 166 has 131072 points
+Me:682 MyNeibors: 569 795 
+Rank 682 has 131072 points
+Me:172 MyNeibors: 59 285 
+Rank 172 has 131072 points
+Me:177 MyNeibors: 64 290 
+Rank 177 has 131072 points
+Me:694 MyNeibors: 581 807 
+Rank 694 has 131072 points
+Me:186 MyNeibors: 73 299 
+Rank 186 has 131072 points
+Me:700 MyNeibors: 587 813 
+Rank 700 has 131072 points
+Me:194 MyNeibors: 81 307 
+Rank 194 has 131072 points
+Me:198 MyNeibors: 85 311 
+Rank 198 has 131072 points
+Me:202 MyNeibors: 89 315 
+Rank 202 has 131072 points
+Me:204 MyNeibors: 91 317 
+Rank 204 has 131072 points
+Me:208 MyNeibors: 111 321 
+Rank 208 has 131072 points
+Me:214 MyNeibors: 101 327 
+Rank 214 has 131072 points
+Me:730 MyNeibors: 617 843 
+Rank 730 has 131072 points
+Me:220 MyNeibors: 107 333 
+Rank 220 has 131072 points
+Me:736 MyNeibors: 639 849 
+Rank 736 has 131072 points
+Me:230 MyNeibors: 117 343 
+Rank 230 has 131072 points
+Me:746 MyNeibors: 633 859 
+Rank 746 has 131072 points
+Me:748 MyNeibors: 635 861 
+Rank 748 has 131072 points
+Me:240 MyNeibors: 15 353 
+Rank 240 has 131072 points
+Me:244 MyNeibors: 3 357 
+Rank 244 has 131072 points
+Me:274 MyNeibors: 161 387 
+Rank 274 has 131072 points
+Me:790 MyNeibors: 677 903 
+Rank 790 has 131072 points
+Me:794 MyNeibors: 681 907 
+Rank 794 has 131072 points
+Me:796 MyNeibors: 683 909 
+Rank 796 has 131072 points
+Me:800 MyNeibors: 703 913 
+Rank 800 has 131072 points
+Me:294 MyNeibors: 181 407 
+Rank 294 has 131072 points
+Me:298 MyNeibors: 185 411 
+Rank 298 has 131072 points
+Me:812 MyNeibors: 699 925 
+Rank 812 has 131072 points
+Me:304 MyNeibors: 207 417 
+Rank 304 has 131072 points
+Me:822 MyNeibors: 709 935 
+Rank 822 has 131072 points
+Me:314 MyNeibors: 201 427 
+Rank 314 has 131072 points
+Me:316 MyNeibors: 203 429 
+Rank 316 has 131072 points
+Me:832 MyNeibors: 735 945 
+Rank 832 has 131072 points
+Me:838 MyNeibors: 725 951 
+Rank 838 has 131072 points
+Me:330 MyNeibors: 217 443 
+Rank 330 has 131072 points
+Me:332 MyNeibors: 219 445 
+Rank 332 has 131072 points
+Me:850 MyNeibors: 737 963 
+Rank 850 has 131072 points
+Me:854 MyNeibors: 741 967 
+Rank 854 has 131072 points
+Me:858 MyNeibors: 745 971 
+Rank 858 has 131072 points
+Me:348 MyNeibors: 235 461 
+Rank 348 has 131072 points
+Me:864 MyNeibors: 767 977 
+Rank 864 has 131072 points
+Me:870 MyNeibors: 757 983 
+Rank 870 has 131072 points
+Me:362 MyNeibors: 249 475 
+Rank 362 has 131072 points
+Me:876 MyNeibors: 763 989 
+Rank 876 has 131072 points
+Me:372 MyNeibors: 131 485 
+Rank 372 has 131072 points
+Me:400 MyNeibors: 303 513 
+Rank 400 has 131072 points
+Me:412 MyNeibors: 299 525 
+Rank 412 has 131072 points
+Me:932 MyNeibors: 819 21 
+Rank 932 has 131072 points
+Me:438 MyNeibors: 325 551 
+Rank 438 has 131072 points
+Me:952 MyNeibors: 839 41 
+Rank 952 has 131072 points
+Me:448 MyNeibors: 351 561 
+Rank 448 has 131072 points
+Me:454 MyNeibors: 341 567 
+Rank 454 has 131072 points
+Me:968 MyNeibors: 855 57 
+Rank 968 has 131072 points
+Me:470 MyNeibors: 357 583 
+Rank 470 has 131072 points
+Me:474 MyNeibors: 361 587 
+Rank 474 has 131072 points
+Me:482 MyNeibors: 369 595 
+Rank 482 has 131072 points
+Me:486 MyNeibors: 373 599 
+Rank 486 has 131072 points
+Me:490 MyNeibors: 377 603 
+Rank 490 has 131072 points
+Me:528 MyNeibors: 431 641 
+Rank 528 has 131072 points
+Me:540 MyNeibors: 427 653 
+Rank 540 has 131072 points
+Me:544 MyNeibors: 447 657 
+Rank 544 has 131072 points
+Me:556 MyNeibors: 443 669 
+Rank 556 has 131072 points
+Me:562 MyNeibors: 449 675 
+Rank 562 has 131072 points
+Me:572 MyNeibors: 459 685 
+Rank 572 has 131072 points
+Me:576 MyNeibors: 479 689 
+Rank 576 has 131072 points
+Me:588 MyNeibors: 475 701 
+Rank 588 has 131072 points
+Me:592 MyNeibors: 495 705 
+Rank 592 has 131072 points
+Me:598 MyNeibors: 485 711 
+Rank 598 has 131072 points
+Me:604 MyNeibors: 491 717 
+Rank 604 has 131072 points
+Me:608 MyNeibors: 511 721 
+Rank 608 has 131072 points
+Me:620 MyNeibors: 507 733 
+Rank 620 has 131072 points
+Me:640 MyNeibors: 543 881 
+Rank 640 has 131072 points
+Me:145 MyNeibors: 32 258 
+Rank 145 has 131072 points
+Me:148 MyNeibors: 35 261 
+Rank 148 has 131072 points
+Me:666 MyNeibors: 553 779 
+Rank 666 has 131072 points
+Me:668 MyNeibors: 555 781 
+Rank 668 has 131072 points
+Me:162 MyNeibors: 49 275 
+Rank 162 has 131072 points
+Me:678 MyNeibors: 565 791 
+Rank 678 has 131072 points
+Me:168 MyNeibors: 55 281 
+Rank 168 has 131072 points
+Me:684 MyNeibors: 571 797 
+Rank 684 has 131072 points
+Me:178 MyNeibors: 65 291 
+Rank 178 has 131072 points
+Me:182 MyNeibors: 69 295 
+Rank 182 has 131072 points
+Me:698 MyNeibors: 585 811 
+Rank 698 has 131072 points
+Me:188 MyNeibors: 75 301 
+Rank 188 has 131072 points
+Me:704 MyNeibors: 607 817 
+Rank 704 has 131072 points
+Me:710 MyNeibors: 597 823 
+Rank 710 has 131072 points
+Me:714 MyNeibors: 601 827 
+Rank 714 has 131072 points
+Me:210 MyNeibors: 97 323 
+Rank 210 has 131072 points
+Me:726 MyNeibors: 613 839 
+Rank 726 has 131072 points
+Me:218 MyNeibors: 105 331 
+Rank 218 has 131072 points
+Me:732 MyNeibors: 619 845 
+Rank 732 has 131072 points
+Me:226 MyNeibors: 113 339 
+Rank 226 has 131072 points
+Me:742 MyNeibors: 629 855 
+Rank 742 has 131072 points
+Me:234 MyNeibors: 121 347 
+Rank 234 has 131072 points
+Me:236 MyNeibors: 123 349 
+Rank 236 has 131072 points
+Me:752 MyNeibors: 527 865 
+Rank 752 has 131072 points
+Me:273 MyNeibors: 160 386 
+Rank 273 has 131072 points
+Me:278 MyNeibors: 165 391 
+Rank 278 has 131072 points
+Me:280 MyNeibors: 167 393 
+Rank 280 has 131072 points
+Me:284 MyNeibors: 171 397 
+Rank 284 has 131072 points
+Me:290 MyNeibors: 177 403 
+Rank 290 has 131072 points
+Me:804 MyNeibors: 691 917 
+Rank 804 has 131072 points
+Me:810 MyNeibors: 697 923 
+Rank 810 has 131072 points
+Me:300 MyNeibors: 187 413 
+Rank 300 has 131072 points
+Me:816 MyNeibors: 719 929 
+Rank 816 has 131072 points
+Me:308 MyNeibors: 195 421 
+Rank 308 has 131072 points
+Me:826 MyNeibors: 713 939 
+Rank 826 has 131072 points
+Me:828 MyNeibors: 715 941 
+Rank 828 has 131072 points
+Me:320 MyNeibors: 223 433 
+Rank 320 has 131072 points
+Me:836 MyNeibors: 723 949 
+Rank 836 has 131072 points
+Me:840 MyNeibors: 727 953 
+Rank 840 has 131072 points
+Me:844 MyNeibors: 731 957 
+Rank 844 has 131072 points
+Me:337 MyNeibors: 224 450 
+Rank 337 has 131072 points
+Me:340 MyNeibors: 227 453 
+Rank 340 has 131072 points
+Me:344 MyNeibors: 231 457 
+Rank 344 has 131072 points
+Me:860 MyNeibors: 747 973 
+Rank 860 has 131072 points
+Me:352 MyNeibors: 255 465 
+Rank 352 has 131072 points
+Me:358 MyNeibors: 245 471 
+Rank 358 has 131072 points
+Me:874 MyNeibors: 761 987 
+Rank 874 has 131072 points
+Me:364 MyNeibors: 251 477 
+Rank 364 has 131072 points
+Me:386 MyNeibors: 273 627 
+Rank 386 has 131072 points
+Me:402 MyNeibors: 289 515 
+Rank 402 has 131072 points
+Me:404 MyNeibors: 291 517 
+Rank 404 has 131072 points
+Me:408 MyNeibors: 295 521 
+Rank 408 has 131072 points
+Me:416 MyNeibors: 319 529 
+Rank 416 has 131072 points
+Me:424 MyNeibors: 311 537 
+Rank 424 has 131072 points
+Me:428 MyNeibors: 315 541 
+Rank 428 has 131072 points
+Me:434 MyNeibors: 321 547 
+Rank 434 has 131072 points
+Me:444 MyNeibors: 331 557 
+Rank 444 has 131072 points
+Me:460 MyNeibors: 347 573 
+Rank 460 has 131072 points
+Me:464 MyNeibors: 367 577 
+Rank 464 has 131072 points
+Me:476 MyNeibors: 363 589 
+Rank 476 has 131072 points
+Me:481 MyNeibors: 368 594 
+Rank 481 has 131072 points
+Me:492 MyNeibors: 379 605 
+Rank 492 has 131072 points
+Me:530 MyNeibors: 417 643 
+Rank 530 has 131072 points
+Me:532 MyNeibors: 419 645 
+Rank 532 has 131072 points
+Me:536 MyNeibors: 423 649 
+Rank 536 has 131072 points
+Me:546 MyNeibors: 433 659 
+Rank 546 has 131072 points
+Me:548 MyNeibors: 435 661 
+Rank 548 has 131072 points
+Me:552 MyNeibors: 439 665 
+Rank 552 has 131072 points
+Me:564 MyNeibors: 451 677 
+Rank 564 has 131072 points
+Me:568 MyNeibors: 455 681 
+Rank 568 has 131072 points
+Me:578 MyNeibors: 465 691 
+Rank 578 has 131072 points
+Me:580 MyNeibors: 467 693 
+Rank 580 has 131072 points
+Me:584 MyNeibors: 471 697 
+Rank 584 has 131072 points
+Me:594 MyNeibors: 481 707 
+Rank 594 has 131072 points
+Me:596 MyNeibors: 483 709 
+Rank 596 has 131072 points
+Me:600 MyNeibors: 487 713 
+Rank 600 has 131072 points
+Me:610 MyNeibors: 497 723 
+Rank 610 has 131072 points
+Me:612 MyNeibors: 499 725 
+Rank 612 has 131072 points
+Me:616 MyNeibors: 503 729 
+Rank 616 has 131072 points
+Me:146 MyNeibors: 33 259 
+Rank 146 has 131072 points
+Me:660 MyNeibors: 547 773 
+Rank 660 has 131072 points
+Me:664 MyNeibors: 551 777 
+Rank 664 has 131072 points
+Me:161 MyNeibors: 48 274 
+Rank 161 has 131072 points
+Me:164 MyNeibors: 51 277 
+Rank 164 has 131072 points
+Me:680 MyNeibors: 567 793 
+Rank 680 has 131072 points
+Me:690 MyNeibors: 577 803 
+Rank 690 has 131072 points
+Me:180 MyNeibors: 67 293 
+Rank 180 has 131072 points
+Me:184 MyNeibors: 71 297 
+Rank 184 has 131072 points
+Me:706 MyNeibors: 593 819 
+Rank 706 has 131072 points
+Me:196 MyNeibors: 83 309 
+Rank 196 has 131072 points
+Me:200 MyNeibors: 87 313 
+Rank 200 has 131072 points
+Me:716 MyNeibors: 603 829 
+Rank 716 has 131072 points
+Me:722 MyNeibors: 609 835 
+Rank 722 has 131072 points
+Me:212 MyNeibors: 99 325 
+Rank 212 has 131072 points
+Me:216 MyNeibors: 103 329 
+Rank 216 has 131072 points
+Me:738 MyNeibors: 625 851 
+Rank 738 has 131072 points
+Me:228 MyNeibors: 115 341 
+Rank 228 has 131072 points
+Me:744 MyNeibors: 631 857 
+Rank 744 has 131072 points
+Me:786 MyNeibors: 673 899 
+Rank 786 has 131072 points
+Me:788 MyNeibors: 675 901 
+Rank 788 has 131072 points
+Me:792 MyNeibors: 679 905 
+Rank 792 has 131072 points
+Me:802 MyNeibors: 689 915 
+Rank 802 has 131072 points
+Me:292 MyNeibors: 179 405 
+Rank 292 has 131072 points
+Me:296 MyNeibors: 183 409 
+Rank 296 has 131072 points
+Me:818 MyNeibors: 705 931 
+Rank 818 has 131072 points
+Me:820 MyNeibors: 707 933 
+Rank 820 has 131072 points
+Me:312 MyNeibors: 199 425 
+Rank 312 has 131072 points
+Me:834 MyNeibors: 721 947 
+Rank 834 has 131072 points
+Me:324 MyNeibors: 211 437 
+Rank 324 has 131072 points
+Me:328 MyNeibors: 215 441 
+Rank 328 has 131072 points
+Me:338 MyNeibors: 225 451 
+Rank 338 has 131072 points
+Me:856 MyNeibors: 743 969 
+Rank 856 has 131072 points
+Me:866 MyNeibors: 753 979 
+Rank 866 has 131072 points
+Me:868 MyNeibors: 755 981 
+Rank 868 has 131072 points
+Me:360 MyNeibors: 247 473 
+Rank 360 has 131072 points
+Me:384 MyNeibors: 287 625 
+Rank 384 has 131072 points
+Me:924 MyNeibors: 811 13 
+Rank 924 has 131072 points
+Me:418 MyNeibors: 305 531 
+Rank 418 has 131072 points
+Me:420 MyNeibors: 307 533 
+Rank 420 has 131072 points
+Me:433 MyNeibors: 320 546 
+Rank 433 has 131072 points
+Me:436 MyNeibors: 323 549 
+Rank 436 has 131072 points
+Me:440 MyNeibors: 327 553 
+Rank 440 has 131072 points
+Me:452 MyNeibors: 339 565 
+Rank 452 has 131072 points
+Me:456 MyNeibors: 343 569 
+Rank 456 has 131072 points
+Me:466 MyNeibors: 353 579 
+Rank 466 has 131072 points
+Me:468 MyNeibors: 355 581 
+Rank 468 has 131072 points
+Me:472 MyNeibors: 359 585 
+Rank 472 has 131072 points
+Me:484 MyNeibors: 371 597 
+Rank 484 has 131072 points
+Me:488 MyNeibors: 375 601 
+Rank 488 has 131072 points
+Me:152 MyNeibors: 39 265 
+Rank 152 has 131072 points
+Me:676 MyNeibors: 563 789 
+Rank 676 has 131072 points
+Me:692 MyNeibors: 579 805 
+Rank 692 has 131072 points
+Me:696 MyNeibors: 583 809 
+Rank 696 has 131072 points
+Me:708 MyNeibors: 595 821 
+Rank 708 has 131072 points
+Me:712 MyNeibors: 599 825 
+Rank 712 has 131072 points
+Me:724 MyNeibors: 611 837 
+Rank 724 has 131072 points
+Me:728 MyNeibors: 615 841 
+Rank 728 has 131072 points
+Me:740 MyNeibors: 627 853 
+Rank 740 has 131072 points
+Me:232 MyNeibors: 119 345 
+Rank 232 has 131072 points
+Me:276 MyNeibors: 163 389 
+Rank 276 has 131072 points
+Me:808 MyNeibors: 695 921 
+Rank 808 has 131072 points
+Me:306 MyNeibors: 193 419 
+Rank 306 has 131072 points
+Me:824 MyNeibors: 711 937 
+Rank 824 has 131072 points
+Me:322 MyNeibors: 209 435 
+Rank 322 has 131072 points
+Me:852 MyNeibors: 739 965 
+Rank 852 has 131072 points
+Me:354 MyNeibors: 241 467 
+Rank 354 has 131072 points
+Me:356 MyNeibors: 243 469 
+Rank 356 has 131072 points
+Me:872 MyNeibors: 759 985 
+Rank 872 has 131072 points
