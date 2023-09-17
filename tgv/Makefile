@@ -13,7 +13,7 @@ SRC2=$(wildcard ./src/*.cpp)
 default: build
 	echo "Start Build"
 
-CXX = mpicxx
+CXX = CC
 EXE = ${EXE_NAME}.exe
 #KOKKOS_ARCH = "Zen"
 #KOKKOS_ARCH = "Ampere80"

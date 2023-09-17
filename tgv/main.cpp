@@ -38,21 +38,27 @@ int main(int argc, char *argv[])
 
         //l1.MPIoutput(0);
         //l1.setup_subdomain();
-        if (l1.comm.me == 0) printf("Warm-Up\n");
-        //warm-up
+        if (l1.comm.me == 0) {
+            std::cout << "Warm-Up" << std::endl; 
+	}
 
-        for (int it = 1; it <= 10; it++)
+	//warm-up
+        for (int it = 1; it <= 5; it++)
         {
             l1.Collision();
             l1.exchange();
             l1.Streaming();
             l1.Update();
-            if (l1.comm.me == 0) printf("Warm-UP, time-step = %f\n", (double) it);
-        }
-    
-        if (l1.comm.me == 0) printf("Reset & Run Main loop\n");
-	l1.Initialize(); 
+            if (l1.comm.me == 0) {
+		std::cout << "Warm-Up, Time-Step: " << it << std::endl; 
+	    }
+	}
 
+        if (l1.comm.me == 0) {
+        	std::cout << "Reset and Run Main-Loop " << std::endl;
+	}
+
+	l1.Initialize(); 
         start = MPI_Wtime();
         for (int it = 1; it <= s1.Time; it++)
         {
@@ -99,7 +105,9 @@ int main(int argc, char *argv[])
                     printf("time=%f\n", end - start);
             }
 	    */
-            if (l1.comm.me == 0) printf("Main Loop, time-step = %f\n", (double) it);
+            if (l1.comm.me == 0) {
+	    	std::cout << "Main-Loop, time-step = " << it  <<std::endl;
+	    }
 
         }
         end = MPI_Wtime();
