@@ -1,0 +1,354 @@
+NUM_OF_NODES= 16 TOTAL_NUM_RANKS= 64 RANKS_PER_NODE= 4 THREADS_PER_RANK= 1
+-------------------------------
+KOKKOS_HOME=/lus/grand/projects/IMEXLBM/spatel/kokkos/polaris/install/kokkos
+-------------------------------
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 17 LOCAL_RANK= 1 gpu= 2”
+“RANK= 19 LOCAL_RANK= 3 gpu= 0”
+“RANK= 40 LOCAL_RANK= 0 gpu= 3”
+“RANK= 41 LOCAL_RANK= 1 gpu= 2”
+“RANK= 18 LOCAL_RANK= 2 gpu= 1”
+“RANK= 42 LOCAL_RANK= 2 gpu= 1”
+“RANK= 43 LOCAL_RANK= 3 gpu= 0”
+“RANK= 16 LOCAL_RANK= 0 gpu= 3”
+“RANK= 60 LOCAL_RANK= 0 gpu= 3”
+“RANK= 63 LOCAL_RANK= 3 gpu= 0”
+“RANK= 61 LOCAL_RANK= 1 gpu= 2”
+“RANK= 62 LOCAL_RANK= 2 gpu= 1”
+“RANK= 51 LOCAL_RANK= 3 gpu= 0”
+“RANK= 48 LOCAL_RANK= 0 gpu= 3”
+“RANK= 49 LOCAL_RANK= 1 gpu= 2”
+“RANK= 50 LOCAL_RANK= 2 gpu= 1”
+“RANK= 39 LOCAL_RANK= 3 gpu= 0”
+“RANK= 37 LOCAL_RANK= 1 gpu= 2”
+“RANK= 36 LOCAL_RANK= 0 gpu= 3”
+“RANK= 38 LOCAL_RANK= 2 gpu= 1”
+“RANK= 14 LOCAL_RANK= 2 gpu= 1”
+“RANK= 15 LOCAL_RANK= 3 gpu= 0”
+“RANK= 12 LOCAL_RANK= 0 gpu= 3”
+“RANK= 13 LOCAL_RANK= 1 gpu= 2”
+“RANK= 20 LOCAL_RANK= 0 gpu= 3”
+“RANK= 22 LOCAL_RANK= 2 gpu= 1”
+“RANK= 21 LOCAL_RANK= 1 gpu= 2”
+“RANK= 44 LOCAL_RANK= 0 gpu= 3”
+“RANK= 23 LOCAL_RANK= 3 gpu= 0”
+“RANK= 45 LOCAL_RANK= 1 gpu= 2”
+“RANK= 47 LOCAL_RANK= 3 gpu= 0”
+“RANK= 46 LOCAL_RANK= 2 gpu= 1”
+“RANK= 24 LOCAL_RANK= 0 gpu= 3”
+“RANK= 25 LOCAL_RANK= 1 gpu= 2”
+“RANK= 26 LOCAL_RANK= 2 gpu= 1”
+“RANK= 27 LOCAL_RANK= 3 gpu= 0”
+“RANK= 10 LOCAL_RANK= 2 gpu= 1”
+“RANK= 8 LOCAL_RANK= 0 gpu= 3”
+“RANK= 9 LOCAL_RANK= 1 gpu= 2”
+“RANK= 11 LOCAL_RANK= 3 gpu= 0”
+“RANK= 29 LOCAL_RANK= 1 gpu= 2”
+“RANK= 30 LOCAL_RANK= 2 gpu= 1”
+“RANK= 31 LOCAL_RANK= 3 gpu= 0”
+“RANK= 28 LOCAL_RANK= 0 gpu= 3”
+“RANK= 32 LOCAL_RANK= 0 gpu= 3”
+“RANK= 33 LOCAL_RANK= 1 gpu= 2”
+“RANK= 34 LOCAL_RANK= 2 gpu= 1”
+“RANK= 35 LOCAL_RANK= 3 gpu= 0”
+“RANK= 58 LOCAL_RANK= 2 gpu= 1”
+“RANK= 59 LOCAL_RANK= 3 gpu= 0”
+“RANK= 56 LOCAL_RANK= 0 gpu= 3”
+“RANK= 57 LOCAL_RANK= 1 gpu= 2”
+“RANK= 53 LOCAL_RANK= 1 gpu= 2”
+“RANK= 54 LOCAL_RANK= 2 gpu= 1”
+“RANK= 52 LOCAL_RANK= 0 gpu= 3”
+“RANK= 55 LOCAL_RANK= 3 gpu= 0”
+System Definition: Done
+============================
+3D Cylinder Flow
+Re    =1600
+Ma    =0.0866025
+rho   =1
+miu   =0.00254648
+tau   =0.00763944
+Time  =50
+inter =10
+nx    =512
+ny    =512
+nz    =512
+============================
+Me:7 MyNeibors: 58 16 
+Rank 7 has 2097152 points
+Currently used CUDA device: 0
+Me:5 MyNeibors: 56 18 
+Rank 5 has 2097152 points
+Currently used CUDA device: 0
+Me:9 MyNeibors: 60 22 
+Rank 9 has 2097152 points
+Currently used CUDA device: 0
+Me:37 MyNeibors: 24 50 
+Rank 37 has 2097152 points
+Currently used CUDA device: 0
+Me:6 MyNeibors: 57 19 
+Rank 6 has 2097152 points
+Currently used CUDA device: 0
+Me:18 MyNeibors: 5 47 
+Rank 18 has 2097152 points
+Currently used CUDA device: 0
+Me:17 MyNeibors: 4 46 
+Rank 17 has 2097152 points
+Currently used CUDA device: 0
+Me:19 MyNeibors: 6 44 
+Rank 19 has 2097152 points
+Currently used CUDA device: 0
+Me:10 MyNeibors: 61 23 
+Rank 10 has 2097152 points
+Currently used CUDA device: 0
+Me:11 MyNeibors: 62 20 
+Rank 11 has 2097152 points
+Currently used CUDA device: 0
+Me:27 MyNeibors: 14 36 
+Rank 27 has 2097152 points
+Currently used CUDA device: 0
+Me:43 MyNeibors: 30 52 
+Rank 43 has 2097152 points
+Currently used CUDA device: 0
+Me:35 MyNeibors: 22 60 
+Rank 35 has 2097152 points
+Currently used CUDA device: 0
+Me:36 MyNeibors: 27 49 
+Rank 36 has 2097152 points
+Currently used CUDA device: 0
+Me:55 MyNeibors: 42 0 
+Rank 55 has 2097152 points
+Currently used CUDA device: 0
+Me:41 MyNeibors: 28 54 
+Rank 41 has 2097152 points
+Currently used CUDA device: 0
+Me:8 MyNeibors: 63 21 
+Rank 8 has 2097152 points
+Currently used CUDA device: 0
+Me:4 MyNeibors: 59 17 
+Rank 4 has 2097152 points
+Currently used CUDA device: 0
+Me:22 MyNeibors: 9 35 
+Rank 22 has 2097152 points
+Currently used CUDA device: 0
+Me:39 MyNeibors: 26 48 
+Rank 39 has 2097152 points
+Currently used CUDA device: 0
+Me:23 MyNeibors: 10 32 
+Rank 23 has 2097152 points
+Currently used CUDA device: 0
+Me:31 MyNeibors: 2 40 
+Rank 31 has 2097152 points
+Currently used CUDA device: 0
+Me:62 MyNeibors: 33 11 
+Rank 62 has 2097152 points
+Currently used CUDA device: 0
+Me:38 MyNeibors: 25 51 
+Rank 38 has 2097152 points
+Currently used CUDA device: 0
+Me:15 MyNeibors: 50 24 
+Rank 15 has 2097152 points
+Currently used CUDA device: 0
+Me:16 MyNeibors: 7 45 
+Rank 16 has 2097152 points
+Currently used CUDA device: 0
+Me:3 MyNeibors: 54 28 
+Rank 3 has 2097152 points
+Currently used CUDA device: 0
+Me:1 MyNeibors: 52 30 
+Rank 1 has 2097152 points
+Currently used CUDA device: 0
+Me:54 MyNeibors: 41 3 
+Rank 54 has 2097152 points
+Currently used CUDA device: 0
+Me:40 MyNeibors: 31 53 
+Rank 40 has 2097152 points
+Currently used CUDA device: 0
+Me:42 MyNeibors: 29 55 
+Rank 42 has 2097152 points
+Currently used CUDA device: 0
+Me:13 MyNeibors: 48 26 
+Rank 13 has 2097152 points
+Currently used CUDA device: 0
+Me:26 MyNeibors: 13 39 
+Rank 26 has 2097152 points
+Currently used CUDA device: 0
+Me:14 MyNeibors: 49 27 
+Rank 14 has 2097152 points
+Currently used CUDA device: 0
+Me:34 MyNeibors: 21 63 
+Rank 34 has 2097152 points
+Currently used CUDA device: 0
+Me:53 MyNeibors: 40 2 
+Rank 53 has 2097152 points
+Currently used CUDA device: 0
+Me:47 MyNeibors: 18 56 
+Rank 47 has 2097152 points
+Currently used CUDA device: 0
+Me:33 MyNeibors: 20 62 
+Rank 33 has 2097152 points
+Currently used CUDA device: 0
+Me:25 MyNeibors: 12 38 
+Rank 25 has 2097152 points
+Currently used CUDA device: 0
+Me:61 MyNeibors: 32 10 
+Rank 61 has 2097152 points
+Currently used CUDA device: 0
+Me:63 MyNeibors: 34 8 
+Rank 63 has 2097152 points
+Currently used CUDA device: 0
+Me:21 MyNeibors: 8 34 
+Rank 21 has 2097152 points
+Currently used CUDA device: 0
+Me:46 MyNeibors: 17 59 
+Rank 46 has 2097152 points
+Currently used CUDA device: 0
+Me:2 MyNeibors: 53 31 
+Rank 2 has 2097152 points
+Currently used CUDA device: 0
+Me:29 MyNeibors: 0 42 
+Rank 29 has 2097152 points
+Currently used CUDA device: 0
+Me:60 MyNeibors: 35 9 
+Rank 60 has 2097152 points
+Currently used CUDA device: 0
+Me:45 MyNeibors: 16 58 
+Rank 45 has 2097152 points
+Currently used CUDA device: 0
+Me:30 MyNeibors: 1 43 
+Rank 30 has 2097152 points
+Currently used CUDA device: 0
+Me:44 MyNeibors: 19 57 
+Rank 44 has 2097152 points
+Currently used CUDA device: 0
+Me:0 MyNeibors: 55 29 
+Rank 0 has 2097152 points
+Currently used CUDA device: 0
+Warm-Up
+Me:52 MyNeibors: 43 1 
+Rank 52 has 2097152 points
+Currently used CUDA device: 0
+Me:51 MyNeibors: 38 12 
+Rank 51 has 2097152 points
+Currently used CUDA device: 0
+Me:12 MyNeibors: 51 25 
+Rank 12 has 2097152 points
+Currently used CUDA device: 0
+Me:50 MyNeibors: 37 15 
+Rank 50 has 2097152 points
+Currently used CUDA device: 0
+Me:20 MyNeibors: 11 33 
+Rank 20 has 2097152 points
+Currently used CUDA device: 0
+Me:49 MyNeibors: 36 14 
+Rank 49 has 2097152 points
+Currently used CUDA device: 0
+Me:58 MyNeibors: 45 7 
+Rank 58 has 2097152 points
+Currently used CUDA device: 0
+Me:56 MyNeibors: 47 5 
+Rank 56 has 2097152 points
+Currently used CUDA device: 0
+Me:57 MyNeibors: 44 6 
+Rank 57 has 2097152 points
+Currently used CUDA device: 0
+Me:32 MyNeibors: 23 61 
+Rank 32 has 2097152 points
+Currently used CUDA device: 0
+Me:59 MyNeibors: 46 4 
+Rank 59 has 2097152 points
+Currently used CUDA device: 0
+Me:24 MyNeibors: 15 37 
+Rank 24 has 2097152 points
+Currently used CUDA device: 0
+Me:28 MyNeibors: 3 41 
+Rank 28 has 2097152 points
+Currently used CUDA device: 0
+Me:48 MyNeibors: 39 13 
+Rank 48 has 2097152 points
+Currently used CUDA device: 0
+Warm-Up, Time-Step: 1
+Warm-Up, Time-Step: 2
+Warm-Up, Time-Step: 3
+Warm-Up, Time-Step: 4
+Warm-Up, Time-Step: 5
+Warm-Up, Time-Step: 6
+Warm-Up, Time-Step: 7
+Warm-Up, Time-Step: 8
+Warm-Up, Time-Step: 9
+Warm-Up, Time-Step: 10
+Warm-Up, Time-Step: 11
+Warm-Up, Time-Step: 12
+Warm-Up, Time-Step: 13
+Warm-Up, Time-Step: 14
+Warm-Up, Time-Step: 15
+Warm-Up, Time-Step: 16
+Warm-Up, Time-Step: 17
+Warm-Up, Time-Step: 18
+Warm-Up, Time-Step: 19
+Warm-Up, Time-Step: 20
+Reset and Run Main-Loop
+Main Loop, time-step = 1
+Main Loop, time-step = 2
+Main Loop, time-step = 3
+Main Loop, time-step = 4
+Main Loop, time-step = 5
+Main Loop, time-step = 6
+Main Loop, time-step = 7
+Main Loop, time-step = 8
+Main Loop, time-step = 9
+Main Loop, time-step = 10
+Main Loop, time-step = 11
+Main Loop, time-step = 12
+Main Loop, time-step = 13
+Main Loop, time-step = 14
+Main Loop, time-step = 15
+Main Loop, time-step = 16
+Main Loop, time-step = 17
+Main Loop, time-step = 18
+Main Loop, time-step = 19
+Main Loop, time-step = 20
+Main Loop, time-step = 21
+Main Loop, time-step = 22
+Main Loop, time-step = 23
+Main Loop, time-step = 24
+Main Loop, time-step = 25
+Main Loop, time-step = 26
+Main Loop, time-step = 27
+Main Loop, time-step = 28
+Main Loop, time-step = 29
+Main Loop, time-step = 30
+Main Loop, time-step = 31
+Main Loop, time-step = 32
+Main Loop, time-step = 33
+Main Loop, time-step = 34
+Main Loop, time-step = 35
+Main Loop, time-step = 36
+Main Loop, time-step = 37
+Main Loop, time-step = 38
+Main Loop, time-step = 39
+Main Loop, time-step = 40
+Main Loop, time-step = 41
+Main Loop, time-step = 42
+Main Loop, time-step = 43
+Main Loop, time-step = 44
+Main Loop, time-step = 45
+Main Loop, time-step = 46
+Main Loop, time-step = 47
+Main Loop, time-step = 48
+Main Loop, time-step = 49
+Main Loop, time-step = 50
+Avg time spent in Collision:  0.287753
+Avg time spent in Pack:  0.416320
+Avg time spent in Exchange:  0.560599
+Avg time spent in Unpack:  1.115130
+Avg time spent in Stream:  0.077315
+Avg time spent in Update:  0.201913
+Avg. Total Solver Time:  2.659233
+Avg. Time per time-step:  0.053185

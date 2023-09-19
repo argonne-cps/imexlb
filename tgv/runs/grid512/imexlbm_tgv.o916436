@@ -1,0 +1,1122 @@
+NUM_OF_NODES= 64 TOTAL_NUM_RANKS= 256 RANKS_PER_NODE= 4 THREADS_PER_RANK= 1
+-------------------------------
+KOKKOS_HOME=/lus/grand/projects/IMEXLBM/spatel/kokkos/polaris/install/kokkos
+-------------------------------
+“RANK= 208 LOCAL_RANK= 0 gpu= 3”
+“RANK= 12 LOCAL_RANK= 0 gpu= 3”
+“RANK= 13 LOCAL_RANK= 1 gpu= 2”
+“RANK= 14 LOCAL_RANK= 2 gpu= 1”
+“RANK= 15 LOCAL_RANK= 3 gpu= 0”
+“RANK= 16 LOCAL_RANK= 0 gpu= 3”
+“RANK= 19 LOCAL_RANK= 3 gpu= 0”
+“RANK= 209 LOCAL_RANK= 1 gpu= 2”
+“RANK= 211 LOCAL_RANK= 3 gpu= 0”
+“RANK= 210 LOCAL_RANK= 2 gpu= 1”
+“RANK= 17 LOCAL_RANK= 1 gpu= 2”
+“RANK= 18 LOCAL_RANK= 2 gpu= 1”
+“RANK= 11 LOCAL_RANK= 3 gpu= 0”
+“RANK= 28 LOCAL_RANK= 0 gpu= 3”
+“RANK= 225 LOCAL_RANK= 1 gpu= 2”
+“RANK= 26 LOCAL_RANK= 2 gpu= 1”
+“RANK= 24 LOCAL_RANK= 0 gpu= 3”
+“RANK= 27 LOCAL_RANK= 3 gpu= 0”
+“RANK= 224 LOCAL_RANK= 0 gpu= 3”
+“RANK= 25 LOCAL_RANK= 1 gpu= 2”
+“RANK= 226 LOCAL_RANK= 2 gpu= 1”
+“RANK= 196 LOCAL_RANK= 0 gpu= 3”
+“RANK= 227 LOCAL_RANK= 3 gpu= 0”
+“RANK= 198 LOCAL_RANK= 2 gpu= 1”
+“RANK= 29 LOCAL_RANK= 1 gpu= 2”
+“RANK= 206 LOCAL_RANK= 2 gpu= 1”
+“RANK= 197 LOCAL_RANK= 1 gpu= 2”
+“RANK= 204 LOCAL_RANK= 0 gpu= 3”
+“RANK= 199 LOCAL_RANK= 3 gpu= 0”
+“RANK= 30 LOCAL_RANK= 2 gpu= 1”
+“RANK= 31 LOCAL_RANK= 3 gpu= 0”
+“RANK= 205 LOCAL_RANK= 1 gpu= 2”
+“RANK= 207 LOCAL_RANK= 3 gpu= 0”
+“RANK= 21 LOCAL_RANK= 1 gpu= 2”
+“RANK= 213 LOCAL_RANK= 1 gpu= 2”
+“RANK= 212 LOCAL_RANK= 0 gpu= 3”
+“RANK= 9 LOCAL_RANK= 1 gpu= 2”
+“RANK= 23 LOCAL_RANK= 3 gpu= 0”
+“RANK= 10 LOCAL_RANK= 2 gpu= 1”
+“RANK= 216 LOCAL_RANK= 0 gpu= 3”
+“RANK= 8 LOCAL_RANK= 0 gpu= 3”
+“RANK= 193 LOCAL_RANK= 1 gpu= 2”
+“RANK= 215 LOCAL_RANK= 3 gpu= 0”
+“RANK= 214 LOCAL_RANK= 2 gpu= 1”
+“RANK= 217 LOCAL_RANK= 1 gpu= 2”
+“RANK= 218 LOCAL_RANK= 2 gpu= 1”
+“RANK= 219 LOCAL_RANK= 3 gpu= 0”
+“RANK= 22 LOCAL_RANK= 2 gpu= 1”
+“RANK= 20 LOCAL_RANK= 0 gpu= 3”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 194 LOCAL_RANK= 2 gpu= 1”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 200 LOCAL_RANK= 0 gpu= 3”
+“RANK= 36 LOCAL_RANK= 0 gpu= 3”
+“RANK= 203 LOCAL_RANK= 3 gpu= 0”
+“RANK= 201 LOCAL_RANK= 1 gpu= 2”
+“RANK= 186 LOCAL_RANK= 2 gpu= 1”
+“RANK= 38 LOCAL_RANK= 2 gpu= 1”
+“RANK= 195 LOCAL_RANK= 3 gpu= 0”
+“RANK= 37 LOCAL_RANK= 1 gpu= 2”
+“RANK= 202 LOCAL_RANK= 2 gpu= 1”
+“RANK= 192 LOCAL_RANK= 0 gpu= 3”
+“RANK= 39 LOCAL_RANK= 3 gpu= 0”
+“RANK= 187 LOCAL_RANK= 3 gpu= 0”
+“RANK= 184 LOCAL_RANK= 0 gpu= 3”
+“RANK= 185 LOCAL_RANK= 1 gpu= 2”
+“RANK= 189 LOCAL_RANK= 1 gpu= 2”
+“RANK= 188 LOCAL_RANK= 0 gpu= 3”
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
+“RANK= 32 LOCAL_RANK= 0 gpu= 3”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 132 LOCAL_RANK= 0 gpu= 3”
+“RANK= 134 LOCAL_RANK= 2 gpu= 1”
+“RANK= 133 LOCAL_RANK= 1 gpu= 2”
+“RANK= 135 LOCAL_RANK= 3 gpu= 0”
+“RANK= 190 LOCAL_RANK= 2 gpu= 1”
+“RANK= 191 LOCAL_RANK= 3 gpu= 0”
+“RANK= 221 LOCAL_RANK= 1 gpu= 2”
+“RANK= 223 LOCAL_RANK= 3 gpu= 0”
+“RANK= 230 LOCAL_RANK= 2 gpu= 1”
+“RANK= 35 LOCAL_RANK= 3 gpu= 0”
+“RANK= 34 LOCAL_RANK= 2 gpu= 1”
+“RANK= 33 LOCAL_RANK= 1 gpu= 2”
+“RANK= 222 LOCAL_RANK= 2 gpu= 1”
+“RANK= 220 LOCAL_RANK= 0 gpu= 3”
+“RANK= 229 LOCAL_RANK= 1 gpu= 2”
+“RANK= 228 LOCAL_RANK= 0 gpu= 3”
+“RANK= 231 LOCAL_RANK= 3 gpu= 0”
+“RANK= 70 LOCAL_RANK= 2 gpu= 1”
+“RANK= 68 LOCAL_RANK= 0 gpu= 3”
+“RANK= 69 LOCAL_RANK= 1 gpu= 2”
+“RANK= 71 LOCAL_RANK= 3 gpu= 0”
+“RANK= 178 LOCAL_RANK= 2 gpu= 1”
+“RANK= 179 LOCAL_RANK= 3 gpu= 0”
+“RANK= 176 LOCAL_RANK= 0 gpu= 3”
+“RANK= 177 LOCAL_RANK= 1 gpu= 2”
+“RANK= 47 LOCAL_RANK= 3 gpu= 0”
+“RANK= 44 LOCAL_RANK= 0 gpu= 3”
+“RANK= 45 LOCAL_RANK= 1 gpu= 2”
+“RANK= 235 LOCAL_RANK= 3 gpu= 0”
+“RANK= 232 LOCAL_RANK= 0 gpu= 3”
+“RANK= 234 LOCAL_RANK= 2 gpu= 1”
+“RANK= 233 LOCAL_RANK= 1 gpu= 2”
+“RANK= 46 LOCAL_RANK= 2 gpu= 1”
+“RANK= 183 LOCAL_RANK= 3 gpu= 0”
+“RANK= 180 LOCAL_RANK= 0 gpu= 3”
+“RANK= 182 LOCAL_RANK= 2 gpu= 1”
+“RANK= 181 LOCAL_RANK= 1 gpu= 2”
+“RANK= 66 LOCAL_RANK= 2 gpu= 1”
+“RANK= 67 LOCAL_RANK= 3 gpu= 0”
+“RANK= 65 LOCAL_RANK= 1 gpu= 2”
+“RANK= 119 LOCAL_RANK= 3 gpu= 0”
+“RANK= 61 LOCAL_RANK= 1 gpu= 2”
+“RANK= 116 LOCAL_RANK= 0 gpu= 3”
+“RANK= 62 LOCAL_RANK= 2 gpu= 1”
+“RANK= 117 LOCAL_RANK= 1 gpu= 2”
+“RANK= 60 LOCAL_RANK= 0 gpu= 3”
+“RANK= 118 LOCAL_RANK= 2 gpu= 1”
+“RANK= 64 LOCAL_RANK= 0 gpu= 3”
+“RANK= 246 LOCAL_RANK= 2 gpu= 1”
+“RANK= 48 LOCAL_RANK= 0 gpu= 3”
+“RANK= 49 LOCAL_RANK= 1 gpu= 2”
+“RANK= 50 LOCAL_RANK= 2 gpu= 1”
+“RANK= 253 LOCAL_RANK= 1 gpu= 2”
+“RANK= 51 LOCAL_RANK= 3 gpu= 0”
+“RANK= 254 LOCAL_RANK= 2 gpu= 1”
+“RANK= 56 LOCAL_RANK= 0 gpu= 3”
+“RANK= 252 LOCAL_RANK= 0 gpu= 3”
+“RANK= 255 LOCAL_RANK= 3 gpu= 0”
+“RANK= 248 LOCAL_RANK= 0 gpu= 3”
+“RANK= 58 LOCAL_RANK= 2 gpu= 1”
+“RANK= 247 LOCAL_RANK= 3 gpu= 0”
+“RANK= 245 LOCAL_RANK= 1 gpu= 2”
+“RANK= 249 LOCAL_RANK= 1 gpu= 2”
+“RANK= 57 LOCAL_RANK= 1 gpu= 2”
+“RANK= 244 LOCAL_RANK= 0 gpu= 3”
+“RANK= 59 LOCAL_RANK= 3 gpu= 0”
+“RANK= 93 LOCAL_RANK= 1 gpu= 2”
+“RANK= 84 LOCAL_RANK= 0 gpu= 3”
+“RANK= 94 LOCAL_RANK= 2 gpu= 1”
+“RANK= 85 LOCAL_RANK= 1 gpu= 2”
+“RANK= 95 LOCAL_RANK= 3 gpu= 0”
+“RANK= 86 LOCAL_RANK= 2 gpu= 1”
+“RANK= 92 LOCAL_RANK= 0 gpu= 3”
+“RANK= 87 LOCAL_RANK= 3 gpu= 0”
+“RANK= 146 LOCAL_RANK= 2 gpu= 1”
+“RANK= 147 LOCAL_RANK= 3 gpu= 0”
+“RANK= 250 LOCAL_RANK= 2 gpu= 1”
+“RANK= 144 LOCAL_RANK= 0 gpu= 3”
+“RANK= 159 LOCAL_RANK= 3 gpu= 0”
+“RANK= 241 LOCAL_RANK= 1 gpu= 2”
+“RANK= 251 LOCAL_RANK= 3 gpu= 0”
+“RANK= 98 LOCAL_RANK= 2 gpu= 1”
+“RANK= 145 LOCAL_RANK= 1 gpu= 2”
+“RANK= 156 LOCAL_RANK= 0 gpu= 3”
+“RANK= 169 LOCAL_RANK= 1 gpu= 2”
+“RANK= 173 LOCAL_RANK= 1 gpu= 2”
+“RANK= 243 LOCAL_RANK= 3 gpu= 0”
+“RANK= 53 LOCAL_RANK= 1 gpu= 2”
+“RANK= 76 LOCAL_RANK= 0 gpu= 3”
+“RANK= 97 LOCAL_RANK= 1 gpu= 2”
+“RANK= 100 LOCAL_RANK= 0 gpu= 3”
+“RANK= 104 LOCAL_RANK= 0 gpu= 3”
+“RANK= 157 LOCAL_RANK= 1 gpu= 2”
+“RANK= 164 LOCAL_RANK= 0 gpu= 3”
+“RANK= 170 LOCAL_RANK= 2 gpu= 1”
+“RANK= 175 LOCAL_RANK= 3 gpu= 0”
+“RANK= 240 LOCAL_RANK= 0 gpu= 3”
+“RANK= 54 LOCAL_RANK= 2 gpu= 1”
+“RANK= 77 LOCAL_RANK= 1 gpu= 2”
+“RANK= 96 LOCAL_RANK= 0 gpu= 3”
+“RANK= 101 LOCAL_RANK= 1 gpu= 2”
+“RANK= 107 LOCAL_RANK= 3 gpu= 0”
+“RANK= 120 LOCAL_RANK= 0 gpu= 3”
+“RANK= 127 LOCAL_RANK= 3 gpu= 0”
+“RANK= 138 LOCAL_RANK= 2 gpu= 1”
+“RANK= 149 LOCAL_RANK= 1 gpu= 2”
+“RANK= 158 LOCAL_RANK= 2 gpu= 1”
+“RANK= 165 LOCAL_RANK= 1 gpu= 2”
+“RANK= 171 LOCAL_RANK= 3 gpu= 0”
+“RANK= 172 LOCAL_RANK= 0 gpu= 3”
+“RANK= 236 LOCAL_RANK= 0 gpu= 3”
+“RANK= 242 LOCAL_RANK= 2 gpu= 1”
+“RANK= 52 LOCAL_RANK= 0 gpu= 3”
+“RANK= 78 LOCAL_RANK= 2 gpu= 1”
+“RANK= 99 LOCAL_RANK= 3 gpu= 0”
+“RANK= 102 LOCAL_RANK= 2 gpu= 1”
+“RANK= 105 LOCAL_RANK= 1 gpu= 2”
+“RANK= 108 LOCAL_RANK= 0 gpu= 3”
+“RANK= 122 LOCAL_RANK= 2 gpu= 1”
+“RANK= 125 LOCAL_RANK= 1 gpu= 2”
+“RANK= 139 LOCAL_RANK= 3 gpu= 0”
+“RANK= 150 LOCAL_RANK= 2 gpu= 1”
+“RANK= 153 LOCAL_RANK= 1 gpu= 2”
+“RANK= 167 LOCAL_RANK= 3 gpu= 0”
+“RANK= 168 LOCAL_RANK= 0 gpu= 3”
+“RANK= 239 LOCAL_RANK= 3 gpu= 0”
+“RANK= 55 LOCAL_RANK= 3 gpu= 0”
+“RANK= 79 LOCAL_RANK= 3 gpu= 0”
+“RANK= 103 LOCAL_RANK= 3 gpu= 0”
+“RANK= 106 LOCAL_RANK= 2 gpu= 1”
+“RANK= 109 LOCAL_RANK= 1 gpu= 2”
+“RANK= 121 LOCAL_RANK= 1 gpu= 2”
+“RANK= 126 LOCAL_RANK= 2 gpu= 1”
+“RANK= 137 LOCAL_RANK= 1 gpu= 2”
+“RANK= 148 LOCAL_RANK= 0 gpu= 3”
+“RANK= 154 LOCAL_RANK= 2 gpu= 1”
+“RANK= 237 LOCAL_RANK= 1 gpu= 2”
+“RANK= 72 LOCAL_RANK= 0 gpu= 3”
+“RANK= 110 LOCAL_RANK= 2 gpu= 1”
+“RANK= 123 LOCAL_RANK= 3 gpu= 0”
+“RANK= 136 LOCAL_RANK= 0 gpu= 3”
+“RANK= 141 LOCAL_RANK= 1 gpu= 2”
+“RANK= 151 LOCAL_RANK= 3 gpu= 0”
+“RANK= 152 LOCAL_RANK= 0 gpu= 3”
+“RANK= 238 LOCAL_RANK= 2 gpu= 1”
+“RANK= 73 LOCAL_RANK= 1 gpu= 2”
+“RANK= 111 LOCAL_RANK= 3 gpu= 0”
+“RANK= 114 LOCAL_RANK= 2 gpu= 1”
+“RANK= 140 LOCAL_RANK= 0 gpu= 3”
+“RANK= 155 LOCAL_RANK= 3 gpu= 0”
+“RANK= 74 LOCAL_RANK= 2 gpu= 1”
+“RANK= 113 LOCAL_RANK= 1 gpu= 2”
+“RANK= 143 LOCAL_RANK= 3 gpu= 0”
+“RANK= 75 LOCAL_RANK= 3 gpu= 0”
+“RANK= 115 LOCAL_RANK= 3 gpu= 0”
+“RANK= 124 LOCAL_RANK= 0 gpu= 3”
+“RANK= 142 LOCAL_RANK= 2 gpu= 1”
+“RANK= 91 LOCAL_RANK= 3 gpu= 0”
+“RANK= 88 LOCAL_RANK= 0 gpu= 3”
+“RANK= 89 LOCAL_RANK= 1 gpu= 2”
+“RANK= 90 LOCAL_RANK= 2 gpu= 1”
+“RANK= 80 LOCAL_RANK= 0 gpu= 3”
+“RANK= 81 LOCAL_RANK= 1 gpu= 2”
+“RANK= 82 LOCAL_RANK= 2 gpu= 1”
+“RANK= 83 LOCAL_RANK= 3 gpu= 0”
+“RANK= 129 LOCAL_RANK= 1 gpu= 2”
+“RANK= 130 LOCAL_RANK= 2 gpu= 1”
+“RANK= 128 LOCAL_RANK= 0 gpu= 3”
+“RANK= 131 LOCAL_RANK= 3 gpu= 0”
+“RANK= 63 LOCAL_RANK= 3 gpu= 0”
+“RANK= 112 LOCAL_RANK= 0 gpu= 3”
+“RANK= 166 LOCAL_RANK= 2 gpu= 1”
+“RANK= 174 LOCAL_RANK= 2 gpu= 1”
+“RANK= 42 LOCAL_RANK= 2 gpu= 1”
+“RANK= 40 LOCAL_RANK= 0 gpu= 3”
+“RANK= 41 LOCAL_RANK= 1 gpu= 2”
+“RANK= 43 LOCAL_RANK= 3 gpu= 0”
+“RANK= 163 LOCAL_RANK= 3 gpu= 0”
+“RANK= 160 LOCAL_RANK= 0 gpu= 3”
+“RANK= 161 LOCAL_RANK= 1 gpu= 2”
+“RANK= 162 LOCAL_RANK= 2 gpu= 1”
+System Definition: Done
+============================
+3D Cylinder Flow
+Re    =1600
+Ma    =0.0866025
+rho   =1
+miu   =0.00254648
+tau   =0.00763944
+Time  =50
+inter =10
+nx    =512
+ny    =512
+nz    =512
+============================
+Me:90 MyNeibors: 33 147 
+Rank 90 has 524288 points
+Currently used CUDA device: 0
+Me:186 MyNeibors: 65 243 
+Rank 186 has 524288 points
+Currently used CUDA device: 0
+Me:91 MyNeibors: 34 148 
+Rank 91 has 524288 points
+Currently used CUDA device: 0
+Me:93 MyNeibors: 36 150 
+Rank 93 has 524288 points
+Currently used CUDA device: 0
+Me:111 MyNeibors: 54 160 
+Rank 111 has 524288 points
+Currently used CUDA device: 0
+Me:117 MyNeibors: 60 174 
+Rank 117 has 524288 points
+Currently used CUDA device: 0
+Me:141 MyNeibors: 84 198 
+Rank 141 has 524288 points
+Currently used CUDA device: 0
+Me:151 MyNeibors: 94 200 
+Rank 151 has 524288 points
+Currently used CUDA device: 0
+Me:153 MyNeibors: 96 210 
+Rank 153 has 524288 points
+Currently used CUDA device: 0
+Me:165 MyNeibors: 108 222 
+Rank 165 has 524288 points
+Currently used CUDA device: 0
+Me:173 MyNeibors: 116 230 
+Rank 173 has 524288 points
+Currently used CUDA device: 0
+Me:187 MyNeibors: 66 244 
+Rank 187 has 524288 points
+Currently used CUDA device: 0
+Me:190 MyNeibors: 69 247 
+Rank 190 has 524288 points
+Currently used CUDA device: 0
+Me:215 MyNeibors: 158 8 
+Rank 215 has 524288 points
+Currently used CUDA device: 0
+Me:226 MyNeibors: 169 27 
+Rank 226 has 524288 points
+Currently used CUDA device: 0
+Me:234 MyNeibors: 177 35 
+Rank 234 has 524288 points
+Currently used CUDA device: 0
+Me:11 MyNeibors: 210 68 
+Rank 11 has 524288 points
+Currently used CUDA device: 0
+Me:17 MyNeibors: 216 74 
+Rank 17 has 524288 points
+Currently used CUDA device: 0
+Me:23 MyNeibors: 222 72 
+Rank 23 has 524288 points
+Currently used CUDA device: 0
+Me:26 MyNeibors: 225 83 
+Rank 26 has 524288 points
+Currently used CUDA device: 0
+Me:31 MyNeibors: 230 80 
+Rank 31 has 524288 points
+Currently used CUDA device: 0
+Me:89 MyNeibors: 32 146 
+Rank 89 has 524288 points
+Currently used CUDA device: 0
+Me:95 MyNeibors: 38 144 
+Rank 95 has 524288 points
+Currently used CUDA device: 0
+Me:98 MyNeibors: 41 155 
+Rank 98 has 524288 points
+Currently used CUDA device: 0
+Me:106 MyNeibors: 49 163 
+Rank 106 has 524288 points
+Currently used CUDA device: 0
+Me:109 MyNeibors: 52 166 
+Rank 109 has 524288 points
+Currently used CUDA device: 0
+Me:113 MyNeibors: 56 170 
+Rank 113 has 524288 points
+Currently used CUDA device: 0
+Me:118 MyNeibors: 61 175 
+Rank 118 has 524288 points
+Currently used CUDA device: 0
+Me:122 MyNeibors: 1 179 
+Rank 122 has 524288 points
+Currently used CUDA device: 0
+Me:127 MyNeibors: 6 176 
+Rank 127 has 524288 points
+Currently used CUDA device: 0
+Me:130 MyNeibors: 73 251 
+Rank 130 has 524288 points
+Currently used CUDA device: 0
+Me:135 MyNeibors: 78 248 
+Rank 135 has 524288 points
+Currently used CUDA device: 0
+Me:143 MyNeibors: 86 192 
+Rank 143 has 524288 points
+Currently used CUDA device: 0
+Me:145 MyNeibors: 88 202 
+Rank 145 has 524288 points
+Currently used CUDA device: 0
+Me:150 MyNeibors: 93 207 
+Rank 150 has 524288 points
+Currently used CUDA device: 0
+Me:154 MyNeibors: 97 211 
+Rank 154 has 524288 points
+Currently used CUDA device: 0
+Me:157 MyNeibors: 100 214 
+Rank 157 has 524288 points
+Currently used CUDA device: 0
+Me:163 MyNeibors: 106 220 
+Rank 163 has 524288 points
+Currently used CUDA device: 0
+Me:167 MyNeibors: 110 216 
+Rank 167 has 524288 points
+Currently used CUDA device: 0
+Me:175 MyNeibors: 118 224 
+Rank 175 has 524288 points
+Currently used CUDA device: 0
+Me:178 MyNeibors: 121 235 
+Rank 178 has 524288 points
+Currently used CUDA device: 0
+Me:185 MyNeibors: 64 242 
+Rank 185 has 524288 points
+Currently used CUDA device: 0
+Me:189 MyNeibors: 68 246 
+Rank 189 has 524288 points
+Currently used CUDA device: 0
+Me:195 MyNeibors: 138 60 
+Rank 195 has 524288 points
+Currently used CUDA device: 0
+Me:197 MyNeibors: 140 62 
+Rank 197 has 524288 points
+Currently used CUDA device: 0
+Me:201 MyNeibors: 144 2 
+Rank 201 has 524288 points
+Currently used CUDA device: 0
+Me:214 MyNeibors: 157 15 
+Rank 214 has 524288 points
+Currently used CUDA device: 0
+Me:224 MyNeibors: 175 25 
+Rank 224 has 524288 points
+Currently used CUDA device: 0
+Me:231 MyNeibors: 174 24 
+Rank 231 has 524288 points
+Currently used CUDA device: 0
+Me:235 MyNeibors: 178 36 
+Rank 235 has 524288 points
+Currently used CUDA device: 0
+Me:1 MyNeibors: 200 122 
+Rank 1 has 524288 points
+Currently used CUDA device: 0
+Me:4 MyNeibors: 203 125 
+Rank 4 has 524288 points
+Currently used CUDA device: 0
+Me:10 MyNeibors: 209 67 
+Rank 10 has 524288 points
+Currently used CUDA device: 0
+Me:14 MyNeibors: 213 71 
+Rank 14 has 524288 points
+Currently used CUDA device: 0
+Me:18 MyNeibors: 217 75 
+Rank 18 has 524288 points
+Currently used CUDA device: 0
+Me:20 MyNeibors: 219 77 
+Rank 20 has 524288 points
+Currently used CUDA device: 0
+Me:25 MyNeibors: 224 82 
+Rank 25 has 524288 points
+Currently used CUDA device: 0
+Me:29 MyNeibors: 228 86 
+Rank 29 has 524288 points
+Currently used CUDA device: 0
+Me:34 MyNeibors: 233 91 
+Rank 34 has 524288 points
+Currently used CUDA device: 0
+Me:39 MyNeibors: 238 88 
+Rank 39 has 524288 points
+Currently used CUDA device: 0
+Me:41 MyNeibors: 240 98 
+Rank 41 has 524288 points
+Currently used CUDA device: 0
+Me:59 MyNeibors: 194 116 
+Rank 59 has 524288 points
+Currently used CUDA device: 0
+Me:88 MyNeibors: 39 145 
+Rank 88 has 524288 points
+Currently used CUDA device: 0
+Me:94 MyNeibors: 37 151 
+Rank 94 has 524288 points
+Currently used CUDA device: 0
+Me:99 MyNeibors: 42 156 
+Rank 99 has 524288 points
+Currently used CUDA device: 0
+Me:102 MyNeibors: 45 159 
+Rank 102 has 524288 points
+Currently used CUDA device: 0
+Me:105 MyNeibors: 48 162 
+Rank 105 has 524288 points
+Currently used CUDA device: 0
+Me:110 MyNeibors: 53 167 
+Rank 110 has 524288 points
+Currently used CUDA device: 0
+Me:115 MyNeibors: 58 172 
+Rank 115 has 524288 points
+Currently used CUDA device: 0
+Me:119 MyNeibors: 62 168 
+Rank 119 has 524288 points
+Currently used CUDA device: 0
+Me:121 MyNeibors: 0 178 
+Rank 121 has 524288 points
+Currently used CUDA device: 0
+Me:126 MyNeibors: 5 183 
+Rank 126 has 524288 points
+Currently used CUDA device: 0
+Me:131 MyNeibors: 74 252 
+Rank 131 has 524288 points
+Currently used CUDA device: 0
+Me:134 MyNeibors: 77 255 
+Rank 134 has 524288 points
+Currently used CUDA device: 0
+Me:138 MyNeibors: 81 195 
+Rank 138 has 524288 points
+Currently used CUDA device: 0
+Me:142 MyNeibors: 85 199 
+Rank 142 has 524288 points
+Currently used CUDA device: 0
+Me:147 MyNeibors: 90 204 
+Rank 147 has 524288 points
+Currently used CUDA device: 0
+Me:149 MyNeibors: 92 206 
+Rank 149 has 524288 points
+Currently used CUDA device: 0
+Me:155 MyNeibors: 98 212 
+Rank 155 has 524288 points
+Currently used CUDA device: 0
+Me:159 MyNeibors: 102 208 
+Rank 159 has 524288 points
+Currently used CUDA device: 0
+Me:161 MyNeibors: 104 218 
+Rank 161 has 524288 points
+Currently used CUDA device: 0
+Me:166 MyNeibors: 109 223 
+Rank 166 has 524288 points
+Currently used CUDA device: 0
+Me:171 MyNeibors: 114 228 
+Rank 171 has 524288 points
+Currently used CUDA device: 0
+Me:174 MyNeibors: 117 231 
+Rank 174 has 524288 points
+Currently used CUDA device: 0
+Me:177 MyNeibors: 120 234 
+Rank 177 has 524288 points
+Currently used CUDA device: 0
+Me:183 MyNeibors: 126 232 
+Rank 183 has 524288 points
+Currently used CUDA device: 0
+Me:184 MyNeibors: 71 241 
+Rank 184 has 524288 points
+Currently used CUDA device: 0
+Me:191 MyNeibors: 70 240 
+Rank 191 has 524288 points
+Currently used CUDA device: 0
+Me:193 MyNeibors: 136 58 
+Rank 193 has 524288 points
+Currently used CUDA device: 0
+Me:199 MyNeibors: 142 56 
+Rank 199 has 524288 points
+Currently used CUDA device: 0
+Me:203 MyNeibors: 146 4 
+Rank 203 has 524288 points
+Currently used CUDA device: 0
+Me:205 MyNeibors: 148 6 
+Rank 205 has 524288 points
+Currently used CUDA device: 0
+Me:211 MyNeibors: 154 12 
+Rank 211 has 524288 points
+Currently used CUDA device: 0
+Me:213 MyNeibors: 156 14 
+Rank 213 has 524288 points
+Currently used CUDA device: 0
+Me:219 MyNeibors: 162 20 
+Rank 219 has 524288 points
+Currently used CUDA device: 0
+Me:221 MyNeibors: 164 22 
+Rank 221 has 524288 points
+Currently used CUDA device: 0
+Me:227 MyNeibors: 170 28 
+Rank 227 has 524288 points
+Currently used CUDA device: 0
+Me:230 MyNeibors: 173 31 
+Rank 230 has 524288 points
+Currently used CUDA device: 0
+Me:233 MyNeibors: 176 34 
+Rank 233 has 524288 points
+Currently used CUDA device: 0
+Me:238 MyNeibors: 181 39 
+Rank 238 has 524288 points
+Currently used CUDA device: 0
+Me:242 MyNeibors: 185 43 
+Rank 242 has 524288 points
+Currently used CUDA device: 0
+Me:0 MyNeibors: 207 121 
+Rank 0 has 524288 points
+Currently used CUDA device: 0
+Warm-Up
+Me:6 MyNeibors: 205 127 
+Rank 6 has 524288 points
+Currently used CUDA device: 0
+Me:9 MyNeibors: 208 66 
+Rank 9 has 524288 points
+Currently used CUDA device: 0
+Me:13 MyNeibors: 212 70 
+Rank 13 has 524288 points
+Currently used CUDA device: 0
+Me:19 MyNeibors: 218 76 
+Rank 19 has 524288 points
+Currently used CUDA device: 0
+Me:21 MyNeibors: 220 78 
+Rank 21 has 524288 points
+Currently used CUDA device: 0
+Me:27 MyNeibors: 226 84 
+Rank 27 has 524288 points
+Currently used CUDA device: 0
+Me:30 MyNeibors: 229 87 
+Rank 30 has 524288 points
+Currently used CUDA device: 0
+Me:33 MyNeibors: 232 90 
+Rank 33 has 524288 points
+Currently used CUDA device: 0
+Me:36 MyNeibors: 235 93 
+Rank 36 has 524288 points
+Currently used CUDA device: 0
+Me:42 MyNeibors: 241 99 
+Rank 42 has 524288 points
+Currently used CUDA device: 0
+Me:46 MyNeibors: 245 103 
+Rank 46 has 524288 points
+Currently used CUDA device: 0
+Me:49 MyNeibors: 248 106 
+Rank 49 has 524288 points
+Currently used CUDA device: 0
+Me:55 MyNeibors: 254 104 
+Rank 55 has 524288 points
+Currently used CUDA device: 0
+Me:58 MyNeibors: 193 115 
+Rank 58 has 524288 points
+Currently used CUDA device: 0
+Me:63 MyNeibors: 198 112 
+Rank 63 has 524288 points
+Currently used CUDA device: 0
+Me:65 MyNeibors: 8 186 
+Rank 65 has 524288 points
+Currently used CUDA device: 0
+Me:71 MyNeibors: 14 184 
+Rank 71 has 524288 points
+Currently used CUDA device: 0
+Me:73 MyNeibors: 16 130 
+Rank 73 has 524288 points
+Currently used CUDA device: 0
+Me:77 MyNeibors: 20 134 
+Rank 77 has 524288 points
+Currently used CUDA device: 0
+Me:82 MyNeibors: 25 139 
+Rank 82 has 524288 points
+Currently used CUDA device: 0
+Me:87 MyNeibors: 30 136 
+Rank 87 has 524288 points
+Currently used CUDA device: 0
+Me:92 MyNeibors: 35 149 
+Rank 92 has 524288 points
+Currently used CUDA device: 0
+Me:97 MyNeibors: 40 154 
+Rank 97 has 524288 points
+Currently used CUDA device: 0
+Me:101 MyNeibors: 44 158 
+Rank 101 has 524288 points
+Currently used CUDA device: 0
+Me:107 MyNeibors: 50 164 
+Rank 107 has 524288 points
+Currently used CUDA device: 0
+Me:108 MyNeibors: 51 165 
+Rank 108 has 524288 points
+Currently used CUDA device: 0
+Me:114 MyNeibors: 57 171 
+Rank 114 has 524288 points
+Currently used CUDA device: 0
+Me:116 MyNeibors: 59 173 
+Rank 116 has 524288 points
+Currently used CUDA device: 0
+Me:123 MyNeibors: 2 180 
+Rank 123 has 524288 points
+Currently used CUDA device: 0
+Me:125 MyNeibors: 4 182 
+Rank 125 has 524288 points
+Currently used CUDA device: 0
+Me:128 MyNeibors: 79 249 
+Rank 128 has 524288 points
+Currently used CUDA device: 0
+Me:132 MyNeibors: 75 253 
+Rank 132 has 524288 points
+Currently used CUDA device: 0
+Me:139 MyNeibors: 82 196 
+Rank 139 has 524288 points
+Currently used CUDA device: 0
+Me:140 MyNeibors: 83 197 
+Rank 140 has 524288 points
+Currently used CUDA device: 0
+Me:146 MyNeibors: 89 203 
+Rank 146 has 524288 points
+Currently used CUDA device: 0
+Me:148 MyNeibors: 91 205 
+Rank 148 has 524288 points
+Currently used CUDA device: 0
+Me:152 MyNeibors: 103 209 
+Rank 152 has 524288 points
+Currently used CUDA device: 0
+Me:158 MyNeibors: 101 215 
+Rank 158 has 524288 points
+Currently used CUDA device: 0
+Me:162 MyNeibors: 105 219 
+Rank 162 has 524288 points
+Currently used CUDA device: 0
+Me:164 MyNeibors: 107 221 
+Rank 164 has 524288 points
+Currently used CUDA device: 0
+Me:170 MyNeibors: 113 227 
+Rank 170 has 524288 points
+Currently used CUDA device: 0
+Me:172 MyNeibors: 115 229 
+Rank 172 has 524288 points
+Currently used CUDA device: 0
+Me:179 MyNeibors: 122 236 
+Rank 179 has 524288 points
+Currently used CUDA device: 0
+Me:181 MyNeibors: 124 238 
+Rank 181 has 524288 points
+Currently used CUDA device: 0
+Me:188 MyNeibors: 67 245 
+Rank 188 has 524288 points
+Currently used CUDA device: 0
+Me:192 MyNeibors: 143 57 
+Rank 192 has 524288 points
+Currently used CUDA device: 0
+Me:196 MyNeibors: 139 61 
+Rank 196 has 524288 points
+Currently used CUDA device: 0
+Me:202 MyNeibors: 145 3 
+Rank 202 has 524288 points
+Currently used CUDA device: 0
+Me:207 MyNeibors: 150 0 
+Rank 207 has 524288 points
+Currently used CUDA device: 0
+Me:210 MyNeibors: 153 11 
+Rank 210 has 524288 points
+Currently used CUDA device: 0
+Me:212 MyNeibors: 155 13 
+Rank 212 has 524288 points
+Currently used CUDA device: 0
+Me:218 MyNeibors: 161 19 
+Rank 218 has 524288 points
+Currently used CUDA device: 0
+Me:222 MyNeibors: 165 23 
+Rank 222 has 524288 points
+Currently used CUDA device: 0
+Me:225 MyNeibors: 168 26 
+Rank 225 has 524288 points
+Currently used CUDA device: 0
+Me:229 MyNeibors: 172 30 
+Rank 229 has 524288 points
+Currently used CUDA device: 0
+Me:232 MyNeibors: 183 33 
+Rank 232 has 524288 points
+Currently used CUDA device: 0
+Me:237 MyNeibors: 180 38 
+Rank 237 has 524288 points
+Currently used CUDA device: 0
+Me:243 MyNeibors: 186 44 
+Rank 243 has 524288 points
+Currently used CUDA device: 0
+Me:246 MyNeibors: 189 47 
+Rank 246 has 524288 points
+Currently used CUDA device: 0
+Me:248 MyNeibors: 135 49 
+Rank 248 has 524288 points
+Currently used CUDA device: 0
+Me:3 MyNeibors: 202 124 
+Rank 3 has 524288 points
+Currently used CUDA device: 0
+Me:7 MyNeibors: 206 120 
+Rank 7 has 524288 points
+Currently used CUDA device: 0
+Me:8 MyNeibors: 215 65 
+Rank 8 has 524288 points
+Currently used CUDA device: 0
+Me:15 MyNeibors: 214 64 
+Rank 15 has 524288 points
+Currently used CUDA device: 0
+Me:16 MyNeibors: 223 73 
+Rank 16 has 524288 points
+Currently used CUDA device: 0
+Me:22 MyNeibors: 221 79 
+Rank 22 has 524288 points
+Currently used CUDA device: 0
+Me:24 MyNeibors: 231 81 
+Rank 24 has 524288 points
+Currently used CUDA device: 0
+Me:28 MyNeibors: 227 85 
+Rank 28 has 524288 points
+Currently used CUDA device: 0
+Me:35 MyNeibors: 234 92 
+Rank 35 has 524288 points
+Currently used CUDA device: 0
+Me:37 MyNeibors: 236 94 
+Rank 37 has 524288 points
+Currently used CUDA device: 0
+Me:43 MyNeibors: 242 100 
+Rank 43 has 524288 points
+Currently used CUDA device: 0
+Me:44 MyNeibors: 243 101 
+Rank 44 has 524288 points
+Currently used CUDA device: 0
+Me:50 MyNeibors: 249 107 
+Rank 50 has 524288 points
+Currently used CUDA device: 0
+Me:53 MyNeibors: 252 110 
+Rank 53 has 524288 points
+Currently used CUDA device: 0
+Me:57 MyNeibors: 192 114 
+Rank 57 has 524288 points
+Currently used CUDA device: 0
+Me:61 MyNeibors: 196 118 
+Rank 61 has 524288 points
+Currently used CUDA device: 0
+Me:64 MyNeibors: 15 185 
+Rank 64 has 524288 points
+Currently used CUDA device: 0
+Me:69 MyNeibors: 12 190 
+Rank 69 has 524288 points
+Currently used CUDA device: 0
+Me:72 MyNeibors: 23 129 
+Rank 72 has 524288 points
+Currently used CUDA device: 0
+Me:78 MyNeibors: 21 135 
+Rank 78 has 524288 points
+Currently used CUDA device: 0
+Me:81 MyNeibors: 24 138 
+Rank 81 has 524288 points
+Currently used CUDA device: 0
+Me:85 MyNeibors: 28 142 
+Rank 85 has 524288 points
+Currently used CUDA device: 0
+Me:96 MyNeibors: 47 153 
+Rank 96 has 524288 points
+Currently used CUDA device: 0
+Me:100 MyNeibors: 43 157 
+Rank 100 has 524288 points
+Currently used CUDA device: 0
+Me:104 MyNeibors: 55 161 
+Rank 104 has 524288 points
+Currently used CUDA device: 0
+Me:112 MyNeibors: 63 169 
+Rank 112 has 524288 points
+Currently used CUDA device: 0
+Me:120 MyNeibors: 7 177 
+Rank 120 has 524288 points
+Currently used CUDA device: 0
+Me:124 MyNeibors: 3 181 
+Rank 124 has 524288 points
+Currently used CUDA device: 0
+Me:129 MyNeibors: 72 250 
+Rank 129 has 524288 points
+Currently used CUDA device: 0
+Me:133 MyNeibors: 76 254 
+Rank 133 has 524288 points
+Currently used CUDA device: 0
+Me:137 MyNeibors: 80 194 
+Rank 137 has 524288 points
+Currently used CUDA device: 0
+Me:144 MyNeibors: 95 201 
+Rank 144 has 524288 points
+Currently used CUDA device: 0
+Me:156 MyNeibors: 99 213 
+Rank 156 has 524288 points
+Currently used CUDA device: 0
+Me:160 MyNeibors: 111 217 
+Rank 160 has 524288 points
+Currently used CUDA device: 0
+Me:169 MyNeibors: 112 226 
+Rank 169 has 524288 points
+Currently used CUDA device: 0
+Me:176 MyNeibors: 127 233 
+Rank 176 has 524288 points
+Currently used CUDA device: 0
+Me:182 MyNeibors: 125 239 
+Rank 182 has 524288 points
+Currently used CUDA device: 0
+Me:194 MyNeibors: 137 59 
+Rank 194 has 524288 points
+Currently used CUDA device: 0
+Me:198 MyNeibors: 141 63 
+Rank 198 has 524288 points
+Currently used CUDA device: 0
+Me:200 MyNeibors: 151 1 
+Rank 200 has 524288 points
+Currently used CUDA device: 0
+Me:206 MyNeibors: 149 7 
+Rank 206 has 524288 points
+Currently used CUDA device: 0
+Me:209 MyNeibors: 152 10 
+Rank 209 has 524288 points
+Currently used CUDA device: 0
+Me:217 MyNeibors: 160 18 
+Rank 217 has 524288 points
+Currently used CUDA device: 0
+Me:223 MyNeibors: 166 16 
+Rank 223 has 524288 points
+Currently used CUDA device: 0
+Me:228 MyNeibors: 171 29 
+Rank 228 has 524288 points
+Currently used CUDA device: 0
+Me:236 MyNeibors: 179 37 
+Rank 236 has 524288 points
+Currently used CUDA device: 0
+Me:241 MyNeibors: 184 42 
+Rank 241 has 524288 points
+Currently used CUDA device: 0
+Me:245 MyNeibors: 188 46 
+Rank 245 has 524288 points
+Currently used CUDA device: 0
+Me:250 MyNeibors: 129 51 
+Rank 250 has 524288 points
+Currently used CUDA device: 0
+Me:255 MyNeibors: 134 48 
+Rank 255 has 524288 points
+Currently used CUDA device: 0
+Me:2 MyNeibors: 201 123 
+Rank 2 has 524288 points
+Currently used CUDA device: 0
+Me:5 MyNeibors: 204 126 
+Rank 5 has 524288 points
+Currently used CUDA device: 0
+Me:12 MyNeibors: 211 69 
+Rank 12 has 524288 points
+Currently used CUDA device: 0
+Me:32 MyNeibors: 239 89 
+Rank 32 has 524288 points
+Currently used CUDA device: 0
+Me:38 MyNeibors: 237 95 
+Rank 38 has 524288 points
+Currently used CUDA device: 0
+Me:40 MyNeibors: 247 97 
+Rank 40 has 524288 points
+Currently used CUDA device: 0
+Me:47 MyNeibors: 246 96 
+Rank 47 has 524288 points
+Currently used CUDA device: 0
+Me:48 MyNeibors: 255 105 
+Rank 48 has 524288 points
+Currently used CUDA device: 0
+Me:54 MyNeibors: 253 111 
+Rank 54 has 524288 points
+Currently used CUDA device: 0
+Me:56 MyNeibors: 199 113 
+Rank 56 has 524288 points
+Currently used CUDA device: 0
+Me:60 MyNeibors: 195 117 
+Rank 60 has 524288 points
+Currently used CUDA device: 0
+Me:67 MyNeibors: 10 188 
+Rank 67 has 524288 points
+Currently used CUDA device: 0
+Me:70 MyNeibors: 13 191 
+Rank 70 has 524288 points
+Currently used CUDA device: 0
+Me:74 MyNeibors: 17 131 
+Rank 74 has 524288 points
+Currently used CUDA device: 0
+Me:79 MyNeibors: 22 128 
+Rank 79 has 524288 points
+Currently used CUDA device: 0
+Me:83 MyNeibors: 26 140 
+Rank 83 has 524288 points
+Currently used CUDA device: 0
+Me:86 MyNeibors: 29 143 
+Rank 86 has 524288 points
+Currently used CUDA device: 0
+Me:103 MyNeibors: 46 152 
+Rank 103 has 524288 points
+Currently used CUDA device: 0
+Me:136 MyNeibors: 87 193 
+Rank 136 has 524288 points
+Currently used CUDA device: 0
+Me:168 MyNeibors: 119 225 
+Rank 168 has 524288 points
+Currently used CUDA device: 0
+Me:180 MyNeibors: 123 237 
+Rank 180 has 524288 points
+Currently used CUDA device: 0
+Me:204 MyNeibors: 147 5 
+Rank 204 has 524288 points
+Currently used CUDA device: 0
+Me:208 MyNeibors: 159 9 
+Rank 208 has 524288 points
+Currently used CUDA device: 0
+Me:216 MyNeibors: 167 17 
+Rank 216 has 524288 points
+Currently used CUDA device: 0
+Me:220 MyNeibors: 163 21 
+Rank 220 has 524288 points
+Currently used CUDA device: 0
+Me:239 MyNeibors: 182 32 
+Rank 239 has 524288 points
+Currently used CUDA device: 0
+Me:240 MyNeibors: 191 41 
+Rank 240 has 524288 points
+Currently used CUDA device: 0
+Me:247 MyNeibors: 190 40 
+Rank 247 has 524288 points
+Currently used CUDA device: 0
+Me:249 MyNeibors: 128 50 
+Rank 249 has 524288 points
+Currently used CUDA device: 0
+Me:252 MyNeibors: 131 53 
+Rank 252 has 524288 points
+Currently used CUDA device: 0
+Me:45 MyNeibors: 244 102 
+Rank 45 has 524288 points
+Currently used CUDA device: 0
+Me:51 MyNeibors: 250 108 
+Rank 51 has 524288 points
+Currently used CUDA device: 0
+Me:52 MyNeibors: 251 109 
+Rank 52 has 524288 points
+Currently used CUDA device: 0
+Me:62 MyNeibors: 197 119 
+Rank 62 has 524288 points
+Currently used CUDA device: 0
+Me:66 MyNeibors: 9 187 
+Rank 66 has 524288 points
+Currently used CUDA device: 0
+Me:68 MyNeibors: 11 189 
+Rank 68 has 524288 points
+Currently used CUDA device: 0
+Me:75 MyNeibors: 18 132 
+Rank 75 has 524288 points
+Currently used CUDA device: 0
+Me:76 MyNeibors: 19 133 
+Rank 76 has 524288 points
+Currently used CUDA device: 0
+Me:80 MyNeibors: 31 137 
+Rank 80 has 524288 points
+Currently used CUDA device: 0
+Me:84 MyNeibors: 27 141 
+Rank 84 has 524288 points
+Currently used CUDA device: 0
+Me:244 MyNeibors: 187 45 
+Rank 244 has 524288 points
+Currently used CUDA device: 0
+Me:251 MyNeibors: 130 52 
+Rank 251 has 524288 points
+Currently used CUDA device: 0
+Me:254 MyNeibors: 133 55 
+Rank 254 has 524288 points
+Currently used CUDA device: 0
+Me:253 MyNeibors: 132 54 
+Rank 253 has 524288 points
+Currently used CUDA device: 0
+Warm-Up, Time-Step: 1
+Warm-Up, Time-Step: 2
+Warm-Up, Time-Step: 3
+Warm-Up, Time-Step: 4
+Warm-Up, Time-Step: 5
+Warm-Up, Time-Step: 6
+Warm-Up, Time-Step: 7
+Warm-Up, Time-Step: 8
+Warm-Up, Time-Step: 9
+Warm-Up, Time-Step: 10
+Warm-Up, Time-Step: 11
+Warm-Up, Time-Step: 12
+Warm-Up, Time-Step: 13
+Warm-Up, Time-Step: 14
+Warm-Up, Time-Step: 15
+Warm-Up, Time-Step: 16
+Warm-Up, Time-Step: 17
+Warm-Up, Time-Step: 18
+Warm-Up, Time-Step: 19
+Warm-Up, Time-Step: 20
+Reset and Run Main-Loop
+Main Loop, time-step = 1
+Main Loop, time-step = 2
+Main Loop, time-step = 3
+Main Loop, time-step = 4
+Main Loop, time-step = 5
+Main Loop, time-step = 6
+Main Loop, time-step = 7
+Main Loop, time-step = 8
+Main Loop, time-step = 9
+Main Loop, time-step = 10
+Main Loop, time-step = 11
+Main Loop, time-step = 12
+Main Loop, time-step = 13
+Main Loop, time-step = 14
+Main Loop, time-step = 15
+Main Loop, time-step = 16
+Main Loop, time-step = 17
+Main Loop, time-step = 18
+Main Loop, time-step = 19
+Main Loop, time-step = 20
+Main Loop, time-step = 21
+Main Loop, time-step = 22
+Main Loop, time-step = 23
+Main Loop, time-step = 24
+Main Loop, time-step = 25
+Main Loop, time-step = 26
+Main Loop, time-step = 27
+Main Loop, time-step = 28
+Main Loop, time-step = 29
+Main Loop, time-step = 30
+Main Loop, time-step = 31
+Main Loop, time-step = 32
+Main Loop, time-step = 33
+Main Loop, time-step = 34
+Main Loop, time-step = 35
+Main Loop, time-step = 36
+Main Loop, time-step = 37
+Main Loop, time-step = 38
+Main Loop, time-step = 39
+Main Loop, time-step = 40
+Main Loop, time-step = 41
+Main Loop, time-step = 42
+Main Loop, time-step = 43
+Main Loop, time-step = 44
+Main Loop, time-step = 45
+Main Loop, time-step = 46
+Main Loop, time-step = 47
+Main Loop, time-step = 48
+Main Loop, time-step = 49
+Main Loop, time-step = 50
+Avg time spent in Collision:  0.072757
+Avg time spent in Pack:  0.197355
+Avg time spent in Exchange:  0.247692
+Avg time spent in Unpack:  0.473793
+Avg time spent in Stream:  0.020286
+Avg time spent in Update:  0.075864
+Avg. Total Solver Time:  1.087986
+Avg. Time per time-step:  0.021760

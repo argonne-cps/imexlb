@@ -1,0 +1,158 @@
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 12 LOCAL_RANK= 0 gpu= 3”
+“RANK= 15 LOCAL_RANK= 3 gpu= 0”
+“RANK= 13 LOCAL_RANK= 1 gpu= 2”
+“RANK= 14 LOCAL_RANK= 2 gpu= 1”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
+“RANK= 9 LOCAL_RANK= 1 gpu= 2”
+“RANK= 10 LOCAL_RANK= 2 gpu= 1”
+“RANK= 8 LOCAL_RANK= 0 gpu= 3”
+“RANK= 11 LOCAL_RANK= 3 gpu= 0”
+System Definition: Done
+============================
+3D Cylinder Flow
+Re    =1600
+Ma    =0.0866025
+rho   =1
+miu   =0.00254648
+tau   =0.00763944
+Time  =50
+inter =10
+nx    =512
+ny    =512
+nz    =512
+============================
+Me:3 MyNeibors: 12 4 
+Rank 3 has 8388608 points
+Currently used CUDA device: 0
+Me:2 MyNeibors: 13 5 
+Rank 2 has 8388608 points
+Currently used CUDA device: 0
+Me:10 MyNeibors: 5 13 
+Rank 10 has 8388608 points
+Currently used CUDA device: 0
+Me:1 MyNeibors: 14 6 
+Rank 1 has 8388608 points
+Currently used CUDA device: 0
+Me:11 MyNeibors: 4 12 
+Rank 11 has 8388608 points
+Currently used CUDA device: 0
+Me:9 MyNeibors: 6 14 
+Rank 9 has 8388608 points
+Currently used CUDA device: 0
+Me:8 MyNeibors: 7 15 
+Rank 8 has 8388608 points
+Currently used CUDA device: 0
+Me:0 MyNeibors: 15 7 
+Rank 0 has 8388608 points
+Currently used CUDA device: 0
+Warm-Up
+Me:5 MyNeibors: 2 10 
+Rank 5 has 8388608 points
+Currently used CUDA device: 0
+Me:6 MyNeibors: 1 9 
+Rank 6 has 8388608 points
+Currently used CUDA device: 0
+Me:7 MyNeibors: 0 8 
+Rank 7 has 8388608 points
+Currently used CUDA device: 0
+Me:4 MyNeibors: 3 11 
+Rank 4 has 8388608 points
+Currently used CUDA device: 0
+Me:15 MyNeibors: 8 0 
+Rank 15 has 8388608 points
+Currently used CUDA device: 0
+Me:14 MyNeibors: 9 1 
+Rank 14 has 8388608 points
+Currently used CUDA device: 0
+Me:12 MyNeibors: 11 3 
+Rank 12 has 8388608 points
+Currently used CUDA device: 0
+Me:13 MyNeibors: 10 2 
+Rank 13 has 8388608 points
+Currently used CUDA device: 0
+Warm-Up, Time-Step: 1
+Warm-Up, Time-Step: 2
+Warm-Up, Time-Step: 3
+Warm-Up, Time-Step: 4
+Warm-Up, Time-Step: 5
+Warm-Up, Time-Step: 6
+Warm-Up, Time-Step: 7
+Warm-Up, Time-Step: 8
+Warm-Up, Time-Step: 9
+Warm-Up, Time-Step: 10
+Warm-Up, Time-Step: 11
+Warm-Up, Time-Step: 12
+Warm-Up, Time-Step: 13
+Warm-Up, Time-Step: 14
+Warm-Up, Time-Step: 15
+Warm-Up, Time-Step: 16
+Warm-Up, Time-Step: 17
+Warm-Up, Time-Step: 18
+Warm-Up, Time-Step: 19
+Warm-Up, Time-Step: 20
+Reset and Run Main-Loop
+Main Loop, time-step = 1
+Main Loop, time-step = 2
+Main Loop, time-step = 3
+Main Loop, time-step = 4
+Main Loop, time-step = 5
+Main Loop, time-step = 6
+Main Loop, time-step = 7
+Main Loop, time-step = 8
+Main Loop, time-step = 9
+Main Loop, time-step = 10
+Main Loop, time-step = 11
+Main Loop, time-step = 12
+Main Loop, time-step = 13
+Main Loop, time-step = 14
+Main Loop, time-step = 15
+Main Loop, time-step = 16
+Main Loop, time-step = 17
+Main Loop, time-step = 18
+Main Loop, time-step = 19
+Main Loop, time-step = 20
+Main Loop, time-step = 21
+Main Loop, time-step = 22
+Main Loop, time-step = 23
+Main Loop, time-step = 24
+Main Loop, time-step = 25
+Main Loop, time-step = 26
+Main Loop, time-step = 27
+Main Loop, time-step = 28
+Main Loop, time-step = 29
+Main Loop, time-step = 30
+Main Loop, time-step = 31
+Main Loop, time-step = 32
+Main Loop, time-step = 33
+Main Loop, time-step = 34
+Main Loop, time-step = 35
+Main Loop, time-step = 36
+Main Loop, time-step = 37
+Main Loop, time-step = 38
+Main Loop, time-step = 39
+Main Loop, time-step = 40
+Main Loop, time-step = 41
+Main Loop, time-step = 42
+Main Loop, time-step = 43
+Main Loop, time-step = 44
+Main Loop, time-step = 45
+Main Loop, time-step = 46
+Main Loop, time-step = 47
+Main Loop, time-step = 48
+Main Loop, time-step = 49
+Main Loop, time-step = 50
+Avg time spent in Collision:  1.146901
+Avg time spent in Pack:  0.984737
+Avg time spent in Exchange:  1.304825
+Avg time spent in Unpack:  2.884416
+Avg time spent in Stream:  0.347327
+Avg time spent in Update:  0.612830
+Avg. Total Solver Time:  7.281375
+Avg. Time per time-step:  0.145628
