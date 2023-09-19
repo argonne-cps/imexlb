@@ -1,0 +1,161 @@
+NUM_OF_NODES= 1 TOTAL_NUM_RANKS= 4 RANKS_PER_NODE= 4 THREADS_PER_RANK= 1
+-------------------------------
+KOKKOS_HOME=/lus/grand/projects/IMEXLBM/spatel/kokkos/polaris/install/kokkos
+-------------------------------
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+System Definition: Done
+============================
+3D Cylinder Flow
+Re    =1600
+Ma    =0.0866025
+rho   =1
+miu   =0.00127324
+tau   =0.00381972
+Time  =100
+inter =10
+nx    =256
+ny    =256
+nz    =256
+============================
+Me:2 MyNeibors: 1 1 
+Currently using CUDA device: 0
+Me:0 MyNeibors: 3 3 
+Currently using CUDA device: 0
+Warm-Up
+Me:1 MyNeibors: 2 2 
+Currently using CUDA device: 0
+Me:3 MyNeibors: 0 0 
+Currently using CUDA device: 0
+Warm-Up, Time-Step: 1
+Warm-Up, Time-Step: 2
+Warm-Up, Time-Step: 3
+Warm-Up, Time-Step: 4
+Warm-Up, Time-Step: 5
+Warm-Up, Time-Step: 6
+Warm-Up, Time-Step: 7
+Warm-Up, Time-Step: 8
+Warm-Up, Time-Step: 9
+Warm-Up, Time-Step: 10
+Warm-Up, Time-Step: 11
+Warm-Up, Time-Step: 12
+Warm-Up, Time-Step: 13
+Warm-Up, Time-Step: 14
+Warm-Up, Time-Step: 15
+Warm-Up, Time-Step: 16
+Warm-Up, Time-Step: 17
+Warm-Up, Time-Step: 18
+Warm-Up, Time-Step: 19
+Warm-Up, Time-Step: 20
+Reset and Run Main-Loop
+time-step = 1
+time-step = 2
+time-step = 3
+time-step = 4
+time-step = 5
+time-step = 6
+time-step = 7
+time-step = 8
+time-step = 9
+time-step = 10
+time-step = 11
+time-step = 12
+time-step = 13
+time-step = 14
+time-step = 15
+time-step = 16
+time-step = 17
+time-step = 18
+time-step = 19
+time-step = 20
+time-step = 21
+time-step = 22
+time-step = 23
+time-step = 24
+time-step = 25
+time-step = 26
+time-step = 27
+time-step = 28
+time-step = 29
+time-step = 30
+time-step = 31
+time-step = 32
+time-step = 33
+time-step = 34
+time-step = 35
+time-step = 36
+time-step = 37
+time-step = 38
+time-step = 39
+time-step = 40
+time-step = 41
+time-step = 42
+time-step = 43
+time-step = 44
+time-step = 45
+time-step = 46
+time-step = 47
+time-step = 48
+time-step = 49
+time-step = 50
+time-step = 51
+time-step = 52
+time-step = 53
+time-step = 54
+time-step = 55
+time-step = 56
+time-step = 57
+time-step = 58
+time-step = 59
+time-step = 60
+time-step = 61
+time-step = 62
+time-step = 63
+time-step = 64
+time-step = 65
+time-step = 66
+time-step = 67
+time-step = 68
+time-step = 69
+time-step = 70
+time-step = 71
+time-step = 72
+time-step = 73
+time-step = 74
+time-step = 75
+time-step = 76
+time-step = 77
+time-step = 78
+time-step = 79
+time-step = 80
+time-step = 81
+time-step = 82
+time-step = 83
+time-step = 84
+time-step = 85
+time-step = 86
+time-step = 87
+time-step = 88
+time-step = 89
+time-step = 90
+time-step = 91
+time-step = 92
+time-step = 93
+time-step = 94
+time-step = 95
+time-step = 96
+time-step = 97
+time-step = 98
+time-step = 99
+time-step = 100
+Avg time spent in Collision:  1.147311
+Avg time spent in Collision: 1.14731
+Avg time spent in Pack:  20.996021
+Avg time spent in Exchange:  2.182188
+Avg time spent in Unpack:  10.461344
+Avg time spent in Stream:  0.351558
+Avg time spent in Update:  0.780768
+Avg. Total Solver Time:  35.919655
+Avg. Time per time-step:  0.359197
