@@ -1,12 +1,12 @@
 #!/bin/bash -l
 #PBS -N imexlbm_tgv
-#PBS -l select=1
-#PBS -l walltime=00:15:00
+#PBS -l select=256
+#PBS -l walltime=00:10:00
 #PBS -l filesystems=home:grand
-#PBS -q debug
+#PBS -q prod
 #PBS -A Catalyst
 
-CASE=tgv256
+CASE=tgv1024
 BACKEND=gpu
 
 NNODES=`wc -l < $PBS_NODEFILE`
@@ -20,6 +20,9 @@ echo "NUM_OF_NODES= ${NNODES} TOTAL_NUM_RANKS= ${NTOTRANKS} RANKS_PER_NODE= ${NR
 
 cd /grand/IMEXLBM/spatel/imexlb/tgv
 source set_kokkos.sh
+
+export OMP_PROC_BIND=spread
+export OMP_PLACES=threads
 
 export MPICH_GPU_SUPPORT_ENABLED=1
 
