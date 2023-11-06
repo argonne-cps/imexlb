@@ -3,7 +3,10 @@
 #This is for running Kokkos_SYCL on Polaris
 module load oneapi
 module load cudatoolkit-standalone/11.8.0
+module load mpiwrappers/cray-mpich-oneapi
 module load cmake 
+
+export MPICH_GPU_SUPPORT_ENABLED=1
 
 export ROOT_DIR="/lus/grand/projects/IMEXLBM/spatel/kokkos"
 export KOKKOS_INSTALL=${ROOT_DIR}/polaris_sycl/install/kokkos

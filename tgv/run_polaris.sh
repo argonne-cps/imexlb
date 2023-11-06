@@ -1,9 +1,9 @@
 #!/bin/bash -l
 #PBS -N imexlbm_tgv
-#PBS -l select=256
+#PBS -l select=1
 #PBS -l walltime=00:10:00
 #PBS -l filesystems=home:grand
-#PBS -q prod
+#PBS -q debug
 #PBS -A Catalyst
 
 CASE=tgv1024

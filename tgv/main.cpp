@@ -35,22 +35,27 @@ int main(int argc, char *argv[])
         LBM l1(MPI_COMM_WORLD, s1.sx, s1.sy, s1.sz, s1.tau, s1.rho0, s1.u0);
 
         l1.Initialize();
-
-        //l1.MPIoutput(0);
         l1.setup_subdomain();
-  
-	/*
-        for (int it = 1; it <= 1000; it++)
+ 
+        //warm-up	
+        for (int it = 1; it <= 20; it++)
         {
             l1.Collision();
             l1.pack();
             l1.exchange();
             l1.unpack();
             l1.Streaming();
+            l1.Update();
+            if (l1.comm.me == 0) {
+        	std::cout << "Warm-Up, Time-Step: " << it << std::endl; 
+    	    }
 
-            l1.Update1();
-        }*/
-    
+	}
+     
+        if (l1.comm.me == 0) {
+        	std::cout << "Reset and Run Main-Loop" << std::endl; 
+        }        
+
         start = MPI_Wtime();
         for (int it = 1; it <= s1.Time; it++)
         {
@@ -103,30 +108,10 @@ int main(int argc, char *argv[])
 	    end_Update = MPI_Wtime();
             time_Update += end_Update - start_Update;
 
-            /*
-	    end = MPI_Wtime();
-	    if (it % s1.inter == 0)
-            {
-                //l1.MPIoutput(it / s1.inter);
-                if (l1.comm.me == 0)
-                    printf("time=%f\n", end - start);
-            }
-	    */
             if (l1.comm.me == 0) printf("time-step = %f\n", (double) it);
 
         }
         end = MPI_Wtime();
-
-	/* Single instance timings
-	time_Col /= s1.Time;
-        time_Pack /= s1.Time;
-        time_Exchange /= s1.Time;
-        time_Unpack /= s1.Time;
-        time_Stream /= s1.Time;
-        time_Update /= s1.Time;
-        */
-
-        //if (l1.comm.me == 0) printf("avg. time per time-step=%f\n", (end - start)/s1.Time);
 
     double time_Total = end - start;
 
@@ -135,7 +120,7 @@ int main(int argc, char *argv[])
     MPI_Reduce(&time_Col, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
-        printf("Avg time spent in Collision:  %lf\n", avgTime);
+        std::cout << "Avg time spent in Collision: " << avgTime << std::endl;
     }
  
     avgTime=0.0;
@@ -144,6 +129,7 @@ int main(int argc, char *argv[])
     if (l1.comm.me == 0) {
         avgTime /= nranks;
         printf("Avg time spent in Pack:  %lf\n", avgTime);
+        std::cout << "Avg time spent in Pack: " << avgTime << std::endl;
     }
     
     avgTime=0.0;
