@@ -1,0 +1,146 @@
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+System Definition: Done
+============================
+3D Cylinder Flow
+Re    =1600
+Ma    =0.0866025
+rho   =1
+miu   =0.00127324
+tau   =0.00381972
+Time  =100
+inter =10
+nx    =256
+ny    =256
+nz    =256
+============================
+Me:0 MyNeibors: 0 0 
+Rank 0 has 16777216 points
+Warm-Up, Time-Step: 1
+Warm-Up, Time-Step: 2
+Warm-Up, Time-Step: 3
+Warm-Up, Time-Step: 4
+Warm-Up, Time-Step: 5
+Warm-Up, Time-Step: 6
+Warm-Up, Time-Step: 7
+Warm-Up, Time-Step: 8
+Warm-Up, Time-Step: 9
+Warm-Up, Time-Step: 10
+Warm-Up, Time-Step: 11
+Warm-Up, Time-Step: 12
+Warm-Up, Time-Step: 13
+Warm-Up, Time-Step: 14
+Warm-Up, Time-Step: 15
+Warm-Up, Time-Step: 16
+Warm-Up, Time-Step: 17
+Warm-Up, Time-Step: 18
+Warm-Up, Time-Step: 19
+Warm-Up, Time-Step: 20
+Reset and Run Main-Loop
+time-step = 1.000000
+time-step = 2.000000
+time-step = 3.000000
+time-step = 4.000000
+time-step = 5.000000
+time-step = 6.000000
+time-step = 7.000000
+time-step = 8.000000
+time-step = 9.000000
+time-step = 10.000000
+time-step = 11.000000
+time-step = 12.000000
+time-step = 13.000000
+time-step = 14.000000
+time-step = 15.000000
+time-step = 16.000000
+time-step = 17.000000
+time-step = 18.000000
+time-step = 19.000000
+time-step = 20.000000
+time-step = 21.000000
+time-step = 22.000000
+time-step = 23.000000
+time-step = 24.000000
+time-step = 25.000000
+time-step = 26.000000
+time-step = 27.000000
+time-step = 28.000000
+time-step = 29.000000
+time-step = 30.000000
+time-step = 31.000000
+time-step = 32.000000
+time-step = 33.000000
+time-step = 34.000000
+time-step = 35.000000
+time-step = 36.000000
+time-step = 37.000000
+time-step = 38.000000
+time-step = 39.000000
+time-step = 40.000000
+time-step = 41.000000
+time-step = 42.000000
+time-step = 43.000000
+time-step = 44.000000
+time-step = 45.000000
+time-step = 46.000000
+time-step = 47.000000
+time-step = 48.000000
+time-step = 49.000000
+time-step = 50.000000
+time-step = 51.000000
+time-step = 52.000000
+time-step = 53.000000
+time-step = 54.000000
+time-step = 55.000000
+time-step = 56.000000
+time-step = 57.000000
+time-step = 58.000000
+time-step = 59.000000
+time-step = 60.000000
+time-step = 61.000000
+time-step = 62.000000
+time-step = 63.000000
+time-step = 64.000000
+time-step = 65.000000
+time-step = 66.000000
+time-step = 67.000000
+time-step = 68.000000
+time-step = 69.000000
+time-step = 70.000000
+time-step = 71.000000
+time-step = 72.000000
+time-step = 73.000000
+time-step = 74.000000
+time-step = 75.000000
+time-step = 76.000000
+time-step = 77.000000
+time-step = 78.000000
+time-step = 79.000000
+time-step = 80.000000
+time-step = 81.000000
+time-step = 82.000000
+time-step = 83.000000
+time-step = 84.000000
+time-step = 85.000000
+time-step = 86.000000
+time-step = 87.000000
+time-step = 88.000000
+time-step = 89.000000
+time-step = 90.000000
+time-step = 91.000000
+time-step = 92.000000
+time-step = 93.000000
+time-step = 94.000000
+time-step = 95.000000
+time-step = 96.000000
+time-step = 97.000000
+time-step = 98.000000
+time-step = 99.000000
+time-step = 100.000000
+Avg time spent in Collision: 4.62933
+Avg time spent in Pack: 5.37928e+228
+Avg time spent in Exchange: 3.39511
+Avg time spent in Unpack: 8.59007
+Avg time spent in Stream: 1.51281
+Avg time spent in Update: 1.55092
+Avg Total Solver Time: 22.585
+Avg Time per time-step: 0.22585

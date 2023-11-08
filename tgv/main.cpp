@@ -128,7 +128,6 @@ int main(int argc, char *argv[])
     MPI_Reduce(&time_Pack, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
-        printf("Avg time spent in Pack:  %lf\n", avgTime);
         std::cout << "Avg time spent in Pack: " << avgTime << std::endl;
     }
     
@@ -137,7 +136,7 @@ int main(int argc, char *argv[])
     MPI_Reduce(&time_Exchange, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
-        printf("Avg time spent in Exchange:  %lf\n", avgTime);
+        std::cout << "Avg time spent in Exchange: " << avgTime << std::endl;
     }
     
     avgTime=0.0;
@@ -145,7 +144,7 @@ int main(int argc, char *argv[])
     MPI_Reduce(&time_Unpack, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
-        printf("Avg time spent in Unpack:  %lf\n", avgTime);
+        std::cout << "Avg time spent in Unpack: " << avgTime << std::endl;
     }
     
     avgTime=0.0;
@@ -153,7 +152,7 @@ int main(int argc, char *argv[])
     MPI_Reduce(&time_Stream, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
-        printf("Avg time spent in Stream:  %lf\n", avgTime);
+        std::cout << "Avg time spent in Stream: " << avgTime << std::endl;
     }
     
     avgTime=0.0;
@@ -161,7 +160,7 @@ int main(int argc, char *argv[])
     MPI_Reduce(&time_Update, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
-        printf("Avg time spent in Update:  %lf\n", avgTime);
+        std::cout << "Avg time spent in Update: " << avgTime << std::endl;
     }
     
     avgTime=0.0;
@@ -169,8 +168,8 @@ int main(int argc, char *argv[])
     MPI_Reduce(&time_Total, &avgTime, 1, MPI_DOUBLE, MPI_SUM, 0,MPI_COMM_WORLD);
     if (l1.comm.me == 0) {
         avgTime /= nranks;
-        printf("Avg. Total Solver Time:  %lf\n", avgTime);
-        printf("Avg. Time per time-step:  %lf\n", avgTime/s1.Time);
+        std::cout << "Avg Total Solver Time: " << avgTime << std::endl;
+        std::cout << "Avg Time per time-step: " << avgTime/s1.Time << std::endl;
     }
 
     }

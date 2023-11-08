@@ -1,16 +1,16 @@
 #!/bin/bash -l
 #PBS -N imexlbm_tgv
-#PBS -l select=1
+#PBS -l select=2
 #PBS -l walltime=00:10:00
 #PBS -l filesystems=home:grand
 #PBS -q debug
 #PBS -A Catalyst
 
-CASE=tgv1024
+CASE=tgv256
 BACKEND=gpu
 
 NNODES=`wc -l < $PBS_NODEFILE`
-NRANKS=4 # Number of MPI ranks to spawn per node
+NRANKS=2 # Number of MPI ranks to spawn per node
 NDEPTH=8 # Number of hardware threads per rank (i.e. spacing between MPI ranks)
 NTHREADS=1 # Number of software threads per rank to launch (i.e. OMP_NUM_THREADS)
 

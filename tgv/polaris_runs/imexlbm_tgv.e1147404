@@ -1,0 +1,30 @@
+
+Lmod is automatically replacing "nvhpc/21.9" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-milan".
+
+--------------------------------------------------------
+Experimental module, subjected to regular updates...
+Module name: oneapi/upstream 
+--------------------------------------------------------
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
+
+The following have been reloaded with a version change:
+  1) cudatoolkit-standalone/11.4.4 => cudatoolkit-standalone/11.8.0
+
+--------------------------------------------------------
+Experimental module, subjected to regular updates...
+Module name: oneapi/upstream 
+--------------------------------------------------------
+--------------------------------------------------------
+Experimental module, subjected to regular updates...
+Module name: oneapi/upstream 
+--------------------------------------------------------
+[1;96m----------------------------------------------------------------------------------
+[1;96m     cmake 3.23.2 successfully loaded
+[1;96m----------------------------------------------------------------------------------
+[0m
